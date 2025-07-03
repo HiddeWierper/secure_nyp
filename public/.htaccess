@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Sta directe toegang toe voor statische bestanden
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_FILENAME} \.(css|js|png|jpg|jpeg|gif|ico|svg)$ [NC]
+RewriteRule ^ - [L]
+
+# Stuur alle andere requests naar index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
