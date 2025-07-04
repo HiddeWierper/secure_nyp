@@ -7,6 +7,8 @@ if (isset($_SESSION['user_id'])) {
     header('Location: /');  // Was: /
     exit;
 }
+// In your login handler, after successful login for regiomanagers:
+
 
 $error = '';
 

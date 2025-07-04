@@ -1,4 +1,4 @@
- <?php
+<?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -13,6 +13,25 @@ $isManager = ($userRole === 'manager');
 $isRegiomanager = ($userRole === 'regiomanager');
 $isAdmin = ($userRole === 'admin');
 
+// Set region_id for regiomanagers if not already set
+// Set region_id for regiomanagers if not already set
+if ($isRegiomanager && !isset($_SESSION['region_id'])) {
+  try {
+      $db = new PDO('sqlite:' . __DIR__ . '/../db/tasks.db');  // Gebruik __DIR__
+      $stmt = $db->prepare("SELECT region_id FROM users WHERE username = ? AND role = 'regiomanager'");
+      $stmt->execute([$username]);
+      $regionId = $stmt->fetchColumn();
+      if ($regionId) {
+          $_SESSION['region_id'] = $regionId;
+          echo "<script>console.log('Region ID set to: " . $regionId . "');</script>";
+      } else {
+          echo "<script>console.log('No region_id found for user: " . $username . "');</script>";
+      }
+  } catch (PDOException $e) {
+      echo "<script>console.log('Database error: " . $e->getMessage() . "');</script>";
+      error_log("Error setting region_id: " . $e->getMessage());
+  }
+}
 // NIEUWE PERMISSIES - Regiomanagers kunnen meer!
 $canGenerate = ($isAdmin || $isRegiomanager); // Admin + Regiomanager
 $canTrack = true; // Iedereen kan taken bijhouden
@@ -28,7 +47,22 @@ $canViewRegioDashboard = ($isRegiomanager); // Alleen regiomanager heeft regio d
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <!-- Gebruikersrol variabelen definiëren EERST -->
+  <script>
+    const isManager = <?= json_encode($isManager) ?>;
+    const isRegiomanager = <?= json_encode($isRegiomanager) ?>;
+    const isAdmin = <?= json_encode($isAdmin) ?>;
+    const userRole = '<?= $userRole ?>';
+    const username = '<?= htmlspecialchars($username) ?>';
+  </script>
+
+  <!-- Dan pas de externe scripts laden -->
   <script defer src="js/script.js"></script>
+  <?php if ($isRegiomanager): ?>
+  <script defer src="js/regiomanager.js"></script>
+  <?php endif; ?>
 
   <script>
     tailwind.config = {
@@ -42,6 +76,7 @@ $canViewRegioDashboard = ($isRegiomanager); // Alleen regiomanager heeft regio d
       }
     }
   </script>
+  
   <style>
     * {
       transition: all 0.3s ease;
@@ -111,7 +146,6 @@ $canViewRegioDashboard = ($isRegiomanager); // Alleen regiomanager heeft regio d
       box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
     }
     
-    /* Mobile menu toggle */
     .mobile-menu-hidden {
       transform: translateX(-100%);
     }
@@ -137,30 +171,20 @@ $canViewRegioDashboard = ($isRegiomanager); // Alleen regiomanager heeft regio d
     .frequency-biweekly { border-left-color: #8b5cf6; background: rgba(139, 92, 246, 0.1); }
     .frequency-monthly { border-left-color: #ef4444; background: rgba(239, 68, 68, 0.1); }
     
-    /* Role indicator styles */
     .role-admin { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); }
     .role-manager { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); }
     .role-regiomanager { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); }
     
-    /* Responsive text sizing */
     @media (max-width: 640px) {
-      .responsive-text-lg {
-        font-size: 1rem;
-      }
-      .responsive-text-xl {
-        font-size: 1.125rem;
-      }
-      .responsive-text-2xl {
-        font-size: 1.25rem;
-      }
-      .responsive-text-3xl {
-        font-size: 1.5rem;
-      }
+      .responsive-text-lg { font-size: 1rem; }
+      .responsive-text-xl { font-size: 1.125rem; }
+      .responsive-text-2xl { font-size: 1.25rem; }
+      .responsive-text-3xl { font-size: 1.5rem; }
     }
   </style>
 </head>
 
-<body class="min-h-screen ">
+<body class="min-h-screen">
   <div class="container w-full mx-[auto] px-2 sm:px-4 py-4 sm:py-8">
     <!-- Header -->
     <div class="glass-card rounded-2xl p-4 sm:p-6 mb-4 sm:mb-8 relative">
@@ -467,15 +491,15 @@ $canViewRegioDashboard = ($isRegiomanager); // Alleen regiomanager heeft regio d
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div class="bg-white rounded-xl p-6 shadow-sm">
             <h3 class="text-lg font-semibold mb-4">Taken per Winkel</h3>
-            <div id="tasks-per-store-chart" class="h-64">
-              <p class="text-gray-500 text-center pt-20">Chart wordt geladen...</p>
+            <div class="h-64">
+              <canvas id="tasksPerStoreChart"></canvas>
             </div>
           </div>
 
           <div class="bg-white rounded-xl p-6 shadow-sm">
             <h3 class="text-lg font-semibold mb-4">Voltooiing Trend</h3>
-            <div id="completion-trend-chart" class="h-64">
-              <p class="text-gray-500 text-center pt-20">Chart wordt geladen...</p>
+            <div class="h-64">
+              <canvas id="completionTrendChart"></canvas>
             </div>
           </div>
         </div>
@@ -746,112 +770,5 @@ $canViewRegioDashboard = ($isRegiomanager); // Alleen regiomanager heeft regio d
     </div>
     <?php endif; ?>
   </div>
-
-<script>
-  const isManager = <?= json_encode($isManager) ?>;
-  const isRegiomanager = <?= json_encode($isRegiomanager) ?>;
-  const isAdmin = <?= json_encode($isAdmin) ?>;
-  const userRole = '<?= $userRole ?>';
-
-  // Mobile menu functionality
-  function toggleMobileMenu() {
-    const mobileNav = document.getElementById('mobile-nav');
-    mobileNav.classList.toggle('mobile-menu-hidden');
-  }
-
-  function closeMobileMenu() {
-    const mobileNav = document.getElementById('mobile-nav');
-    mobileNav.classList.add('mobile-menu-hidden');
-  }
-
-  // Event listeners for mobile menu
-  document.getElementById('mobile-menu-toggle').addEventListener('click', toggleMobileMenu);
-  document.getElementById('mobile-menu-close').addEventListener('click', closeMobileMenu);
-
-  // Close mobile menu when clicking outside
-  document.getElementById('mobile-nav').addEventListener('click', function(e) {
-    if (e.target === this) {
-      closeMobileMenu();
-    }
-  });
-
-  // Verbeterde showPage functie
-  function showPage(pageId) {
-    // Close mobile menu when navigating
-    closeMobileMenu();
-    
-    // Hide all pages
-    ['page-generator', 'page-track', 'page-manage', 'page-region', 'page-regio-dashboard'].forEach(id => {
-      const page = document.getElementById(id);
-      if (page) page.classList.add('hidden');
-    });
-    
-    // Show selected page
-    const page = document.getElementById(`page-${pageId}`);
-    if (page) {
-      page.classList.remove('hidden');
-    }
-
-    // Update desktop navigation
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-      btn.classList.remove('active');
-    });
-
-    const activeBtn = document.getElementById(`btn-${pageId}`);
-    if (activeBtn) {
-      activeBtn.classList.add('active');
-    }
-
-    // Update mobile navigation
-    document.querySelectorAll('.mobile-nav-btn').forEach(btn => {
-      btn.classList.remove('bg-green-50', 'text-green-600');
-    });
-
-    // Load specific page data AFTER page is shown
-    if (pageId === 'region' && isRegiomanager) {
-      setTimeout(() => {
-        loadRegionStores();
-      }, 100);
-    }
-    
-    if (pageId === 'regio-dashboard' && isRegiomanager) {
-      setTimeout(() => {
-        loadRegioDashboard();
-      }, 100);
-    }
-    
-    if (pageId === 'track') {
-      setTimeout(() => {
-        loadTaskSetsAndStores();
-      }, 100);
-    }
-  }
-
-  // Placeholder functie voor regio dashboard
-  async function loadRegioDashboard() {
-    console.log('Loading regio dashboard...');
-    // Hier komt de dashboard data loading logica
-  }
-
-  // Verbeterde DOMContentLoaded event
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, user role:', userRole);
-    
-    // Wacht tot alle elementen geladen zijn
-    setTimeout(() => {
-      // Show appropriate default page based on role
-      if (isRegiomanager) {
-        showPage('regio-dashboard'); // Start met dashboard voor regiomanagers
-      } else if (isManager) {
-        showPage('track');
-      } else if (isAdmin) {
-        showPage('generator');
-      } else {
-        showPage('track');
-      }
-    }, 200);
-  });
-</script>
-
 </body>
 </html>

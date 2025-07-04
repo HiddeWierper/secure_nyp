@@ -3,47 +3,13 @@ let currentTaskSetId = null;
 let currentTasks = [];
 
 // Pagina navigatie
-function showPage(pageId) {
-    if (isManager && pageId === 'generator') {
-        return;
-    }
-    // Verberg alle pagina's
-    document.querySelectorAll('[id^="page-"]').forEach(page => {
-        page.classList.add('hidden');
-    });
-    
-    const page = document.getElementById(`page-${pageId}`);
-    if (page) {
-        page.classList.remove('hidden');
-    } else {
-        console.warn(`Pagina met id page-${pageId} niet gevonden`);
-    }
-    
-    // Update navigatie
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.classList.remove('bg-primary', 'text-white');
-        btn.classList.add('text-gray-600', 'hover:text-primary');
-    });
-    
-    const btn = document.querySelector(`[onclick="showPage('${pageId}')"]`);
-    if (btn) {
-        btn.classList.add('bg-primary', 'text-white');
-        btn.classList.remove('text-gray-600', 'hover:text-primary');
-    }
-    
-    // Laad data voor specifieke pagina's
-    if (pageId === 'manage') {
-        loadTasks();
-    } else if (pageId === 'track') {
-        loadAllTaskSetsForTracking();
-    }
-}
+
 // Taken genereren
 async function generateTasks() {
     console.log('Generate tasks clicked');
     
     const storeId = document.getElementById('storeSelect').value;
-    const managerId = document.getElementById('managerSelect').value; // Fixed ID
+    const managerId = document.getElementById('managerSelect').value;
     const day = document.getElementById('day').value;
     const maxDuration = document.getElementById('max-duration').value;
     
@@ -60,8 +26,8 @@ async function generateTasks() {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                store_id: storeId,
-                manager_id: managerId, 
+                store_id: storeId,    // Voeg store_id toe
+                manager: managerId,   // Behoud voor backwards compatibility
                 day: day, 
                 maxDuration: parseInt(maxDuration)
             })
@@ -83,7 +49,6 @@ async function generateTasks() {
         alert('Fout bij genereren taken: ' + e.message);
     }
 }
-// Gegenereerde taken weergeven - AANGEPASTE VERSIE
 // Gegenereerde taken weergeven - MET WHATSAPP PREVIEW
 function displayGeneratedTasks(tasks, totalTime) {
     const container = document.getElementById('generated-tasks');
@@ -200,45 +165,7 @@ function regenerateTasks() {
 }
 
 // Update showPage function to hide generated tasks when switching pages
-function showPage(pageId) {
-    if (isManager && pageId === 'generator') {
-        return;
-    }
-    
-    // Hide all pages
-    document.querySelectorAll('[id^="page-"]').forEach(page => {
-        page.classList.add('hidden');
-    });
-    
-    const page = document.getElementById(`page-${pageId}`);
-    if (page) {
-        page.classList.remove('hidden');
-    }
-    
-    // Hide generated tasks when switching away from generator
-    if (pageId !== 'generator') {
-        hideGeneratedTasks();
-    }
-    
-    // Update navigation buttons
-    document.querySelectorAll('.nav-btn').forEach(btn => {
-        btn.classList.remove('bg-primary', 'text-white');
-        btn.classList.add('text-gray-600', 'hover:text-primary');
-    });
-    
-    const btn = document.querySelector(`[onclick="showPage('${pageId}')"]`);
-    if (btn) {
-        btn.classList.add('bg-primary', 'text-white');
-        btn.classList.remove('text-gray-600', 'hover:text-primary');
-    }
-    
-    // Load data for specific pages
-    if (pageId === 'manage') {
-        loadTasks();
-    } else if (pageId === 'track') {
-        loadAllTaskSetsForTracking();
-    }
-}
+
 
 // WhatsApp preview genereren
 function generateWhatsAppPreview() {
@@ -1671,3 +1598,200 @@ async function generateTasksForRegion() {
         showError('Fout bij aanmaken taken');
     }
 }
+
+// ===== FUNCTIES UIT HOME.PHP =====
+
+// Mobile menu functionality
+function toggleMobileMenu() {
+    console.log('toggleMobileMenu called');
+    const mobileNav = document.getElementById('mobile-nav');
+    mobileNav.classList.toggle('mobile-menu-hidden');
+}
+
+function closeMobileMenu() {
+    console.log('closeMobileMenu called');
+    const mobileNav = document.getElementById('mobile-nav');
+    mobileNav.classList.add('mobile-menu-hidden');
+}
+
+// Verbeterde showPage functie
+function showPage(pageId) {
+    try {
+        console.log('=== SHOWPAGE CALLED ===');
+        console.log('Page ID:', pageId);
+        console.log('User role:', userRole);
+        
+        // Managers kunnen niet naar generator
+        if (isManager && pageId === 'generator') {
+            console.log('Manager blocked from generator');
+            return;
+        }
+        
+        // Verberg alle pagina's
+        document.querySelectorAll('[id^="page-"]').forEach(page => {
+            page.classList.add('hidden');
+        });
+        
+        // Toon gewenste pagina
+        const page = document.getElementById(`page-${pageId}`);
+        if (page) {
+            page.classList.remove('hidden');
+            console.log('Page shown:', pageId);
+        } else {
+            console.warn(`Pagina met id page-${pageId} niet gevonden`);
+            return;
+        }
+        
+        // Update navigatie buttons
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        const activeBtn = document.getElementById(`btn-${pageId}`);
+        if (activeBtn) {
+            activeBtn.classList.add('active');
+        }
+        
+        // Laad specifieke pagina data
+        if (pageId === 'manage') {
+            console.log('Loading tasks for manage page...');
+            setTimeout(() => {
+                if (typeof loadTasks === 'function') {
+                    loadTasks();
+                } else {
+                    console.error('loadTasks function not found');
+                }
+            }, 100);
+        }
+        
+        if (pageId === 'region' && isRegiomanager) {
+            console.log('Loading region data...');
+            setTimeout(() => {
+                if (typeof loadRegionStores === 'function') {
+                    loadRegionStores();
+                } else {
+                    console.error('loadRegionStores function not found');
+                }
+            }, 100);
+        }
+        
+        if (pageId === 'regio-dashboard' && isRegiomanager) {
+            console.log('Should load regio dashboard...');
+            setTimeout(() => {
+                if (typeof loadRegioDashboard === 'function') {
+                    console.log('Calling loadRegioDashboard...');
+                    loadRegioDashboard();
+                } else {
+                    console.error('loadRegioDashboard function not found');
+                }
+            }, 100);
+        }
+        
+        if (pageId === 'track') {
+            console.log('Loading task sets...');
+            setTimeout(() => {
+                if (typeof loadAllTaskSetsForTracking === 'function') {
+                    loadAllTaskSetsForTracking();
+                } else {
+                    console.error('loadAllTaskSetsForTracking function not found');
+                }
+            }, 100);
+        }
+        
+        console.log('showPage completed successfully');
+        
+    } catch (error) {
+        console.error('Error in showPage:', error);
+        console.error('Error stack:', error.stack);
+    }
+}
+
+// Dashboard functie (placeholder - wordt ingevuld door regiomanager.js)
+function loadRegioDashboard() {
+    console.log('loadRegioDashboard called from script.js - should be overridden by regiomanager.js');
+}
+
+// Event listeners voor DOM loaded
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('=== DOM LOADED IN SCRIPT.JS ===');
+    console.log('User role on DOM load:', userRole);
+    
+    // Check if elements exist
+    const mobileToggle = document.getElementById('mobile-menu-toggle');
+    const mobileClose = document.getElementById('mobile-menu-close');
+    const mobileNav = document.getElementById('mobile-nav');
+    
+    console.log('Mobile elements found:', {
+        toggle: !!mobileToggle,
+        close: !!mobileClose,
+        nav: !!mobileNav
+    });
+
+    // Event listeners for mobile menu
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', toggleMobileMenu);
+        console.log('Mobile toggle listener added');
+    }
+    
+    if (mobileClose) {
+        mobileClose.addEventListener('click', closeMobileMenu);
+        console.log('Mobile close listener added');
+    }
+
+    // Close mobile menu when clicking outside
+    if (mobileNav) {
+        mobileNav.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeMobileMenu();
+            }
+        });
+        console.log('Mobile nav outside click listener added');
+    }
+    
+    // Initialize search functionality
+    initializeSearch();
+    
+    // Load stores and managers for non-managers
+    if (!isManager) {
+        loadStoresAndManagers();
+    }
+
+    // Add event listeners for buttons
+    const saveBtn = document.getElementById('saveBtn');
+    if (saveBtn) {
+        saveBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            saveTaskSet();
+        });
+    }
+    
+    const addTaskBtn = document.getElementById('addTaskBtn');
+    if (addTaskBtn) {
+        addTaskBtn.addEventListener('click', addNewTask);
+    }
+
+    const generateBtn = document.getElementById('generateBtn');
+    if (generateBtn) {
+        generateBtn.addEventListener('click', generateTasks);
+    }
+    
+    // Show default page
+    setTimeout(() => {
+        console.log('Setting default page...');
+        if (isRegiomanager) {
+            console.log('Showing region page for regiomanager');
+            showPage('regio-dashboard');
+        } else if (isManager) {
+            console.log('Showing track page for manager');
+            showPage('track');
+        } else if (isAdmin) {
+            console.log('Showing generator page for admin');
+            showPage('generator');
+        } else {
+            console.log('Showing track page for default');
+            showPage('track');
+        }
+    }, 200);
+    
+    console.log('=== SCRIPT SETUP COMPLETE ===');
+});
