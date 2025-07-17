@@ -1,8 +1,11 @@
 RewriteEngine On
 
+# Stel de base directory in voor de rewrites
+RewriteBase /secure_nyp/public/
+
 # Sta directe toegang toe voor statische bestanden
 RewriteCond %{REQUEST_FILENAME} -f
-RewriteCond %{REQUEST_FILENAME} \.(css|js|png|jpg|jpeg|gif|ico|svg)$ [NC]
+RewriteCond %{REQUEST_FILENAME} \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
 RewriteRule ^ - [L]
 
 # Stuur alle andere requests naar index.php

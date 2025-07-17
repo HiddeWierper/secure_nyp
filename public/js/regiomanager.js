@@ -285,23 +285,16 @@ if (typeof isRegiomanager !== 'undefined' && isRegiomanager) {
     // Load region managers
     async function loadRegionManagers() {
         try {
-            console.log('Loading region managers...');
-            const response = await fetch('/api/get_region_managers.php');
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            
-            const managers = await response.json();
-            
-            if (managers.error) {
-                throw new Error(managers.error);
-            }
-            
-            console.log('Region managers loaded:', managers);
-            
-            // Update manager dropdown
-            const managerSelect = document.getElementById('manager-select');
+            const response = await fetch('/api/get_region_managers.php', { credentials: 'include' });
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    
+            const result = await response.json();
+    
+            if (!result.success) throw new Error(result.error || 'Onbekende fout');
+    
+            const managers = result.managers;
+    
+            const managerSelect = document.getElementById('managerSelect');
             if (managerSelect) {
                 managerSelect.innerHTML = '<option value="">Selecteer manager...</option>';
                 managers.forEach(manager => {
@@ -311,12 +304,9 @@ if (typeof isRegiomanager !== 'undefined' && isRegiomanager) {
                     managerSelect.appendChild(option);
                 });
             }
-            
-            return managers;
         } catch (error) {
             console.error('Error loading region managers:', error);
             showNotification('Fout bij laden van managers: ' + error.message, 'error');
-            return [];
         }
     }
 

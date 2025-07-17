@@ -6,98 +6,95 @@ if (file_exists('../vendor/autoload.php')) {
     require_once '../vendor/autoload.php';
 }
 
+// BASEPATH AANPASSEN naar /secure_nyp/public
+define('BASEPATH', '/secure_nyp/public');
+
 // Get request path
 $request = $_SERVER['REQUEST_URI'];
 $path = parse_url($request, PHP_URL_PATH);
+
+// Remove basepath if present
+if (BASEPATH !== '' && strpos($path, BASEPATH) === 0) {
+    $path = substr($path, strlen(BASEPATH));
+}
 
 // Remove trailing slash
 $path = rtrim($path, '/');
 if ($path === '') $path = '/';
 
+// Helper function voor URL generatie
+function url($path = '') {
+    return BASEPATH . $path;
+}
+
 // Router
 switch ($path) {
     case '/':
-        require '../app/views/home.php';
+        require __DIR__ . '/../app/views/home.php';
         break;
         
     case '/dashboard':
-        require '../app/views/dashboard.php';
+        require __DIR__ . '/../app/views/dashboard.php';
         break;
         
     case '/login':
-        require '../app/views/login.php';
+        require __DIR__ . '/../app/views/login.php';
         break;
         
     case '/logout':
-        require '../app/views/logout.php';
+        require __DIR__ . '/../app/views/logout.php';
         break;
         
     case '/forgot-password':
-        require '../app/views/forgot_password.php';
+        require __DIR__ . '/../app/views/forgot_password.php';
         break;
-
+        
     case '/reset-password':
-        require '../app/views/reset_password.php';
+        require __DIR__ . '/../app/views/reset_password.php';
         break;
         
     case '/set-password':
-        require '../app/views/set_password.php';
+        require __DIR__ . '/../app/views/set_password.php';
         break;
-
-    // case '/regiomanager-dashboard':
-    //     if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'regiomanager') {
-    //         header('Location: /nyp/login');
-    //         exit;
-    //     }
-    //     require '../app/views/regiomanager_dashboard.php';
-    //     break;
         
-    // API routes
-// API routes - VERBETERDE VERSIE
-// API routes - ACCEPTEERT .php extensie
-default:
-    // Check if it's an API route
-    if (strpos($path, '/api/') === 0) {
-        // Remove /api/ from path
-        $apiPath = substr($path, 5); // Remove '/api/'
-        
-        // Try with .php extension first
-        $apiFile = '../app/api/' . $apiPath;
-        if (!file_exists($apiFile)) {
-            // If not found, try adding .php
-            $apiFile = '../app/api/' . $apiPath . '.php';
+    default:
+        // Check if it's an API route
+        if (strpos($path, '/api/') === 0) {
+            $apiPath = substr($path, 5);
+            $apiFile = __DIR__ . '/../app/api/' . $apiPath;
+            if (!file_exists($apiFile)) {
+                $apiFile .= '.php';
+            }
+            if (file_exists($apiFile)) {
+                require $apiFile;
+            } else {
+                http_response_code(404);
+                header('Content-Type: application/json');
+                echo json_encode(['error' => 'API endpoint not found: ' . $apiPath]);
+            }
+            break;
         }
         
-        if (file_exists($apiFile)) {
-            require $apiFile;
-        } else {
-            http_response_code(404);
-            header('Content-Type: application/json');
-            echo json_encode(['error' => 'API endpoint not found: ' . $apiPath]);
-        }
+        // Regular 404
+        http_response_code(404);
+        echo "<!DOCTYPE html>
+        <html>
+        <head>
+            <title>404 - Pagina niet gevonden</title>
+            <meta charset='UTF-8'>
+            <style>
+                body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+                h1 { color: #e74c3c; }
+                a { color: #3498db; text-decoration: none; }
+                a:hover { text-decoration: underline; }
+            </style>
+        </head>
+        <body>
+            <h1>404 - Pagina niet gevonden</h1>
+            <p>De opgevraagde pagina bestaat niet.</p>
+            <a href='" . url('/') . "'>← Terug naar home</a>
+        </body>
+        </html>";
         break;
-    }
-    
-    // Regular 404 for non-API routes
-    http_response_code(404);
-    echo "<!DOCTYPE html>
-    <html>
-    <head>
-        <title>404 - Pagina niet gevonden</title>
-        <meta charset='UTF-8'>
-        <style>
-            body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-            h1 { color: #e74c3c; }
-            a { color: #3498db; text-decoration: none; }
-            a:hover { text-decoration: underline; }
-        </style>
-    </head>
-    <body>
-        <h1>404 - Pagina niet gevonden</h1>
-        <p>De opgevraagde pagina bestaat niet.</p>
-        <a href='/'>← Terug naar home</a>
-    </body>
-    </html>";
-    break;
 }
 ?>

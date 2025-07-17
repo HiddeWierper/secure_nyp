@@ -3,6 +3,8 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+error_log('API get_region_managers.php session region_id: ' . ($_SESSION['region_id'] ?? 'not set'));
+error_log('API get_region_managers.php session user_role: ' . ($_SESSION['user_role'] ?? 'not set'));
 
 // Check if user is logged in and is a regiomanager
 if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'regiomanager') {
@@ -24,13 +26,22 @@ try {
     $regionId = $_SESSION['region_id'];
     
     // Get managers in the region
+    error_log("Region ID in session: " . $regionId);
+
     $stmt = $db->prepare("
-        SELECT u.id, u.username, s.name as store_name, s.id as store_id
-        FROM users u
-        JOIN stores s ON u.store_id = s.id
-        WHERE u.role = 'manager' AND s.region_id = ?
-        ORDER BY u.username
+        SELECT u.id, u.username, u.store_id, s.name as store_name 
+        FROM users u 
+        JOIN stores s ON u.store_id = s.id 
+        JOIN region_stores rs ON s.id = rs.store_id
+        WHERE u.role = 'manager' AND rs.region_id = ?
+        ORDER BY s.name, u.username
     ");
+    
+    error_log("Executing query with region_id: $regionId");
+    $stmt->execute([$regionId]);
+    $managers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+    error_log("Managers found: " . count($managers));
     $stmt->execute([$regionId]);
     $managers = $stmt->fetchAll(PDO::FETCH_ASSOC);
     

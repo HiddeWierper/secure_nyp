@@ -37,10 +37,12 @@ try {
     $_SESSION['user_role'] = $user['role'];
     $_SESSION['store_id'] = $user['store_id'];
     
-    // IMPORTANT: Set region_id for regiomanagers
-    if ($user['role'] === 'regiomanager' && $user['region_id']) {
+    if ($user['role'] === 'regiomanager' && !empty($user['region_id'])) {
         $_SESSION['region_id'] = $user['region_id'];
+    } else {
+        unset($_SESSION['region_id']);
     }
+    error_log('Login: user_role=' . $user['role'] . ', region_id=' . ($user['region_id'] ?? 'none'));
     
     echo json_encode([
         'success' => true,

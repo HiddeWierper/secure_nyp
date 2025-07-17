@@ -1,6 +1,6 @@
 <?php
 if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'regiomanager') {
-    header('Location: /nyp/login');
+    header('Location: ' . url('/login'));nyp/login');
     exit;
 }
 ?>

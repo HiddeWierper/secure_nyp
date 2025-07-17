@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: /');  // Was: /
+  header('Location: ' . url('/login'));
     exit;
 }
 // In your login handler, after successful login for regiomanagers:
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['user_role'] = $user['role'];
                 $_SESSION['username'] = $user['username'];
 
-                header('Location: /');  // Was: /
+                header('Location:' .url( '/'));
                 exit;
             }
         } catch (Exception $e) {
@@ -310,7 +310,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <!-- Login Form -->
-    <form method="post" action="/login" class="space-y-6" id="loginForm">
+    <form method="post" action="<?= url('/login') ?>" class="space-y-6" id="loginForm">
       <div class="form-group">
         <label for="email" class="block text-gray-700 font-semibold mb-3 text-sm sm:text-base">
           <i class="fas fa-envelope mr-2 text-green-600"></i>

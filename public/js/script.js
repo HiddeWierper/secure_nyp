@@ -1,3 +1,11 @@
+const BASEPATH = '/secure_nyp/public';
+const origFetch = window.fetch;
+window.fetch = function(resource, options) {
+    if (typeof resource === 'string' && resource.startsWith('/api/')) {
+        resource = BASEPATH + resource;
+    }
+    return origFetch(resource, options);
+};
 // Globale variabelen
 let currentTaskSetId = null;
 let currentTasks = [];
