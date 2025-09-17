@@ -14,12 +14,21 @@ if (!isset($data['task_set_id']) || empty($data['task_set_id'])) {
     exit;
 }
 
+// Extract incomplete reasons if provided
+$incompleteReasons = $data['incomplete_reasons'] ?? [];
+logMail("Received incomplete reasons: " . json_encode($incompleteReasons));
+
 try {
     $db = new PDO('sqlite:' . __DIR__ . '/../db/tasks.db');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Check of task set bestaat
-    $stmt = $db->prepare("SELECT * FROM task_sets WHERE id = :id");
+    // Check of task set bestaat en haal manager username op
+    $stmt = $db->prepare("
+        SELECT ts.*, u.username as manager_name
+        FROM task_sets ts
+        LEFT JOIN users u ON ts.manager = u.id
+        WHERE ts.id = :id
+    ");
     $stmt->execute([':id' => $data['task_set_id']]);
     $taskSet = $stmt->fetch(PDO::FETCH_ASSOC);
     
@@ -35,7 +44,7 @@ try {
 
     // Haal taken en voltooiing op
     $stmt = $db->prepare("
-        SELECT t.*, tsi.completed 
+        SELECT t.*, tsi.completed, tsi.task_id
         FROM tasks t
         JOIN task_set_items tsi ON t.id = tsi.task_id
         WHERE tsi.task_set_id = :task_set_id
@@ -43,6 +52,24 @@ try {
     ");
     $stmt->execute([':task_set_id' => $data['task_set_id']]);
     $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    // Store incomplete reasons in database
+    if (!empty($incompleteReasons)) {
+        logMail("Storing incomplete reasons for " . count($incompleteReasons) . " tasks");
+        foreach ($incompleteReasons as $taskId => $reason) {
+            $stmt = $db->prepare("
+                UPDATE task_set_items
+                SET incomplete_reason = :reason
+                WHERE task_set_id = :task_set_id AND task_id = :task_id
+            ");
+            $stmt->execute([
+                ':reason' => $reason,
+                ':task_set_id' => $data['task_set_id'],
+                ':task_id' => $taskId
+            ]);
+            logMail("Stored reason for task $taskId: $reason");
+        }
+    }
 
     // Update als ingediend
     $stmt = $db->prepare("UPDATE task_sets SET submitted = 1, submitted_at = datetime('now') WHERE id = :id");
@@ -55,27 +82,42 @@ try {
     $percentage = $totalTasks > 0 ? round(($completedCount / $totalTasks) * 100) : 0;
 
     // Probeer e-mail te versturen
-    $mailResult = sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percentage);
+    logMail("Starting email process for task_set_id: {$data['task_set_id']}");
+    $mailResult = sendTaskEmail($db, $taskSet, $tasks, $completedCount, $totalTasks, $percentage);
+    logMail("Email process completed. Result: " . json_encode($mailResult));
 
     echo json_encode([
         'success' => true, 
         'message' => 'Taken succesvol ingediend' . ($mailResult['sent'] ? ' en e-mail verzonden!' : ''),
         'mail_sent' => $mailResult['sent'],
         'mail_error' => $mailResult['error'] ?? null,
-        'completion_rate' => $percentage
+        'completion_rate' => $percentage,
+        'attachments' => $mailResult['attachments'] ?? 0
     ]);
 
 } catch (Exception $e) {
     echo json_encode(['success' => false, 'error' => $e->getMessage()]);
 }
 
-function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percentage) {
+function logMail($message) {
+    $logFile = __DIR__ . '/mail.log';
+    $timestamp = date('Y-m-d H:i:s');
+    file_put_contents($logFile, "[$timestamp] $message" . PHP_EOL, FILE_APPEND | LOCK_EX);
+}
+
+function sendTaskEmail($db, $taskSet, $tasks, $completedCount, $totalTasks, $percentage) {
     try {
+        logMail("=== STARTING EMAIL FUNCTION ===");
+        logMail("TaskSet ID: {$taskSet['id']}, Day: {$taskSet['day']}, Manager: {$taskSet['manager']}");
+        logMail("Stats: $completedCount/$totalTasks tasks completed ($percentage%)");
         // Laad .env configuratie
         $envFile = __DIR__ . '/../../.env';
+        logMail("Looking for .env file at: $envFile");
         if (!file_exists($envFile)) {
+            logMail("ERROR: .env file not found!");
             return ['sent' => false, 'error' => '.env bestand niet gevonden'];
         }
+        logMail(".env file found, loading configuration...");
         
         $envLines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         $config = [];
@@ -87,12 +129,15 @@ function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percenta
         }
 
         // Controleer verplichte velden
-        $required = ['MAIL_HOST', 'MAIL_USERNAME', 'MAIL_PASSWORD', 'MAIL_FROM_ADDRESS', 'MAIL_TO_ADDRESS'];
+        $required = ['MAIL_HOST', 'MAIL_USERNAME', 'MAIL_PASSWORD', 'MAIL_FROM_ADDRESS'];
+        logMail("Checking required mail configuration fields...");
         foreach ($required as $field) {
             if (empty($config[$field])) {
+                logMail("ERROR: Missing required field: $field");
                 return ['sent' => false, 'error' => "Ontbrekende configuratie: $field"];
             }
         }
+        logMail("All required fields present. Host: {$config['MAIL_HOST']}, Username: {$config['MAIL_USERNAME']}, From: {$config['MAIL_FROM_ADDRESS']}");
 
         $mail = new PHPMailer(true);
         
@@ -108,18 +153,46 @@ function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percenta
 
         // Ontvangers
         $mail->setFrom($config['MAIL_FROM_ADDRESS'], $config['MAIL_FROM_NAME'] ?? 'Taakbeheer NYP');
-        $mail->addAddress($config['MAIL_TO_ADDRESS']);
 
-        // Haal foto's op uit database
-        $db = new PDO('sqlite:' . __DIR__ . '/../db/tasks.db');
+        // Haal ontvangers op uit database (storemanager, regio manager, admin)
+        $recipients = getEmailRecipients((int)$taskSet['manager'], (int)$taskSet['store_id']);
+        logMail("Found " . count($recipients) . " email recipients");
+
+        $actualRecipients = 0;
+        foreach ($recipients as $recipient) {
+            if (str_ends_with(strtolower($recipient['email']), 'nyp.nl')) {
+                logMail("SKIPPED nyp.nl recipient: {$recipient['name']} ({$recipient['email']}) - Role: {$recipient['role']} (would have been sent in production)");
+            } else {
+                $mail->addAddress($recipient['email'], $recipient['name']);
+                $actualRecipients++;
+                logMail("Added recipient: {$recipient['name']} ({$recipient['email']}) - Role: {$recipient['role']}");
+            }
+        }
+
+        // Als geen ontvangers gevonden, log error
+        if (empty($recipients)) {
+            logMail("ERROR: No recipients found in database for manager: {$taskSet['manager']}");
+            return ['sent' => false, 'error' => 'Geen e-mail ontvangers gevonden'];
+        }
+
+        // Als alle ontvangers nyp.nl waren, log dit
+        if ($actualRecipients === 0 && !empty($recipients)) {
+            logMail("INFO: All recipients were nyp.nl domains - email not sent but would have been sent to " . count($recipients) . " recipients in production");
+            return ['sent' => true, 'attachments' => $attachmentCount, 'note' => 'Simulated send to nyp.nl domains'];
+        }
+
+        // Haal foto's en incomplete reasons op uit database
         $stmt = $db->prepare("
-            SELECT t.name as task_name, tsi.photo_path 
+            SELECT t.name as task_name, tsi.photo_path, tsi.completed, tsi.incomplete_reason
             FROM tasks t
             JOIN task_set_items tsi ON t.id = tsi.task_id
-            WHERE tsi.task_set_id = :task_set_id AND tsi.photo_path IS NOT NULL
+            WHERE tsi.task_set_id = :task_set_id
         ");
         $stmt->execute([':task_set_id' => $taskSet['id']]);
-        $photos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $taskDetails = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        // Filter photos
+        $photos = array_filter($taskDetails, fn($t) => !empty($t['photo_path']));
 
         // Voeg foto's toe als bijlagen
         $attachmentCount = 0;
@@ -137,7 +210,7 @@ function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percenta
 
         // Inhoud
         $mail->isHTML(true);
-        $mail->Subject = "Taken ingediend - {$taskSet['day']} ({$taskSet['manager']}) - {$attachmentCount} foto's";
+        $mail->Subject = "Taken ingediend - {$taskSet['day']} ({$taskSet['manager_name']}) - {$attachmentCount} foto's";
         
         // Bepaal status kleur
         $statusColor = $percentage >= 80 ? '#22c55e' : ($percentage >= 50 ? '#f59e0b' : '#ef4444');
@@ -177,7 +250,7 @@ function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percenta
             <div class='container'>
                 <div class='header'>
                     <h1>📋 Taken Ingediend</h1>
-                    <p>{$taskSet['day']} - {$taskSet['manager']}</p>
+                    <p>{$taskSet['day']} - {$taskSet['manager_name']}</p>
                 </div>
                 
                 <div class='content'>
@@ -219,22 +292,30 @@ function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percenta
             $badgeClass = $isCompleted ? 'badge-completed' : 'badge-incomplete';
             $statusText = $isCompleted ? '✅ Voltooid' : '❌ Niet voltooid';
             $icon = $isCompleted ? '✅' : '❌';
-            
-            // Check of er een foto is voor deze taak
-            $hasPhoto = false;
-            foreach ($photos as $photo) {
-                if ($photo['task_name'] === $task['name']) {
-                    $hasPhoto = true;
+
+            // Find task details including photo and incomplete reason
+            $taskDetail = null;
+            foreach ($taskDetails as $detail) {
+                if ($detail['task_name'] === $task['name']) {
+                    $taskDetail = $detail;
                     break;
                 }
             }
-            $photoIndicator = $hasPhoto ? '<span class="photo-indicator">📷 Foto</span>' : '';
-            
+
+            $photoIndicator = (!empty($taskDetail['photo_path'])) ? '<span class="photo-indicator">📷 Foto</span>' : '';
+
+            // Add incomplete reason if task is not completed and reason exists
+            $reasonText = '';
+            if (!$isCompleted && !empty($taskDetail['incomplete_reason'])) {
+                $reasonText = '<div class="task-details" style="color: #dc2626; font-style: italic; margin-top: 4px;">💬 Reden: ' . htmlspecialchars($taskDetail['incomplete_reason']) . '</div>';
+            }
+
             $mail->Body .= "
                         <div class='task-item {$statusClass}'>
                             <div>
                                 <div class='task-name'>{$icon} {$task['name']} {$photoIndicator}</div>
                                 <div class='task-details'>⏱️ {$task['time']} minuten • 🔄 {$task['frequency']}</div>
+                                {$reasonText}
                             </div>
                             <span class='status-badge {$badgeClass}'>{$statusText}</span>
                         </div>";
@@ -257,6 +338,54 @@ function sendTaskEmail($taskSet, $tasks, $completedCount, $totalTasks, $percenta
         
     } catch (Exception $e) {
         return ['sent' => false, 'error' => $e->getMessage()];
+    }
+}
+
+function getEmailRecipients($managerUserId, $storeId) {
+    try {
+        $db = new PDO('sqlite:' . __DIR__ . '/../db/tasks.db');
+        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        logMail("Getting email recipients for managerUserId: $managerUserId, store: $storeId");
+
+        // Sends to:
+        // - all admins
+        // - the storemanager assigned to the store (users.role='storemanager' AND users.store_id = :store_id)
+        // - the regiomanager(s) matching the store’s region(s) via region_stores
+        $stmt = $db->prepare("
+            SELECT u.username AS name, u.email, u.role
+            FROM users u
+            WHERE u.role = 'admin'
+
+            UNION
+
+            SELECT u.username AS name, u.email, u.role
+            FROM users u
+            WHERE u.role = 'storemanager'
+              AND u.store_id = :store_id
+
+            UNION
+
+            SELECT u.username AS name, u.email, u.role
+            FROM users u
+            WHERE u.role = 'regiomanager'
+              AND u.region_id IN (
+                  SELECT rs.region_id
+                  FROM region_stores rs
+                  WHERE rs.store_id = :store_id
+              )
+        ");
+        $stmt->execute([
+            ':store_id' => $storeId
+        ]);
+        $recipients = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        logMail('Found recipients: ' . json_encode($recipients));
+        return $recipients;
+
+    } catch (Exception $e) {
+        logMail('ERROR getting recipients: ' . $e->getMessage());
+        return [];
     }
 }
 ?>

@@ -1,0 +1,702 @@
+[2025-08-11 20:52:05] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 20:52:05] Session region_id: 1
+[2025-08-11 20:52:05] Session user_role: regiomanager
+[2025-08-11 20:52:05] Session user_id: 28
+[2025-08-11 20:52:05] Access granted - proceeding with region_id: 1
+[2025-08-11 20:53:05] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 20:53:05] Session region_id: 1
+[2025-08-11 20:53:05] Session user_role: regiomanager
+[2025-08-11 20:53:05] Session user_id: 28
+[2025-08-11 20:53:05] Access granted - proceeding with region_id: 1
+[2025-08-11 20:55:46] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 20:55:46] Session region_id: 1
+[2025-08-11 20:55:46] Session user_role: regiomanager
+[2025-08-11 20:55:46] Session user_id: 28
+[2025-08-11 20:55:46] Access granted - proceeding with region_id: 1
+[2025-08-11 20:58:44] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 20:58:44] Session region_id: 1
+[2025-08-11 20:58:44] Session user_role: regiomanager
+[2025-08-11 20:58:44] Session user_id: 28
+[2025-08-11 20:58:44] Access granted - proceeding with region_id: 1
+[2025-08-11 20:58:50] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 20:58:50] Session region_id: 1
+[2025-08-11 20:58:50] Session user_role: regiomanager
+[2025-08-11 20:58:50] Session user_id: 28
+[2025-08-11 20:58:50] Access granted - proceeding with region_id: 1
+[2025-08-11 21:01:21] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:01:21] Session region_id: 1
+[2025-08-11 21:01:21] Session user_role: regiomanager
+[2025-08-11 21:01:21] Session user_id: 28
+[2025-08-11 21:01:21] Access granted - proceeding with region_id: 1
+[2025-08-11 21:06:00] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:06:00] Session region_id: 1
+[2025-08-11 21:06:00] Session user_role: regiomanager
+[2025-08-11 21:06:00] Session user_id: 28
+[2025-08-11 21:06:00] Access granted - proceeding with region_id: 1
+[2025-08-11 21:09:47] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:09:47] Session region_id: 1
+[2025-08-11 21:09:47] Session user_role: regiomanager
+[2025-08-11 21:09:47] Session user_id: 28
+[2025-08-11 21:09:47] Access granted - proceeding with region_id: 1
+[2025-08-11 21:11:55] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:11:55] Session region_id: 1
+[2025-08-11 21:11:55] Session user_role: regiomanager
+[2025-08-11 21:11:55] Session user_id: 28
+[2025-08-11 21:11:55] Access granted - proceeding with region_id: 1
+[2025-08-11 21:15:13] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:15:13] Session region_id: 1
+[2025-08-11 21:15:13] Session user_role: regiomanager
+[2025-08-11 21:15:13] Session user_id: 28
+[2025-08-11 21:15:13] Access granted - proceeding with region_id: 1
+[2025-08-11 21:18:47] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:18:47] Session region_id: 1
+[2025-08-11 21:18:47] Session user_role: regiomanager
+[2025-08-11 21:18:47] Session user_id: 28
+[2025-08-11 21:18:47] Access granted - proceeding with region_id: 1
+[2025-08-11 21:19:16] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:19:16] Session region_id: not set
+[2025-08-11 21:19:16] Session user_role: regiomanager
+[2025-08-11 21:19:16] Session user_id: 32
+[2025-08-11 21:19:16] ERROR: Region ID not found in session
+[2025-08-11 21:19:33] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:19:33] Session region_id: not set
+[2025-08-11 21:19:33] Session user_role: regiomanager
+[2025-08-11 21:19:33] Session user_id: 32
+[2025-08-11 21:19:33] ERROR: Region ID not found in session
+[2025-08-11 21:20:08] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:20:08] Session region_id: 1
+[2025-08-11 21:20:08] Session user_role: regiomanager
+[2025-08-11 21:20:08] Session user_id: 28
+[2025-08-11 21:20:08] Access granted - proceeding with region_id: 1
+[2025-08-11 21:20:38] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:20:38] Session region_id: 1
+[2025-08-11 21:20:38] Session user_role: regiomanager
+[2025-08-11 21:20:38] Session user_id: 28
+[2025-08-11 21:20:38] Access granted - proceeding with region_id: 1
+[2025-08-11 21:21:05] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:21:05] Session region_id: 1
+[2025-08-11 21:21:05] Session user_role: regiomanager
+[2025-08-11 21:21:05] Session user_id: 28
+[2025-08-11 21:21:05] Access granted - proceeding with region_id: 1
+[2025-08-11 21:24:05] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:24:05] Session region_id: 1
+[2025-08-11 21:24:05] Session user_role: regiomanager
+[2025-08-11 21:24:05] Session user_id: 28
+[2025-08-11 21:24:05] Access granted - proceeding with region_id: 1
+[2025-08-11 21:24:27] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:24:27] Session region_id: 1
+[2025-08-11 21:24:27] Session user_role: regiomanager
+[2025-08-11 21:24:27] Session user_id: 28
+[2025-08-11 21:24:27] Access granted - proceeding with region_id: 1
+[2025-08-11 21:29:03] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:29:03] Session region_id: 1
+[2025-08-11 21:29:03] Session user_role: regiomanager
+[2025-08-11 21:29:03] Session user_id: 28
+[2025-08-11 21:29:03] Access granted - proceeding with region_id: 1
+[2025-08-11 21:29:03] DB Query executed - managers found: 3
+[2025-08-11 21:30:47] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:30:47] Session region_id: 1
+[2025-08-11 21:30:47] Session user_role: regiomanager
+[2025-08-11 21:30:47] Session user_id: 28
+[2025-08-11 21:30:47] Access granted - proceeding with region_id: 1
+[2025-08-11 21:30:47] DB Query executed - managers found: 3
+[2025-08-11 21:38:13] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:38:13] Session region_id: 1
+[2025-08-11 21:38:13] Session user_role: regiomanager
+[2025-08-11 21:38:13] Session user_id: 28
+[2025-08-11 21:38:13] Access granted - proceeding with region_id: 1
+[2025-08-11 21:38:13] DB Query executed - managers found: 3
+[2025-08-11 21:38:21] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:38:21] Session region_id: 1
+[2025-08-11 21:38:21] Session user_role: regiomanager
+[2025-08-11 21:38:21] Session user_id: 28
+[2025-08-11 21:38:21] Access granted - proceeding with region_id: 1
+[2025-08-11 21:38:21] DB Query executed - managers found: 3
+[2025-08-11 21:39:01] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:39:01] Session region_id: 1
+[2025-08-11 21:39:01] Session user_role: regiomanager
+[2025-08-11 21:39:01] Session user_id: 28
+[2025-08-11 21:39:01] Access granted - proceeding with region_id: 1
+[2025-08-11 21:39:01] DB Query executed - managers found: 3
+[2025-08-11 21:39:08] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:39:08] Session region_id: 1
+[2025-08-11 21:39:08] Session user_role: regiomanager
+[2025-08-11 21:39:08] Session user_id: 28
+[2025-08-11 21:39:08] Access granted - proceeding with region_id: 1
+[2025-08-11 21:39:08] DB Query executed - managers found: 3
+[2025-08-11 21:40:07] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:40:07] Session region_id: 1
+[2025-08-11 21:40:07] Session user_role: regiomanager
+[2025-08-11 21:40:07] Session user_id: 28
+[2025-08-11 21:40:07] Access granted - proceeding with region_id: 1
+[2025-08-11 21:40:07] DB Query executed - managers found: 3
+[2025-08-11 21:40:56] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:40:56] Session region_id: 1
+[2025-08-11 21:40:56] Session user_role: regiomanager
+[2025-08-11 21:40:56] Session user_id: 28
+[2025-08-11 21:40:56] Access granted - proceeding with region_id: 1
+[2025-08-11 21:40:56] DB Query executed - managers found: 3
+[2025-08-11 21:41:28] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:41:28] Session region_id: 1
+[2025-08-11 21:41:28] Session user_role: regiomanager
+[2025-08-11 21:41:28] Session user_id: 28
+[2025-08-11 21:41:28] Access granted - proceeding with region_id: 1
+[2025-08-11 21:41:28] DB Query executed - managers found: 3
+[2025-08-11 21:41:34] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:41:34] Session region_id: 1
+[2025-08-11 21:41:34] Session user_role: regiomanager
+[2025-08-11 21:41:34] Session user_id: 28
+[2025-08-11 21:41:34] Access granted - proceeding with region_id: 1
+[2025-08-11 21:41:34] DB Query executed - managers found: 3
+[2025-08-11 21:42:14] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:42:14] Session region_id: 1
+[2025-08-11 21:42:14] Session user_role: regiomanager
+[2025-08-11 21:42:14] Session user_id: 28
+[2025-08-11 21:42:14] Access granted - proceeding with region_id: 1
+[2025-08-11 21:42:14] DB Query executed - managers found: 3
+[2025-08-11 21:43:40] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:43:40] Session region_id: 1
+[2025-08-11 21:43:40] Session user_role: regiomanager
+[2025-08-11 21:43:40] Session user_id: 28
+[2025-08-11 21:43:40] Access granted - proceeding with region_id: 1
+[2025-08-11 21:43:40] DB Query executed - managers found: 3
+[2025-08-11 21:53:18] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 21:53:18] Session region_id: 1
+[2025-08-11 21:53:18] Session user_role: regiomanager
+[2025-08-11 21:53:18] Session user_id: 28
+[2025-08-11 21:53:18] Access granted - proceeding with region_id: 1
+[2025-08-11 21:53:18] DB Query executed - managers found: 3
+[2025-08-11 22:01:29] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:01:29] Session region_id: 1
+[2025-08-11 22:01:29] Session user_role: regiomanager
+[2025-08-11 22:01:29] Session user_id: 28
+[2025-08-11 22:01:29] Access granted - proceeding with region_id: 1
+[2025-08-11 22:01:29] DB Query executed - managers found: 3
+[2025-08-11 22:01:34] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:01:34] Session region_id: 1
+[2025-08-11 22:01:34] Session user_role: regiomanager
+[2025-08-11 22:01:34] Session user_id: 28
+[2025-08-11 22:01:34] Access granted - proceeding with region_id: 1
+[2025-08-11 22:01:34] DB Query executed - managers found: 3
+[2025-08-11 22:20:17] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:20:17] Session region_id: 1
+[2025-08-11 22:20:17] Session user_role: regiomanager
+[2025-08-11 22:20:17] Session user_id: 28
+[2025-08-11 22:20:17] Access granted - proceeding with region_id: 1
+[2025-08-11 22:20:17] DB Query executed - managers found: 3
+[2025-08-11 22:49:38] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:49:38] Session region_id: 1
+[2025-08-11 22:49:38] Session user_role: regiomanager
+[2025-08-11 22:49:38] Session user_id: 28
+[2025-08-11 22:49:38] Access granted - proceeding with region_id: 1
+[2025-08-11 22:49:38] DB Query executed - managers found: 3
+[2025-08-11 22:50:07] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:50:07] Session region_id: 1
+[2025-08-11 22:50:07] Session user_role: regiomanager
+[2025-08-11 22:50:07] Session user_id: 28
+[2025-08-11 22:50:07] Access granted - proceeding with region_id: 1
+[2025-08-11 22:50:07] DB Query executed - managers found: 3
+[2025-08-11 22:50:13] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:50:13] Session region_id: 1
+[2025-08-11 22:50:13] Session user_role: regiomanager
+[2025-08-11 22:50:13] Session user_id: 28
+[2025-08-11 22:50:13] Access granted - proceeding with region_id: 1
+[2025-08-11 22:50:13] DB Query executed - managers found: 3
+[2025-08-11 22:56:54] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:56:54] Session region_id: 1
+[2025-08-11 22:56:54] Session user_role: regiomanager
+[2025-08-11 22:56:54] Session user_id: 28
+[2025-08-11 22:56:54] Access granted - proceeding with region_id: 1
+[2025-08-11 22:56:54] DB Query executed - managers found: 3
+[2025-08-11 22:57:08] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 22:57:08] Session region_id: 1
+[2025-08-11 22:57:08] Session user_role: regiomanager
+[2025-08-11 22:57:08] Session user_id: 28
+[2025-08-11 22:57:08] Access granted - proceeding with region_id: 1
+[2025-08-11 22:57:08] DB Query executed - managers found: 3
+[2025-08-11 23:00:43] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 23:00:43] Session region_id: 1
+[2025-08-11 23:00:43] Session user_role: regiomanager
+[2025-08-11 23:00:43] Session user_id: 28
+[2025-08-11 23:00:43] Access granted - proceeding with region_id: 1
+[2025-08-11 23:00:43] DB Query executed - managers found: 4
+[2025-08-11 23:03:16] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 23:03:16] Session region_id: 1
+[2025-08-11 23:03:16] Session user_role: regiomanager
+[2025-08-11 23:03:16] Session user_id: 28
+[2025-08-11 23:03:16] Access granted - proceeding with region_id: 1
+[2025-08-11 23:03:16] DB Query executed - managers found: 4
+[2025-08-11 23:03:27] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 23:03:27] Session region_id: 1
+[2025-08-11 23:03:27] Session user_role: regiomanager
+[2025-08-11 23:03:27] Session user_id: 28
+[2025-08-11 23:03:27] Access granted - proceeding with region_id: 1
+[2025-08-11 23:03:27] DB Query executed - managers found: 4
+[2025-08-11 23:16:01] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 23:16:01] Session region_id: 1
+[2025-08-11 23:16:01] Session user_role: regiomanager
+[2025-08-11 23:16:01] Session user_id: 28
+[2025-08-11 23:16:01] Access granted - proceeding with region_id: 1
+[2025-08-11 23:16:01] DB Query executed - managers found: 4
+[2025-08-11 23:18:08] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 23:18:08] Session region_id: 1
+[2025-08-11 23:18:08] Session user_role: regiomanager
+[2025-08-11 23:18:08] Session user_id: 28
+[2025-08-11 23:18:08] Access granted - proceeding with region_id: 1
+[2025-08-11 23:18:08] DB Query executed - managers found: 4
+[2025-08-11 23:59:20] === GET REGION MANAGERS API CALLED ===
+[2025-08-11 23:59:20] Session region_id: 1
+[2025-08-11 23:59:20] Session user_role: regiomanager
+[2025-08-11 23:59:20] Session user_id: 28
+[2025-08-11 23:59:20] Access granted - proceeding with region_id: 1
+[2025-08-11 23:59:20] DB Query executed - managers found: 4
+[2025-08-12 00:03:08] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 00:03:08] Session region_id: 1
+[2025-08-12 00:03:08] Session user_role: regiomanager
+[2025-08-12 00:03:08] Session user_id: 28
+[2025-08-12 00:03:08] Access granted - proceeding with region_id: 1
+[2025-08-12 00:03:08] DB Query executed - managers found: 4
+[2025-08-12 00:09:37] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 00:09:37] Session region_id: 1
+[2025-08-12 00:09:37] Session user_role: regiomanager
+[2025-08-12 00:09:37] Session user_id: 28
+[2025-08-12 00:09:37] Access granted - proceeding with region_id: 1
+[2025-08-12 00:09:37] DB Query executed - managers found: 4
+[2025-08-12 21:33:33] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 21:33:33] Session region_id: 1
+[2025-08-12 21:33:33] Session user_role: regiomanager
+[2025-08-12 21:33:33] Session user_id: 28
+[2025-08-12 21:33:33] Access granted - proceeding with region_id: 1
+[2025-08-12 21:33:33] DB Query executed - managers found: 5
+[2025-08-12 21:36:58] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 21:36:58] Session region_id: 1
+[2025-08-12 21:36:58] Session user_role: regiomanager
+[2025-08-12 21:36:58] Session user_id: 28
+[2025-08-12 21:36:58] Access granted - proceeding with region_id: 1
+[2025-08-12 21:36:58] DB Query executed - managers found: 5
+[2025-08-12 21:40:08] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 21:40:08] Session region_id: 1
+[2025-08-12 21:40:08] Session user_role: regiomanager
+[2025-08-12 21:40:08] Session user_id: 28
+[2025-08-12 21:40:08] Access granted - proceeding with region_id: 1
+[2025-08-12 21:40:08] DB Query executed - managers found: 5
+[2025-08-12 21:40:42] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 21:40:42] Session region_id: 1
+[2025-08-12 21:40:42] Session user_role: regiomanager
+[2025-08-12 21:40:42] Session user_id: 28
+[2025-08-12 21:40:42] Access granted - proceeding with region_id: 1
+[2025-08-12 21:40:42] DB Query executed - managers found: 5
+[2025-08-12 21:40:53] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 21:40:53] Session region_id: 1
+[2025-08-12 21:40:53] Session user_role: regiomanager
+[2025-08-12 21:40:53] Session user_id: 28
+[2025-08-12 21:40:53] Access granted - proceeding with region_id: 1
+[2025-08-12 21:40:53] DB Query executed - managers found: 5
+[2025-08-12 21:45:22] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 21:45:22] Session region_id: 1
+[2025-08-12 21:45:22] Session user_role: regiomanager
+[2025-08-12 21:45:22] Session user_id: 28
+[2025-08-12 21:45:22] Access granted - proceeding with region_id: 1
+[2025-08-12 21:45:22] DB Query executed - managers found: 5
+[2025-08-12 22:37:12] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 22:37:12] Session region_id: 1
+[2025-08-12 22:37:12] Session user_role: regiomanager
+[2025-08-12 22:37:12] Session user_id: 28
+[2025-08-12 22:37:12] Access granted - proceeding with region_id: 1
+[2025-08-12 22:37:12] DB Query executed - managers found: 5
+[2025-08-12 22:37:19] === GET REGION MANAGERS API CALLED ===
+[2025-08-12 22:37:19] Session region_id: 1
+[2025-08-12 22:37:19] Session user_role: regiomanager
+[2025-08-12 22:37:19] Session user_id: 28
+[2025-08-12 22:37:19] Access granted - proceeding with region_id: 1
+[2025-08-12 22:37:19] DB Query executed - managers found: 5
+[2025-08-13 21:53:33] === GET REGION MANAGERS API CALLED ===
+[2025-08-13 21:53:33] Session region_id: 3
+[2025-08-13 21:53:33] Session user_role: developer
+[2025-08-13 21:53:33] Session user_id: 1
+[2025-08-13 21:53:33] ERROR: Access denied - user role: developer
+[2025-08-14 01:05:09] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:05:09] Session region_id: 3
+[2025-08-14 01:05:09] Session user_role: developer
+[2025-08-14 01:05:09] Session user_id: 1
+[2025-08-14 01:05:09] ERROR: Access denied - user role: developer
+[2025-08-14 01:05:54] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:05:54] Session region_id: 3
+[2025-08-14 01:05:54] Session user_role: developer
+[2025-08-14 01:05:54] Session user_id: 1
+[2025-08-14 01:05:54] ERROR: Access denied - user role: developer
+[2025-08-14 01:06:04] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:06:04] Session region_id: 3
+[2025-08-14 01:06:04] Session user_role: developer
+[2025-08-14 01:06:04] Session user_id: 1
+[2025-08-14 01:06:04] ERROR: Access denied - user role: developer
+[2025-08-14 01:06:33] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:06:33] Session region_id: 3
+[2025-08-14 01:06:33] Session user_role: developer
+[2025-08-14 01:06:33] Session user_id: 1
+[2025-08-14 01:06:33] ERROR: Access denied - user role: developer
+[2025-08-14 01:06:40] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:06:40] Session region_id: 3
+[2025-08-14 01:06:40] Session user_role: developer
+[2025-08-14 01:06:40] Session user_id: 1
+[2025-08-14 01:06:40] ERROR: Access denied - user role: developer
+[2025-08-14 01:07:55] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:07:55] Session region_id: 3
+[2025-08-14 01:07:55] Session user_role: developer
+[2025-08-14 01:07:55] Session user_id: 1
+[2025-08-14 01:07:55] ERROR: Access denied - user role: developer
+[2025-08-14 01:08:47] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:08:47] Session region_id: 3
+[2025-08-14 01:08:47] Session user_role: developer
+[2025-08-14 01:08:47] Session user_id: 1
+[2025-08-14 01:08:47] ERROR: Access denied - user role: developer
+[2025-08-14 01:09:22] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:09:22] Session region_id: 3
+[2025-08-14 01:09:22] Session user_role: developer
+[2025-08-14 01:09:22] Session user_id: 1
+[2025-08-14 01:09:22] ERROR: Access denied - user role: developer
+[2025-08-14 01:09:27] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:09:27] Session region_id: 3
+[2025-08-14 01:09:27] Session user_role: developer
+[2025-08-14 01:09:27] Session user_id: 1
+[2025-08-14 01:09:27] ERROR: Access denied - user role: developer
+[2025-08-14 01:09:35] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:09:35] Session region_id: 3
+[2025-08-14 01:09:35] Session user_role: developer
+[2025-08-14 01:09:35] Session user_id: 1
+[2025-08-14 01:09:35] ERROR: Access denied - user role: developer
+[2025-08-14 01:10:11] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:10:11] Session region_id: 3
+[2025-08-14 01:10:11] Session user_role: developer
+[2025-08-14 01:10:11] Session user_id: 1
+[2025-08-14 01:10:11] ERROR: Access denied - user role: developer
+[2025-08-14 01:11:28] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:11:28] Session region_id: 3
+[2025-08-14 01:11:28] Session user_role: developer
+[2025-08-14 01:11:28] Session user_id: 1
+[2025-08-14 01:11:28] ERROR: Access denied - user role: developer
+[2025-08-14 01:11:35] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:11:35] Session region_id: 3
+[2025-08-14 01:11:35] Session user_role: developer
+[2025-08-14 01:11:35] Session user_id: 1
+[2025-08-14 01:11:35] ERROR: Access denied - user role: developer
+[2025-08-14 01:19:49] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:19:49] Session region_id: not set
+[2025-08-14 01:19:49] Session user_role: developer
+[2025-08-14 01:19:49] Session user_id: 1
+[2025-08-14 01:19:49] ERROR: Access denied - user role: developer
+[2025-08-14 01:23:53] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:23:53] Session region_id: not set
+[2025-08-14 01:23:53] Session user_role: developer
+[2025-08-14 01:23:53] Session user_id: 1
+[2025-08-14 01:23:53] ERROR: Access denied - user role: developer
+[2025-08-14 01:23:59] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:23:59] Session region_id: not set
+[2025-08-14 01:23:59] Session user_role: developer
+[2025-08-14 01:23:59] Session user_id: 1
+[2025-08-14 01:23:59] ERROR: Access denied - user role: developer
+[2025-08-14 01:28:33] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:28:33] Session region_id: not set
+[2025-08-14 01:28:33] Session user_role: developer
+[2025-08-14 01:28:33] Session user_id: 1
+[2025-08-14 01:28:33] ERROR: Access denied - user role: developer
+[2025-08-14 01:34:59] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:34:59] Session region_id: not set
+[2025-08-14 01:34:59] Session user_role: developer
+[2025-08-14 01:34:59] Session user_id: 1
+[2025-08-14 01:34:59] ERROR: Access denied - user role: developer
+[2025-08-14 01:40:21] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:40:21] Session region_id: 4
+[2025-08-14 01:40:21] Session user_role: developer
+[2025-08-14 01:40:21] Session user_id: 1
+[2025-08-14 01:40:21] ERROR: Access denied - user role: developer
+[2025-08-14 01:40:28] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:40:28] Session region_id: 4
+[2025-08-14 01:40:28] Session user_role: developer
+[2025-08-14 01:40:28] Session user_id: 1
+[2025-08-14 01:40:28] ERROR: Access denied - user role: developer
+[2025-08-14 01:45:03] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:45:03] Session region_id: 1
+[2025-08-14 01:45:03] Session user_role: developer
+[2025-08-14 01:45:03] Session user_id: 1
+[2025-08-14 01:45:03] ERROR: Access denied - user role: developer
+[2025-08-14 01:47:36] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:47:36] Session region_id: 1
+[2025-08-14 01:47:36] Session user_role: developer
+[2025-08-14 01:47:36] Session user_id: 1
+[2025-08-14 01:47:36] ERROR: Access denied - user role: developer
+[2025-08-14 01:48:09] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:48:09] Session region_id: 1
+[2025-08-14 01:48:09] Session user_role: developer
+[2025-08-14 01:48:09] Session user_id: 1
+[2025-08-14 01:48:09] ERROR: Access denied - user role: developer
+[2025-08-14 01:49:56] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:49:56] Session region_id: 1
+[2025-08-14 01:49:56] Session user_role: developer
+[2025-08-14 01:49:56] Session user_id: 1
+[2025-08-14 01:49:56] ERROR: Access denied - user role: developer
+[2025-08-14 01:50:39] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:50:39] Session region_id: 1
+[2025-08-14 01:50:39] Session user_role: developer
+[2025-08-14 01:50:39] Session user_id: 1
+[2025-08-14 01:50:39] ERROR: Access denied - user role: developer
+[2025-08-14 01:50:44] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:50:44] Session region_id: 1
+[2025-08-14 01:50:44] Session user_role: developer
+[2025-08-14 01:50:44] Session user_id: 1
+[2025-08-14 01:50:44] ERROR: Access denied - user role: developer
+[2025-08-14 01:50:59] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:50:59] Session region_id: 1
+[2025-08-14 01:50:59] Session user_role: developer
+[2025-08-14 01:50:59] Session user_id: 1
+[2025-08-14 01:50:59] ERROR: Access denied - user role: developer
+[2025-08-14 01:52:17] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:52:17] Session region_id: 1
+[2025-08-14 01:52:17] Session user_role: developer
+[2025-08-14 01:52:17] Session user_id: 1
+[2025-08-14 01:52:17] Access granted - proceeding with region_id: 1
+[2025-08-14 01:52:17] DB Query executed - managers found: 4
+[2025-08-14 01:52:39] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:52:39] Session region_id: 1
+[2025-08-14 01:52:39] Session user_role: developer
+[2025-08-14 01:52:39] Session user_id: 1
+[2025-08-14 01:52:39] Access granted - proceeding with region_id: 1
+[2025-08-14 01:52:39] DB Query executed - managers found: 4
+[2025-08-14 01:54:16] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:54:16] Session region_id: 1
+[2025-08-14 01:54:16] Session user_role: developer
+[2025-08-14 01:54:16] Session user_id: 1
+[2025-08-14 01:54:16] Access granted - proceeding with region_id: 1
+[2025-08-14 01:54:16] DB Query executed - managers found: 4
+[2025-08-14 01:54:31] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:54:31] Session region_id: 1
+[2025-08-14 01:54:31] Session user_role: developer
+[2025-08-14 01:54:31] Session user_id: 1
+[2025-08-14 01:54:31] Access granted - proceeding with region_id: 1
+[2025-08-14 01:54:31] DB Query executed - managers found: 4
+[2025-08-14 01:55:14] === GET REGION MANAGERS API CALLED ===
+[2025-08-14 01:55:14] Session region_id: 2
+[2025-08-14 01:55:14] Session user_role: developer
+[2025-08-14 01:55:14] Session user_id: 1
+[2025-08-14 01:55:14] Access granted - proceeding with region_id: 2
+[2025-08-14 01:55:14] DB Query executed - managers found: 0
+[2025-08-18 20:33:34] === GET REGION MANAGERS API CALLED ===
+[2025-08-18 20:33:34] Session region_id: not set
+[2025-08-18 20:33:34] Session user_role: regiomanager
+[2025-08-18 20:33:34] Session user_id: 28
+[2025-08-18 20:33:34] ERROR: Region ID not found in session
+[2025-08-18 20:33:39] === GET REGION MANAGERS API CALLED ===
+[2025-08-18 20:33:39] Session region_id: not set
+[2025-08-18 20:33:39] Session user_role: regiomanager
+[2025-08-18 20:33:39] Session user_id: 28
+[2025-08-18 20:33:39] ERROR: Region ID not found in session
+[2025-08-18 20:33:59] === GET REGION MANAGERS API CALLED ===
+[2025-08-18 20:33:59] Session region_id: 1
+[2025-08-18 20:33:59] Session user_role: regiomanager
+[2025-08-18 20:33:59] Session user_id: 28
+[2025-08-18 20:33:59] Access granted - proceeding with region_id: 1
+[2025-08-18 20:33:59] DB Query executed - managers found: 4
+[2025-08-18 20:35:22] === GET REGION MANAGERS API CALLED ===
+[2025-08-18 20:35:22] Session region_id: 1
+[2025-08-18 20:35:22] Session user_role: regiomanager
+[2025-08-18 20:35:22] Session user_id: 28
+[2025-08-18 20:35:22] Access granted - proceeding with region_id: 1
+[2025-08-18 20:35:22] DB Query executed - managers found: 4
+[2025-08-18 20:41:34] === GET REGION MANAGERS API CALLED ===
+[2025-08-18 20:41:34] Session region_id: 1
+[2025-08-18 20:41:34] Session user_role: developer
+[2025-08-18 20:41:34] Session user_id: 1
+[2025-08-18 20:41:34] Access granted - proceeding with region_id: 1
+[2025-08-18 20:41:34] DB Query executed - managers found: 4
+[2025-08-18 21:05:36] === GET REGION MANAGERS API CALLED ===
+[2025-08-18 21:05:36] Session region_id: 1
+[2025-08-18 21:05:36] Session user_role: regiomanager
+[2025-08-18 21:05:36] Session user_id: 28
+[2025-08-18 21:05:36] Access granted - proceeding with region_id: 1
+[2025-08-18 21:05:36] DB Query executed - managers found: 4
+[2025-08-27 22:48:12] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 22:48:12] Session region_id: 1
+[2025-08-27 22:48:12] Session user_role: regiomanager
+[2025-08-27 22:48:12] Session user_id: 28
+[2025-08-27 22:48:12] Access granted - proceeding with region_id: 1
+[2025-08-27 22:48:12] DB Query executed - managers found: 4
+[2025-08-27 22:51:12] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 22:51:12] Session region_id: 1
+[2025-08-27 22:51:12] Session user_role: regiomanager
+[2025-08-27 22:51:12] Session user_id: 28
+[2025-08-27 22:51:12] Access granted - proceeding with region_id: 1
+[2025-08-27 22:51:12] DB Query executed - managers found: 4
+[2025-08-27 23:00:05] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:00:05] Session region_id: 1
+[2025-08-27 23:00:05] Session user_role: regiomanager
+[2025-08-27 23:00:05] Session user_id: 28
+[2025-08-27 23:00:05] Access granted - proceeding with region_id: 1
+[2025-08-27 23:00:05] DB Query executed - managers found: 4
+[2025-08-27 23:00:39] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:00:39] Session region_id: 1
+[2025-08-27 23:00:39] Session user_role: regiomanager
+[2025-08-27 23:00:39] Session user_id: 28
+[2025-08-27 23:00:39] Access granted - proceeding with region_id: 1
+[2025-08-27 23:00:39] DB Query executed - managers found: 4
+[2025-08-27 23:00:52] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:00:52] Session region_id: 1
+[2025-08-27 23:00:52] Session user_role: regiomanager
+[2025-08-27 23:00:52] Session user_id: 28
+[2025-08-27 23:00:52] Access granted - proceeding with region_id: 1
+[2025-08-27 23:00:52] DB Query executed - managers found: 4
+[2025-08-27 23:05:00] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:05:00] Session region_id: 1
+[2025-08-27 23:05:00] Session user_role: regiomanager
+[2025-08-27 23:05:00] Session user_id: 28
+[2025-08-27 23:05:00] Access granted - proceeding with region_id: 1
+[2025-08-27 23:05:00] DB Query executed - managers found: 4
+[2025-08-27 23:10:26] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:10:26] Session region_id: 1
+[2025-08-27 23:10:26] Session user_role: regiomanager
+[2025-08-27 23:10:26] Session user_id: 28
+[2025-08-27 23:10:26] Access granted - proceeding with region_id: 1
+[2025-08-27 23:10:26] DB Query executed - managers found: 4
+[2025-08-27 23:19:49] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:19:49] Session region_id: 1
+[2025-08-27 23:19:49] Session user_role: regiomanager
+[2025-08-27 23:19:49] Session user_id: 28
+[2025-08-27 23:19:49] Access granted - proceeding with region_id: 1
+[2025-08-27 23:19:49] DB Query executed - managers found: 4
+[2025-08-27 23:20:24] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:20:24] Session region_id: 1
+[2025-08-27 23:20:24] Session user_role: regiomanager
+[2025-08-27 23:20:24] Session user_id: 28
+[2025-08-27 23:20:24] Access granted - proceeding with region_id: 1
+[2025-08-27 23:20:24] DB Query executed - managers found: 4
+[2025-08-27 23:22:28] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:22:28] Session region_id: 1
+[2025-08-27 23:22:28] Session user_role: regiomanager
+[2025-08-27 23:22:28] Session user_id: 28
+[2025-08-27 23:22:28] Access granted - proceeding with region_id: 1
+[2025-08-27 23:22:28] DB Query executed - managers found: 4
+[2025-08-27 23:23:10] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:23:10] Session region_id: 1
+[2025-08-27 23:23:10] Session user_role: regiomanager
+[2025-08-27 23:23:10] Session user_id: 28
+[2025-08-27 23:23:10] Access granted - proceeding with region_id: 1
+[2025-08-27 23:23:10] DB Query executed - managers found: 4
+[2025-08-27 23:26:03] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:26:03] Session region_id: 1
+[2025-08-27 23:26:03] Session user_role: regiomanager
+[2025-08-27 23:26:03] Session user_id: 28
+[2025-08-27 23:26:03] Access granted - proceeding with region_id: 1
+[2025-08-27 23:26:03] DB Query executed - managers found: 4
+[2025-08-27 23:36:10] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:36:10] Session region_id: 1
+[2025-08-27 23:36:10] Session user_role: regiomanager
+[2025-08-27 23:36:10] Session user_id: 28
+[2025-08-27 23:36:10] Access granted - proceeding with region_id: 1
+[2025-08-27 23:36:10] DB Query executed - managers found: 4
+[2025-08-27 23:36:47] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:36:47] Session region_id: 1
+[2025-08-27 23:36:47] Session user_role: regiomanager
+[2025-08-27 23:36:47] Session user_id: 28
+[2025-08-27 23:36:47] Access granted - proceeding with region_id: 1
+[2025-08-27 23:36:47] DB Query executed - managers found: 4
+[2025-08-27 23:39:32] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:39:32] Session region_id: 1
+[2025-08-27 23:39:32] Session user_role: regiomanager
+[2025-08-27 23:39:32] Session user_id: 28
+[2025-08-27 23:39:32] Access granted - proceeding with region_id: 1
+[2025-08-27 23:39:32] DB Query executed - managers found: 4
+[2025-08-27 23:40:45] === GET REGION MANAGERS API CALLED ===
+[2025-08-27 23:40:45] Session region_id: 1
+[2025-08-27 23:40:45] Session user_role: regiomanager
+[2025-08-27 23:40:45] Session user_id: 28
+[2025-08-27 23:40:45] Access granted - proceeding with region_id: 1
+[2025-08-27 23:40:45] DB Query executed - managers found: 4
+[2025-09-27 23:41:04] === GET REGION MANAGERS API CALLED ===
+[2025-09-27 23:41:04] Session region_id: 1
+[2025-09-27 23:41:04] Session user_role: regiomanager
+[2025-09-27 23:41:04] Session user_id: 28
+[2025-09-27 23:41:04] Access granted - proceeding with region_id: 1
+[2025-09-27 23:41:04] DB Query executed - managers found: 4
+[2025-09-01 01:14:40] === GET REGION MANAGERS API CALLED ===
+[2025-09-01 01:14:40] Session region_id: 1
+[2025-09-01 01:14:40] Session user_role: regiomanager
+[2025-09-01 01:14:40] Session user_id: 0
+[2025-09-01 01:14:40] Access granted - proceeding with region_id: 1
+[2025-09-01 01:14:40] DB Query executed - managers found: 4
+[2025-09-01 01:15:06] === GET REGION MANAGERS API CALLED ===
+[2025-09-01 01:15:06] Session region_id: 1
+[2025-09-01 01:15:06] Session user_role: regiomanager
+[2025-09-01 01:15:06] Session user_id: 0
+[2025-09-01 01:15:06] Access granted - proceeding with region_id: 1
+[2025-09-01 01:15:06] DB Query executed - managers found: 4
+[2025-09-02 18:28:14] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 18:28:14] Session region_id: 1
+[2025-09-02 18:28:14] Session user_role: regiomanager
+[2025-09-02 18:28:14] Session user_id: 0
+[2025-09-02 18:28:14] Access granted - proceeding with region_id: 1
+[2025-09-02 18:28:14] DB Query executed - managers found: 4
+[2025-09-02 18:33:54] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 18:33:54] Session region_id: 1
+[2025-09-02 18:33:54] Session user_role: regiomanager
+[2025-09-02 18:33:54] Session user_id: 0
+[2025-09-02 18:33:54] Access granted - proceeding with region_id: 1
+[2025-09-02 18:33:54] DB Query executed - managers found: 4
+[2025-09-02 18:34:29] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 18:34:29] Session region_id: 1
+[2025-09-02 18:34:29] Session user_role: regiomanager
+[2025-09-02 18:34:29] Session user_id: 0
+[2025-09-02 18:34:29] Access granted - proceeding with region_id: 1
+[2025-09-02 18:34:29] DB Query executed - managers found: 4
+[2025-09-02 22:25:20] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 22:25:20] Session region_id: 1
+[2025-09-02 22:25:20] Session user_role: regiomanager
+[2025-09-02 22:25:20] Session user_id: 0
+[2025-09-02 22:25:20] Access granted - proceeding with region_id: 1
+[2025-09-02 22:25:20] DB Query executed - managers found: 4
+[2025-09-02 22:25:48] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 22:25:48] Session region_id: 1
+[2025-09-02 22:25:48] Session user_role: regiomanager
+[2025-09-02 22:25:48] Session user_id: 0
+[2025-09-02 22:25:48] Access granted - proceeding with region_id: 1
+[2025-09-02 22:25:48] DB Query executed - managers found: 4
+[2025-09-02 22:25:52] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 22:25:52] Session region_id: 1
+[2025-09-02 22:25:52] Session user_role: regiomanager
+[2025-09-02 22:25:52] Session user_id: 0
+[2025-09-02 22:25:52] Access granted - proceeding with region_id: 1
+[2025-09-02 22:25:52] DB Query executed - managers found: 4
+[2025-09-02 22:26:04] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 22:26:04] Session region_id: 1
+[2025-09-02 22:26:04] Session user_role: regiomanager
+[2025-09-02 22:26:04] Session user_id: 0
+[2025-09-02 22:26:04] Access granted - proceeding with region_id: 1
+[2025-09-02 22:26:04] DB Query executed - managers found: 4
+[2025-09-02 23:21:21] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 23:21:21] Session region_id: 1
+[2025-09-02 23:21:21] Session user_role: regiomanager
+[2025-09-02 23:21:21] Session user_id: 0
+[2025-09-02 23:21:21] Access granted - proceeding with region_id: 1
+[2025-09-02 23:21:21] DB Query executed - managers found: 4
+[2025-09-02 23:21:45] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 23:21:45] Session region_id: 1
+[2025-09-02 23:21:45] Session user_role: regiomanager
+[2025-09-02 23:21:45] Session user_id: 0
+[2025-09-02 23:21:45] Access granted - proceeding with region_id: 1
+[2025-09-02 23:21:45] DB Query executed - managers found: 4
+[2025-09-02 23:21:51] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 23:21:51] Session region_id: 1
+[2025-09-02 23:21:51] Session user_role: regiomanager
+[2025-09-02 23:21:51] Session user_id: 0
+[2025-09-02 23:21:51] Access granted - proceeding with region_id: 1
+[2025-09-02 23:21:51] DB Query executed - managers found: 4
+[2025-09-02 23:22:08] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 23:22:08] Session region_id: 1
+[2025-09-02 23:22:08] Session user_role: regiomanager
+[2025-09-02 23:22:08] Session user_id: 0
+[2025-09-02 23:22:08] Access granted - proceeding with region_id: 1
+[2025-09-02 23:22:08] DB Query executed - managers found: 4
+[2025-09-02 23:22:20] === GET REGION MANAGERS API CALLED ===
+[2025-09-02 23:22:20] Session region_id: 1
+[2025-09-02 23:22:20] Session user_role: regiomanager
+[2025-09-02 23:22:20] Session user_id: 0
+[2025-09-02 23:22:20] Access granted - proceeding with region_id: 1
+[2025-09-02 23:22:20] DB Query executed - managers found: 4

@@ -50,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="https://nypschoonmaak.nl/assets/logo.webp">  
 
   <script>
     tailwind.config = {
@@ -344,7 +345,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </head>
 
-<body class="min-h-screen flex items-center justify-center p-4">
+<body class="overflow-hidden min-h-screen flex items-center justify-center p-4">
   <div class="w-full max-w-md">
     <div class="glass-card rounded-2xl p-6 sm:p-8">
       <!-- Logo/Header -->
@@ -387,7 +388,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p class="text-gray-600 mb-6">Je kunt nu inloggen met je nieuwe wachtwoord</p>
           </div>
           
-          <a href="/login" 
+          <a href="<?= url('/login') ?>" 
              class="btn-primary inline-flex items-center px-8 py-3 rounded-xl font-medium text-sm transition-all hover:no-underline text-white">
             <i class="fas fa-sign-in-alt mr-2"></i>
             Naar inloggen
@@ -474,7 +475,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <p class="text-gray-600 mb-6">De link is ongeldig of ontbreekt. Neem contact op met je beheerder voor een nieuwe uitnodiging.</p>
             
-            <a href="/login" 
+            <a href="<?= url('/login') ?>" 
                class="btn-secondary inline-flex items-center px-8 py-3 rounded-xl font-medium text-sm transition-all hover:no-underline">
               <i class="fas fa-home mr-2"></i>
               Terug naar login

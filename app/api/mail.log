@@ -1,0 +1,495 @@
+[2025-08-11 23:03:13] Starting email process for task_set_id: 50
+[2025-08-11 23:03:13] === STARTING EMAIL FUNCTION ===
+[2025-08-11 23:03:13] TaskSet ID: 50, Day: Maandag, Manager: 33
+[2025-08-11 23:03:13] Stats: 2/7 tasks completed (29%)
+[2025-08-11 23:03:13] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-11 23:03:13] .env file found, loading configuration...
+[2025-08-11 23:03:13] Checking required mail configuration fields...
+[2025-08-11 23:03:13] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com, To: hmrwierper@gmail.com
+[2025-08-11 23:03:15] Email process completed. Result: {"sent":true,"attachments":1}
+[2025-08-13 15:24:15] Starting email process for task_set_id: 55
+[2025-08-13 15:24:15] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:24:15] TaskSet ID: 55, Day: Maandag, Manager: 25
+[2025-08-13 15:24:15] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:24:15] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:24:15] .env file found, loading configuration...
+[2025-08-13 15:24:15] Checking required mail configuration fields...
+[2025-08-13 15:24:15] ERROR: Missing required field: MAIL_TO_ADDRESS
+[2025-08-13 15:24:15] Email process completed. Result: {"sent":false,"error":"Ontbrekende configuratie: MAIL_TO_ADDRESS"}
+[2025-08-13 15:25:36] Starting email process for task_set_id: 54
+[2025-08-13 15:25:36] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:25:36] TaskSet ID: 54, Day: Maandag, Manager: 26
+[2025-08-13 15:25:36] Stats: 1/7 tasks completed (14%)
+[2025-08-13 15:25:36] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:25:36] .env file found, loading configuration...
+[2025-08-13 15:25:36] Checking required mail configuration fields...
+[2025-08-13 15:25:36] ERROR: Missing required field: MAIL_TO_ADDRESS
+[2025-08-13 15:25:36] Email process completed. Result: {"sent":false,"error":"Ontbrekende configuratie: MAIL_TO_ADDRESS"}
+[2025-08-13 15:26:27] Starting email process for task_set_id: 53
+[2025-08-13 15:26:27] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:26:27] TaskSet ID: 53, Day: Maandag, Manager: 25
+[2025-08-13 15:26:27] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:26:27] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:26:27] .env file found, loading configuration...
+[2025-08-13 15:26:27] Checking required mail configuration fields...
+[2025-08-13 15:26:27] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:26:27] Getting email recipients for manager: 25
+[2025-08-13 15:30:20] Starting email process for task_set_id: 52
+[2025-08-13 15:30:20] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:30:20] TaskSet ID: 52, Day: Maandag, Manager: 25
+[2025-08-13 15:30:20] Stats: 0/7 tasks completed (0%)
+[2025-08-13 15:30:20] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:30:20] .env file found, loading configuration...
+[2025-08-13 15:30:20] Checking required mail configuration fields...
+[2025-08-13 15:30:20] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:30:20] Getting email recipients for manager: 25
+[2025-08-13 15:31:41] Starting email process for task_set_id: 56
+[2025-08-13 15:31:41] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:31:41] TaskSet ID: 56, Day: Maandag, Manager: 26
+[2025-08-13 15:31:41] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:31:41] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:31:41] .env file found, loading configuration...
+[2025-08-13 15:31:41] Checking required mail configuration fields...
+[2025-08-13 15:31:41] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:31:41] Getting email recipients for manager: 26
+[2025-08-13 15:34:01] Starting email process for task_set_id: 57
+[2025-08-13 15:34:01] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:34:01] TaskSet ID: 57, Day: Maandag, Manager: 25
+[2025-08-13 15:34:01] Stats: 2/6 tasks completed (33%)
+[2025-08-13 15:34:01] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:34:01] .env file found, loading configuration...
+[2025-08-13 15:34:01] Checking required mail configuration fields...
+[2025-08-13 15:34:01] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:34:01] Getting email recipients for manager: 25
+[2025-08-13 15:35:52] Starting email process for task_set_id: 58
+[2025-08-13 15:35:52] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:35:52] TaskSet ID: 58, Day: Maandag, Manager: 25
+[2025-08-13 15:35:52] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:35:52] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:35:52] .env file found, loading configuration...
+[2025-08-13 15:35:52] Checking required mail configuration fields...
+[2025-08-13 15:35:52] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:35:52] Getting email recipients for manager: 25
+[2025-08-13 15:37:48] Starting email process for task_set_id: 59
+[2025-08-13 15:37:48] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:37:48] TaskSet ID: 59, Day: Maandag, Manager: 25
+[2025-08-13 15:37:48] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:37:48] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:37:48] .env file found, loading configuration...
+[2025-08-13 15:37:48] Checking required mail configuration fields...
+[2025-08-13 15:37:48] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:37:48] Getting email recipients for manager: 25
+[2025-08-13 15:41:25] Starting email process for task_set_id: 60
+[2025-08-13 15:41:25] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:41:25] TaskSet ID: 60, Day: Maandag, Manager: 25
+[2025-08-13 15:41:25] Stats: 2/6 tasks completed (33%)
+[2025-08-13 15:41:25] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:41:25] .env file found, loading configuration...
+[2025-08-13 15:41:25] Checking required mail configuration fields...
+[2025-08-13 15:41:25] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:41:25] Getting email recipients for manager: 25
+[2025-08-13 15:42:39] Starting email process for task_set_id: 61
+[2025-08-13 15:42:39] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:42:39] TaskSet ID: 61, Day: Maandag, Manager: 26
+[2025-08-13 15:42:39] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:42:39] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:42:39] .env file found, loading configuration...
+[2025-08-13 15:42:39] Checking required mail configuration fields...
+[2025-08-13 15:42:39] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:42:39] Getting email recipients for manager: 26
+[2025-08-13 15:42:39] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"}]
+[2025-08-13 15:42:39] Found 2 email recipients
+[2025-08-13 15:42:39] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 15:42:39] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 15:42:41] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-13 15:47:49] Starting email process for task_set_id: 62
+[2025-08-13 15:47:49] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:47:49] TaskSet ID: 62, Day: Maandag, Manager: 25
+[2025-08-13 15:47:49] Stats: 2/7 tasks completed (29%)
+[2025-08-13 15:47:49] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:47:49] .env file found, loading configuration...
+[2025-08-13 15:47:49] Checking required mail configuration fields...
+[2025-08-13 15:47:49] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:47:49] Getting email recipients for manager: 25
+[2025-08-13 15:49:47] Starting email process for task_set_id: 63
+[2025-08-13 15:49:47] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:49:47] TaskSet ID: 63, Day: Maandag, Manager: 25
+[2025-08-13 15:49:47] Stats: 1/6 tasks completed (17%)
+[2025-08-13 15:49:47] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:49:47] .env file found, loading configuration...
+[2025-08-13 15:49:47] Checking required mail configuration fields...
+[2025-08-13 15:49:47] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:49:47] Getting email recipients for manager: 25
+[2025-08-13 15:49:47] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"regio_utrecht","email":"utrecht@nyp.nl","role":"regiomanager"},{"name":"regio_amersfoort","email":"amersfoort@nyp.nl","role":"regiomanager"},{"name":"regio_almere","email":"almere@nyp.nl","role":"regiomanager"}]
+[2025-08-13 15:49:47] Found 6 email recipients
+[2025-08-13 15:49:47] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 15:49:47] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 15:49:47] Added recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager
+[2025-08-13 15:49:47] Added recipient: regio_utrecht (utrecht@nyp.nl) - Role: regiomanager
+[2025-08-13 15:49:47] Added recipient: regio_amersfoort (amersfoort@nyp.nl) - Role: regiomanager
+[2025-08-13 15:49:47] Added recipient: regio_almere (almere@nyp.nl) - Role: regiomanager
+[2025-08-13 15:49:49] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-13 15:56:11] Starting email process for task_set_id: 64
+[2025-08-13 15:56:11] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:56:11] TaskSet ID: 64, Day: Maandag, Manager: 24
+[2025-08-13 15:56:11] Stats: 0/6 tasks completed (0%)
+[2025-08-13 15:56:11] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:56:11] .env file found, loading configuration...
+[2025-08-13 15:56:11] Checking required mail configuration fields...
+[2025-08-13 15:56:11] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 15:58:56] Starting email process for task_set_id: 65
+[2025-08-13 15:58:56] === STARTING EMAIL FUNCTION ===
+[2025-08-13 15:58:56] TaskSet ID: 65, Day: Maandag, Manager: 25
+[2025-08-13 15:58:56] Stats: 0/6 tasks completed (0%)
+[2025-08-13 15:58:56] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 15:58:56] .env file found, loading configuration...
+[2025-08-13 15:58:56] Checking required mail configuration fields...
+[2025-08-13 15:58:56] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:02:26] Starting email process for task_set_id: 66
+[2025-08-13 16:02:26] === STARTING EMAIL FUNCTION ===
+[2025-08-13 16:02:26] TaskSet ID: 66, Day: Maandag, Manager: 25
+[2025-08-13 16:02:26] Stats: 0/7 tasks completed (0%)
+[2025-08-13 16:02:26] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 16:02:26] .env file found, loading configuration...
+[2025-08-13 16:02:26] Checking required mail configuration fields...
+[2025-08-13 16:02:26] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:03:10] Starting email process for task_set_id: 67
+[2025-08-13 16:03:10] === STARTING EMAIL FUNCTION ===
+[2025-08-13 16:03:10] TaskSet ID: 67, Day: Maandag, Manager: 24
+[2025-08-13 16:03:10] Stats: 0/6 tasks completed (0%)
+[2025-08-13 16:03:10] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 16:03:10] .env file found, loading configuration...
+[2025-08-13 16:03:10] Checking required mail configuration fields...
+[2025-08-13 16:03:10] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:43:29] Starting email process for task_set_id: 68
+[2025-08-13 16:43:29] === STARTING EMAIL FUNCTION ===
+[2025-08-13 16:43:29] TaskSet ID: 68, Day: Maandag, Manager: 25
+[2025-08-13 16:43:29] Stats: 0/7 tasks completed (0%)
+[2025-08-13 16:43:29] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 16:43:29] .env file found, loading configuration...
+[2025-08-13 16:43:29] Checking required mail configuration fields...
+[2025-08-13 16:43:29] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:43:29] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-13 16:43:29] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Lucas","email":"luccorver@gmail.com","role":"manager"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"}]
+[2025-08-13 16:43:29] Found 4 email recipients
+[2025-08-13 16:43:29] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 16:43:29] Added recipient: Lucas (luccorver@gmail.com) - Role: manager
+[2025-08-13 16:43:29] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 16:43:29] Added recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager
+[2025-08-13 16:43:30] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-13 16:49:30] Starting email process for task_set_id: 69
+[2025-08-13 16:49:30] === STARTING EMAIL FUNCTION ===
+[2025-08-13 16:49:30] TaskSet ID: 69, Day: Maandag, Manager: 25
+[2025-08-13 16:49:30] Stats: 3/6 tasks completed (50%)
+[2025-08-13 16:49:30] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 16:49:30] .env file found, loading configuration...
+[2025-08-13 16:49:30] Checking required mail configuration fields...
+[2025-08-13 16:49:30] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:49:30] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-13 16:49:30] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 16:49:30] Found 4 email recipients
+[2025-08-13 16:49:30] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 16:49:30] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 16:49:30] Added recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager
+[2025-08-13 16:49:30] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 16:49:33] Email process completed. Result: {"sent":true,"attachments":1}
+[2025-08-13 16:52:01] Starting email process for task_set_id: 70
+[2025-08-13 16:52:01] === STARTING EMAIL FUNCTION ===
+[2025-08-13 16:52:01] TaskSet ID: 70, Day: Maandag, Manager: 26
+[2025-08-13 16:52:01] Stats: 0/7 tasks completed (0%)
+[2025-08-13 16:52:01] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 16:52:01] .env file found, loading configuration...
+[2025-08-13 16:52:01] Checking required mail configuration fields...
+[2025-08-13 16:52:01] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:52:01] Getting email recipients for managerUserId: 26, store: 1
+[2025-08-13 16:52:01] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 16:52:01] Found 4 email recipients
+[2025-08-13 16:52:01] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 16:52:01] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 16:52:01] Added recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager
+[2025-08-13 16:52:01] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 16:52:02] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-13 16:52:50] Starting email process for task_set_id: 71
+[2025-08-13 16:52:50] === STARTING EMAIL FUNCTION ===
+[2025-08-13 16:52:50] TaskSet ID: 71, Day: Maandag, Manager: 24
+[2025-08-13 16:52:50] Stats: 0/6 tasks completed (0%)
+[2025-08-13 16:52:50] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 16:52:50] .env file found, loading configuration...
+[2025-08-13 16:52:50] Checking required mail configuration fields...
+[2025-08-13 16:52:50] All required fields present. Host: smtp.gmail.com, Username: hmrwierper@gmail.com, From: hmrwierper@gmail.com
+[2025-08-13 16:52:50] Getting email recipients for managerUserId: 24, store: 1
+[2025-08-13 16:52:50] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 16:52:50] Found 4 email recipients
+[2025-08-13 16:52:50] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 16:52:50] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 16:52:50] Added recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager
+[2025-08-13 16:52:50] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 16:52:53] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-13 17:19:45] Starting email process for task_set_id: 72
+[2025-08-13 17:19:45] === STARTING EMAIL FUNCTION ===
+[2025-08-13 17:19:45] TaskSet ID: 72, Day: Maandag, Manager: 25
+[2025-08-13 17:19:45] Stats: 0/7 tasks completed (0%)
+[2025-08-13 17:19:45] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 17:19:45] .env file found, loading configuration...
+[2025-08-13 17:19:45] Checking required mail configuration fields...
+[2025-08-13 17:19:45] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: nypschoonmaak.nl
+[2025-08-13 17:19:45] Email process completed. Result: {"sent":false,"error":"Invalid address:  (From): nypschoonmaak.nl"}
+[2025-08-13 17:21:12] Starting email process for task_set_id: 73
+[2025-08-13 17:21:12] === STARTING EMAIL FUNCTION ===
+[2025-08-13 17:21:12] TaskSet ID: 73, Day: Maandag, Manager: 25
+[2025-08-13 17:21:12] Stats: 0/7 tasks completed (0%)
+[2025-08-13 17:21:12] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 17:21:12] .env file found, loading configuration...
+[2025-08-13 17:21:12] Checking required mail configuration fields...
+[2025-08-13 17:21:12] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-13 17:21:12] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-13 17:21:12] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_almere","email":"almere@nyp.nl","role":"admin"},{"name":"regio_amersfoort","email":"amersfoort@nyp.nl","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"admin"},{"name":"regio_utrecht","email":"utrecht@nyp.nl","role":"admin"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 17:21:12] Found 7 email recipients
+[2025-08-13 17:21:12] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 17:21:12] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 17:21:12] Added recipient: regio_almere (almere@nyp.nl) - Role: admin
+[2025-08-13 17:21:12] Added recipient: regio_amersfoort (amersfoort@nyp.nl) - Role: admin
+[2025-08-13 17:21:12] Added recipient: regio_gooi (gooi@nyp.nl) - Role: admin
+[2025-08-13 17:21:12] Added recipient: regio_utrecht (utrecht@nyp.nl) - Role: admin
+[2025-08-13 17:21:12] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 17:21:13] Email process completed. Result: {"sent":false,"error":"SMTP Error: data not accepted."}
+[2025-08-13 17:29:28] Starting email process for task_set_id: 74
+[2025-08-13 17:29:28] === STARTING EMAIL FUNCTION ===
+[2025-08-13 17:29:28] TaskSet ID: 74, Day: Maandag, Manager: 26
+[2025-08-13 17:29:28] Stats: 0/7 tasks completed (0%)
+[2025-08-13 17:29:28] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 17:29:28] .env file found, loading configuration...
+[2025-08-13 17:29:28] Checking required mail configuration fields...
+[2025-08-13 17:29:28] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-13 17:29:28] Getting email recipients for managerUserId: 26, store: 1
+[2025-08-13 17:29:28] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_almere","email":"almere@nyp.nl","role":"admin"},{"name":"regio_amersfoort","email":"amersfoort@nyp.nl","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"admin"},{"name":"regio_utrecht","email":"utrecht@nyp.nl","role":"admin"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 17:29:28] Found 7 email recipients
+[2025-08-13 17:29:28] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 17:29:28] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 17:29:28] Added recipient: regio_almere (almere@nyp.nl) - Role: admin
+[2025-08-13 17:29:28] Added recipient: regio_amersfoort (amersfoort@nyp.nl) - Role: admin
+[2025-08-13 17:29:28] Added recipient: regio_gooi (gooi@nyp.nl) - Role: admin
+[2025-08-13 17:29:28] Added recipient: regio_utrecht (utrecht@nyp.nl) - Role: admin
+[2025-08-13 17:29:28] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 17:29:28] Email process completed. Result: {"sent":false,"error":"SMTP Error: data not accepted."}
+[2025-08-13 18:05:10] Starting email process for task_set_id: 75
+[2025-08-13 18:05:10] === STARTING EMAIL FUNCTION ===
+[2025-08-13 18:05:10] TaskSet ID: 75, Day: Maandag, Manager: 25
+[2025-08-13 18:05:10] Stats: 0/7 tasks completed (0%)
+[2025-08-13 18:05:10] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 18:05:10] .env file found, loading configuration...
+[2025-08-13 18:05:10] Checking required mail configuration fields...
+[2025-08-13 18:05:10] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-13 18:05:10] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-13 18:05:10] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_almere","email":"almere@nyp.nl","role":"admin"},{"name":"regio_amersfoort","email":"amersfoort@nyp.nl","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"admin"},{"name":"regio_utrecht","email":"utrecht@nyp.nl","role":"admin"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 18:05:10] Found 7 email recipients
+[2025-08-13 18:05:10] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 18:05:10] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 18:05:10] Added recipient: regio_almere (almere@nyp.nl) - Role: admin
+[2025-08-13 18:05:10] Added recipient: regio_amersfoort (amersfoort@nyp.nl) - Role: admin
+[2025-08-13 18:05:10] Added recipient: regio_gooi (gooi@nyp.nl) - Role: admin
+[2025-08-13 18:05:10] Added recipient: regio_utrecht (utrecht@nyp.nl) - Role: admin
+[2025-08-13 18:05:10] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 18:05:11] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-13 18:45:57] Starting email process for task_set_id: 76
+[2025-08-13 18:45:57] === STARTING EMAIL FUNCTION ===
+[2025-08-13 18:45:57] TaskSet ID: 76, Day: Maandag, Manager: 25
+[2025-08-13 18:45:57] Stats: 0/6 tasks completed (0%)
+[2025-08-13 18:45:57] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-13 18:45:57] .env file found, loading configuration...
+[2025-08-13 18:45:57] Checking required mail configuration fields...
+[2025-08-13 18:45:57] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-13 18:45:57] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-13 18:45:57] Found recipients: [{"name":"Hidde","email":"hmrwierper@gmail.com","role":"admin"},{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_almere","email":"almere@nyp.nl","role":"admin"},{"name":"regio_amersfoort","email":"amersfoort@nyp.nl","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"admin"},{"name":"regio_utrecht","email":"utrecht@nyp.nl","role":"admin"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-13 18:45:57] Found 7 email recipients
+[2025-08-13 18:45:57] Added recipient: Hidde (hmrwierper@gmail.com) - Role: admin
+[2025-08-13 18:45:57] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-13 18:45:57] Added recipient: regio_almere (almere@nyp.nl) - Role: admin
+[2025-08-13 18:45:57] Added recipient: regio_amersfoort (amersfoort@nyp.nl) - Role: admin
+[2025-08-13 18:45:57] Added recipient: regio_gooi (gooi@nyp.nl) - Role: admin
+[2025-08-13 18:45:57] Added recipient: regio_utrecht (utrecht@nyp.nl) - Role: admin
+[2025-08-13 18:45:57] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-13 18:45:58] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-18 20:28:51] Starting email process for task_set_id: 78
+[2025-08-18 20:28:51] === STARTING EMAIL FUNCTION ===
+[2025-08-18 20:28:51] TaskSet ID: 78, Day: Maandag, Manager: 25
+[2025-08-18 20:28:51] Stats: 2/6 tasks completed (33%)
+[2025-08-18 20:28:51] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-18 20:28:51] .env file found, loading configuration...
+[2025-08-18 20:28:51] Checking required mail configuration fields...
+[2025-08-18 20:28:51] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-18 20:28:51] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-18 20:28:51] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-18 20:28:51] Found 2 email recipients
+[2025-08-18 20:28:51] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-18 20:28:51] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-18 20:28:52] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-18 20:30:47] Starting email process for task_set_id: 79
+[2025-08-18 20:30:47] === STARTING EMAIL FUNCTION ===
+[2025-08-18 20:30:47] TaskSet ID: 79, Day: Maandag, Manager: 26
+[2025-08-18 20:30:47] Stats: 3/6 tasks completed (50%)
+[2025-08-18 20:30:47] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-18 20:30:47] .env file found, loading configuration...
+[2025-08-18 20:30:47] Checking required mail configuration fields...
+[2025-08-18 20:30:47] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-18 20:30:47] Getting email recipients for managerUserId: 26, store: 1
+[2025-08-18 20:30:47] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-18 20:30:47] Found 2 email recipients
+[2025-08-18 20:30:47] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-18 20:30:47] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-18 20:30:48] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-18 20:44:36] Starting email process for task_set_id: 80
+[2025-08-18 20:44:36] === STARTING EMAIL FUNCTION ===
+[2025-08-18 20:44:36] TaskSet ID: 80, Day: Maandag, Manager: 24
+[2025-08-18 20:44:36] Stats: 2/7 tasks completed (29%)
+[2025-08-18 20:44:36] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-18 20:44:36] .env file found, loading configuration...
+[2025-08-18 20:44:36] Checking required mail configuration fields...
+[2025-08-18 20:44:36] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-18 20:44:36] Getting email recipients for managerUserId: 24, store: 1
+[2025-08-18 20:44:36] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-18 20:44:36] Found 3 email recipients
+[2025-08-18 20:44:36] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-18 20:44:36] Added recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager
+[2025-08-18 20:44:36] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-18 20:44:37] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-18 20:49:10] Starting email process for task_set_id: 81
+[2025-08-18 20:49:10] === STARTING EMAIL FUNCTION ===
+[2025-08-18 20:49:10] TaskSet ID: 81, Day: Maandag, Manager: 25
+[2025-08-18 20:49:10] Stats: 0/7 tasks completed (0%)
+[2025-08-18 20:49:10] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-18 20:49:10] .env file found, loading configuration...
+[2025-08-18 20:49:10] Checking required mail configuration fields...
+[2025-08-18 20:49:10] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-18 20:49:10] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-18 20:49:10] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-18 20:49:10] Found 3 email recipients
+[2025-08-18 20:49:10] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-18 20:49:10] SKIPPED nyp.nl recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-08-18 20:49:10] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-18 20:49:11] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-18 20:55:55] Starting email process for task_set_id: 82
+[2025-08-18 20:55:55] === STARTING EMAIL FUNCTION ===
+[2025-08-18 20:55:55] TaskSet ID: 82, Day: Maandag, Manager: 26
+[2025-08-18 20:55:55] Stats: 3/7 tasks completed (43%)
+[2025-08-18 20:55:55] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-18 20:55:55] .env file found, loading configuration...
+[2025-08-18 20:55:55] Checking required mail configuration fields...
+[2025-08-18 20:55:55] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-18 20:55:55] Getting email recipients for managerUserId: 26, store: 1
+[2025-08-18 20:55:55] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-18 20:55:55] Found 3 email recipients
+[2025-08-18 20:55:55] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-18 20:55:55] SKIPPED nyp.nl recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-08-18 20:55:55] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-18 20:55:55] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-26 20:10:45] Starting email process for task_set_id: 83
+[2025-08-26 20:10:45] === STARTING EMAIL FUNCTION ===
+[2025-08-26 20:10:45] TaskSet ID: 83, Day: Maandag, Manager: 25
+[2025-08-26 20:10:45] Stats: 2/7 tasks completed (29%)
+[2025-08-26 20:10:45] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-26 20:10:45] .env file found, loading configuration...
+[2025-08-26 20:10:45] Checking required mail configuration fields...
+[2025-08-26 20:10:45] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-26 20:10:45] Getting email recipients for managerUserId: 25, store: 1
+[2025-08-26 20:10:45] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-26 20:10:45] Found 3 email recipients
+[2025-08-26 20:10:45] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-08-26 20:10:45] SKIPPED nyp.nl recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-08-26 20:10:45] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-26 20:10:46] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-08-26 20:15:34] Starting email process for task_set_id: 84
+[2025-08-26 20:15:34] === STARTING EMAIL FUNCTION ===
+[2025-08-26 20:15:34] TaskSet ID: 84, Day: Maandag, Manager: 24
+[2025-08-26 20:15:34] Stats: 2/6 tasks completed (33%)
+[2025-08-26 20:15:34] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-08-26 20:15:34] .env file found, loading configuration...
+[2025-08-26 20:15:34] Checking required mail configuration fields...
+[2025-08-26 20:15:34] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-08-26 20:15:34] Getting email recipients for managerUserId: 24, store: 1
+[2025-08-26 20:15:34] Found recipients: [{"name":"Tim","email":"hmrwierper@gmail.com","role":"admin"},{"name":"regio_gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-08-26 20:15:34] Found 3 email recipients
+[2025-08-26 20:15:34] Added recipient: Tim (hmrwierper@gmail.com) - Role: admin
+[2025-08-26 20:15:34] SKIPPED nyp.nl recipient: regio_gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-08-26 20:15:34] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-08-26 20:15:34] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-09-02 18:34:56] Starting email process for task_set_id: 91
+[2025-09-02 18:34:56] === STARTING EMAIL FUNCTION ===
+[2025-09-02 18:34:56] TaskSet ID: 91, Day: Maandag, Manager: 25
+[2025-09-02 18:34:56] Stats: 5/6 tasks completed (83%)
+[2025-09-02 18:34:56] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-09-02 18:34:56] .env file found, loading configuration...
+[2025-09-02 18:34:56] Checking required mail configuration fields...
+[2025-09-02 18:34:56] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-09-02 18:34:56] Getting email recipients for managerUserId: 25, store: 1
+[2025-09-02 18:34:56] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-09-02 18:34:56] Found 3 email recipients
+[2025-09-02 18:34:56] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-09-02 18:34:56] SKIPPED nyp.nl recipient: gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-09-02 18:34:56] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-09-02 18:34:57] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-09-02 18:44:16] Starting email process for task_set_id: 92
+[2025-09-02 18:44:16] === STARTING EMAIL FUNCTION ===
+[2025-09-02 18:44:16] TaskSet ID: 92, Day: Vrijdag, Manager: 24
+[2025-09-02 18:44:16] Stats: 3/6 tasks completed (50%)
+[2025-09-02 18:44:16] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-09-02 18:44:16] .env file found, loading configuration...
+[2025-09-02 18:44:16] Checking required mail configuration fields...
+[2025-09-02 18:44:16] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-09-02 18:44:16] Getting email recipients for managerUserId: 24, store: 1
+[2025-09-02 18:44:16] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-09-02 18:44:16] Found 3 email recipients
+[2025-09-02 18:44:16] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-09-02 18:44:16] SKIPPED nyp.nl recipient: gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-09-02 18:44:16] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-09-02 18:44:18] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-09-02 18:46:15] Starting email process for task_set_id: 93
+[2025-09-02 18:46:15] === STARTING EMAIL FUNCTION ===
+[2025-09-02 18:46:15] TaskSet ID: 93, Day: Maandag, Manager: 25
+[2025-09-02 18:46:15] Stats: 4/6 tasks completed (67%)
+[2025-09-02 18:46:15] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-09-02 18:46:15] .env file found, loading configuration...
+[2025-09-02 18:46:15] Checking required mail configuration fields...
+[2025-09-02 18:46:15] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-09-02 18:46:15] Getting email recipients for managerUserId: 25, store: 1
+[2025-09-02 18:46:15] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-09-02 18:46:15] Found 3 email recipients
+[2025-09-02 18:46:15] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-09-02 18:46:15] SKIPPED nyp.nl recipient: gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-09-02 18:46:15] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-09-02 18:46:16] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-09-02 18:57:36] Starting email process for task_set_id: 94
+[2025-09-02 18:57:36] === STARTING EMAIL FUNCTION ===
+[2025-09-02 18:57:36] TaskSet ID: 94, Day: Dinsdag, Manager: 24
+[2025-09-02 18:57:36] Stats: 3/6 tasks completed (50%)
+[2025-09-02 18:57:36] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-09-02 18:57:36] .env file found, loading configuration...
+[2025-09-02 18:57:36] Checking required mail configuration fields...
+[2025-09-02 18:57:36] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-09-02 18:57:36] Getting email recipients for managerUserId: 24, store: 1
+[2025-09-02 18:57:36] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-09-02 18:57:36] Found 3 email recipients
+[2025-09-02 18:57:36] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-09-02 18:57:36] SKIPPED nyp.nl recipient: gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-09-02 18:57:36] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-09-02 18:57:38] Email process completed. Result: {"sent":true,"attachments":0}
+[2025-09-02 19:01:45] Received incomplete reasons: {"1116":"was beetje koud in de winkel"}
+[2025-09-02 19:01:45] Storing incomplete reasons for 1 tasks
+[2025-09-02 19:04:22] Received incomplete reasons: {"1116":"geen izn in"}
+[2025-09-02 19:04:22] Storing incomplete reasons for 1 tasks
+[2025-09-02 19:04:22] Stored reason for task 1116: geen izn in
+[2025-09-02 19:04:22] Starting email process for task_set_id: 95
+[2025-09-02 19:04:22] === STARTING EMAIL FUNCTION ===
+[2025-09-02 19:04:22] TaskSet ID: 95, Day: Donderdag, Manager: 25
+[2025-09-02 19:04:22] Stats: 5/6 tasks completed (83%)
+[2025-09-02 19:04:22] Looking for .env file at: C:\xampp\htdocs\secure_nyp\app\api/../../.env
+[2025-09-02 19:04:22] .env file found, loading configuration...
+[2025-09-02 19:04:22] Checking required mail configuration fields...
+[2025-09-02 19:04:22] All required fields present. Host: smtp.strato.com, Username: no-reply@nypschoonmaak.nl, From: no-reply@nypschoonmaak.nl
+[2025-09-02 19:04:22] Getting email recipients for managerUserId: 25, store: 1
+[2025-09-02 19:04:22] Found recipients: [{"name":"Tim","email":"hidde@wierper.net","role":"admin"},{"name":"gooi","email":"gooi@nyp.nl","role":"regiomanager"},{"name":"storemanager","email":"2187877@talnet.nl","role":"storemanager"}]
+[2025-09-02 19:04:22] Found 3 email recipients
+[2025-09-02 19:04:22] Added recipient: Tim (hidde@wierper.net) - Role: admin
+[2025-09-02 19:04:22] SKIPPED nyp.nl recipient: gooi (gooi@nyp.nl) - Role: regiomanager (would have been sent in production)
+[2025-09-02 19:04:22] Added recipient: storemanager (2187877@talnet.nl) - Role: storemanager
+[2025-09-02 19:04:24] Email process completed. Result: {"sent":true,"attachments":0}

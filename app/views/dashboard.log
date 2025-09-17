@@ -1,0 +1,4855 @@
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:06:20",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 29096c504df3ffe28924edf2a1367749, expiry: 2025-08-13 18:06:20
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:20",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 2747de02c0c410d02e2b9927e8770a62, expiry: 2025-08-13 18:08:20
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:22",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 789d6683fa0acdb2197c96a3a8c48ec5, expiry: 2025-08-13 18:08:22
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:22",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 65347fe74edf29c2e4165d6b2d850b8d, expiry: 2025-08-13 18:08:22
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:22",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - b948d8a820760a9a9d1fbaf9231e2db5, expiry: 2025-08-13 18:08:22
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:22",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - d1658282cc00347d7189b5885339eb8f, expiry: 2025-08-13 18:08:22
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:22",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 0500aafc7bb4f01b7930ffc3aaa87e63, expiry: 2025-08-13 18:08:22
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:22",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 651ddad937dfba5d4f09643a7cb34248, expiry: 2025-08-13 18:08:22
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:23",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 5968236112639f56ec415d8cbc6bf528, expiry: 2025-08-13 18:08:23
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:23",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 7942a2d7526d151618116b4b1b94453c, expiry: 2025-08-13 18:08:23
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:08:23",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 07f8d52322ae845e5eaffb4cf66dc792, expiry: 2025-08-13 18:08:23
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:12:30",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "1"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 1
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 1
+
+INVITE: Admin store validation passed - 1
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 36381db01aaa686c9f5361314f690546, expiry: 2025-08-13 18:12:30
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 18:20:37",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "2187877@talnet.nl",
+        "username": "storemanager",
+        "role": "storemanager",
+        "store_id": "1"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 1
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - storemanager
+
+INVITE: Validating store ID - 1
+
+INVITE: Admin store validation passed - 1
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 6f1b84f29b135513aec27ccbfc14acb4, expiry: 2025-08-13 18:20:37
+
+INVITE: User created in database with ID: 35
+
+INVITE: Starting email setup
+
+INVITE: Email configuration set - Host: smtp.gmail.com, Port: 587
+
+INVITE: Generated invite link - http://localhost/secure_nyp/public/set-password?token=6f1b84f29b135513aec27ccbfc14acb4
+
+INVITE SUCCESS: Email sent successfully to 2187877@talnet.nl
+
+INVITE FINAL SUCCESS: {
+    "timestamp": "2025-08-12 18:20:40",
+    "success": true,
+    "new_user_id": "35",
+    "email": "2187877@talnet.nl",
+    "username": "storemanager",
+    "role": "storemanager",
+    "store_id": 1,
+    "token": "6f1b84f29b135513aec27ccbfc14acb4",
+    "invite_link": "http:\/\/localhost\/secure_nyp\/public\/set-password?token=6f1b84f29b135513aec27ccbfc14acb4"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:02",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:02",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+ERROR: {
+    "timestamp": "2025-08-12 18:26:03",
+    "action": "get_users",
+    "error": "Geen winkel toegewezen aan gebruiker.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(37): require()\n#1 {main}"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:03",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+ERROR: {
+    "timestamp": "2025-08-12 18:26:03",
+    "action": "get_users",
+    "error": "Geen winkel toegewezen aan gebruiker.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(37): require()\n#1 {main}"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:04",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:04",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+ERROR: {
+    "timestamp": "2025-08-12 18:26:04",
+    "action": "get_users",
+    "error": "Geen winkel toegewezen aan gebruiker.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(37): require()\n#1 {main}"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:04",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+ERROR: {
+    "timestamp": "2025-08-12 18:26:04",
+    "action": "get_users",
+    "error": "Geen winkel toegewezen aan gebruiker.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(37): require()\n#1 {main}"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:15",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:15",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+ERROR: {
+    "timestamp": "2025-08-12 18:26:15",
+    "action": "get_users",
+    "error": "Geen winkel toegewezen aan gebruiker.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(37): require()\n#1 {main}"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 18:26:15",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager"
+    }
+}
+
+ERROR: {
+    "timestamp": "2025-08-12 18:26:15",
+    "action": "get_users",
+    "error": "Geen winkel toegewezen aan gebruiker.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(37): require()\n#1 {main}"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:26:00",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:26:01",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:26:01",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:30:47",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:30:48",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:30:48",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:31:03",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 21:31:03",
+    "action": "send_invite",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "post_data": {
+        "action": "send_invite",
+        "email": "appels@peren.nl",
+        "username": "hoi",
+        "role": "manager",
+        "store_id": "1"
+    },
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "appels@peren.nl",
+    "username": "hoi",
+    "role": "manager",
+    "store_id": 1
+}
+
+INVITE: Basic validation passed
+
+INVITE: Storemanager role validation passed - manager
+
+INVITE: Validating store ID - 1
+
+INVITE: Storemanager store validation passed - 1
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 3b749f1981ad17e79b83b43e725a5a41, expiry: 2025-08-13 21:31:03
+
+INVITE: User created in database with ID: 36
+
+INVITE: Starting email setup
+
+INVITE: Email configuration set - Host: smtp.gmail.com, Port: 587
+
+INVITE: Generated invite link - http://localhost/secure_nyp/public/set-password?token=3b749f1981ad17e79b83b43e725a5a41
+
+INVITE SUCCESS: Email sent successfully to appels@peren.nl
+
+INVITE FINAL SUCCESS: {
+    "timestamp": "2025-08-12 21:31:05",
+    "success": true,
+    "new_user_id": "36",
+    "email": "appels@peren.nl",
+    "username": "hoi",
+    "role": "manager",
+    "store_id": 1,
+    "token": "3b749f1981ad17e79b83b43e725a5a41",
+    "invite_link": "http:\/\/localhost\/secure_nyp\/public\/set-password?token=3b749f1981ad17e79b83b43e725a5a41"
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:31:05",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:32:38",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:32:39",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 21:32:39",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 22:36:59",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 22:36:59",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-12 22:36:59",
+    "user_id": 35,
+    "username": "storemanager",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 35,
+        "user_role": "storemanager",
+        "username": "storemanager",
+        "store_id": 1
+    }
+}
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-12 23:23:56",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "admin",
+    "post_data": {
+        "action": "send_invite",
+        "email": "hmrwierper@gmail.com",
+        "username": "dsfdf",
+        "role": "manager",
+        "store_id": "10"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "admin",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "hmrwierper@gmail.com",
+    "username": "dsfdf",
+    "role": "manager",
+    "store_id": 10
+}
+
+INVITE: Basic validation passed
+
+INVITE: Admin role validation passed - manager
+
+INVITE: Validating store ID - 10
+
+INVITE: Admin store validation passed - 10
+
+INVITE: Checking if email or username already exists
+
+INVITE ERROR: Email or username already exists - email: hmrwierper@gmail.com, username: dsfdf
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:43:42",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:43:42",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:43:42",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:03",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:04",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:04",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:44:33",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "admin",
+        "region_id": "1",
+        "store_id": "1"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:55:59",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "16",
+    "region_id": "2",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "regiomanager",
+        "region_id": "2",
+        "store_id": "16"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:55:59",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "16",
+    "region_id": "2",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "regiomanager",
+        "region_id": "2",
+        "store_id": "16"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:55:59",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "16",
+    "region_id": "2",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "regiomanager",
+        "region_id": "2",
+        "store_id": "16"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:59:32",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "16",
+    "region_id": "2",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "regiomanager",
+        "region_id": "2",
+        "store_id": "16"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:59:32",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "16",
+    "region_id": "2",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "regiomanager",
+        "region_id": "2",
+        "store_id": "16"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:59:32",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "16",
+    "region_id": "2",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "dev_role_override": "regiomanager",
+        "region_id": "2",
+        "store_id": "16"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:59:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:59:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 01:59:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER ERROR: {
+    "timestamp": "2025-08-14 02:08:29",
+    "action": "dev_role_override",
+    "error": "Onbekende actie.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(41): require()\n#1 {main}"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER ERROR: {
+    "timestamp": "2025-08-14 02:08:34",
+    "action": "dev_role_override",
+    "error": "Onbekende actie.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(41): require()\n#1 {main}"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER ERROR: {
+    "timestamp": "2025-08-14 02:08:35",
+    "action": "dev_role_reset",
+    "error": "Onbekende actie.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(41): require()\n#1 {main}"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:08:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER ERROR: {
+    "timestamp": "2025-08-14 02:08:44",
+    "action": "dev_role_override",
+    "error": "Onbekende actie.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(41): require()\n#1 {main}"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:14:50",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:14:51",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:14:51",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:14:55",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:17:52",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:17:53",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:17:53",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:17:53",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:19:46",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:19:46",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:19:46",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:30:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:30:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:30:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:30:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:30:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:30:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:33:06",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:33:07",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:33:07",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:33:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:33:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-14 02:33:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:23:52",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:23:52",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:23:52",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:23:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:21",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:21",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:21",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:24",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:32",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:39",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:39",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:34:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:37:46",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:37:47",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:37:47",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:38:02",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:38:02",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:38:02",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:38:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:38:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:38:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:40:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:40:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:40:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:41:18",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "region_id": "1",
+        "store_id": "1",
+        "dev_role_override": "storemanager"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:41:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "region_id": "1",
+        "store_id": "1",
+        "dev_role_override": "storemanager"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-18 20:41:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "1",
+    "region_id": "1",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "region_id": "1",
+        "store_id": "1",
+        "dev_role_override": "storemanager"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:37:57",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:37:57",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:37:57",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:38:14",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-27 22:38:14",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "post_data": {
+        "action": "send_invite",
+        "email": "hidde@wierper.net",
+        "username": "test2",
+        "role": "storemanager",
+        "store_id": "2"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "hidde@wierper.net",
+    "username": "test2",
+    "role": "storemanager",
+    "store_id": 2
+}
+
+INVITE: Basic validation passed
+
+INVITE: Developer role validation passed - storemanager
+
+INVITE: Validating store ID - 2
+
+INVITE: Developer store validation passed - 2
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 84dba478ce99de3f4d74ac7ec9d3f051, expiry: 2025-08-28 22:38:14
+
+INVITE: User created in database with ID: 36
+
+INVITE: Starting email setup
+
+INVITE: Email configuration set - Host: smtp.strato.com, Port: 587
+
+INVITE: Generated invite link - http://localhost/secure_nyp/public/set-password?token=84dba478ce99de3f4d74ac7ec9d3f051
+
+INVITE SUCCESS: Email sent successfully to hidde@wierper.net
+
+INVITE FINAL SUCCESS: {
+    "timestamp": "2025-08-27 22:38:15",
+    "success": true,
+    "new_user_id": "36",
+    "email": "hidde@wierper.net",
+    "username": "test2",
+    "role": "storemanager",
+    "store_id": 2,
+    "token": "84dba478ce99de3f4d74ac7ec9d3f051",
+    "invite_link": "http:\/\/localhost\/secure_nyp\/public\/set-password?token=84dba478ce99de3f4d74ac7ec9d3f051"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:38:15",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:45:23",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:45:23",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:45:23",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:45:50",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+INVITE DEBUG START: {
+    "timestamp": "2025-08-27 22:45:50",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "post_data": {
+        "action": "send_invite",
+        "email": "hidde@wierper.net",
+        "username": "test2",
+        "role": "storemanager",
+        "store_id": "1"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "hidde@wierper.net",
+    "username": "test2",
+    "role": "storemanager",
+    "store_id": 1
+}
+
+INVITE: Basic validation passed
+
+INVITE: Developer role validation passed - storemanager
+
+INVITE: Validating store ID - 1
+
+INVITE: Developer store validation passed - 1
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 37edaab5177ed49b1cfc8b52cb2027af, expiry: 2025-08-28 22:45:50
+
+INVITE: User created in database with ID: 37
+
+INVITE: Starting email setup
+
+INVITE: Email configuration set - Host: smtp.strato.com, Port: 587
+
+INVITE: Generated invite link - http://localhost/secure_nyp/public/set-password?token=37edaab5177ed49b1cfc8b52cb2027af
+
+INVITE SUCCESS: Email sent successfully to hidde@wierper.net
+
+INVITE FINAL SUCCESS: {
+    "timestamp": "2025-08-27 22:45:51",
+    "success": true,
+    "new_user_id": "37",
+    "email": "hidde@wierper.net",
+    "username": "test2",
+    "role": "storemanager",
+    "store_id": 1,
+    "token": "37edaab5177ed49b1cfc8b52cb2027af",
+    "invite_link": "http:\/\/localhost\/secure_nyp\/public\/set-password?token=37edaab5177ed49b1cfc8b52cb2027af"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-27 22:45:51",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-27 22:47:33",
+    "user_id": 37,
+    "username": "test2",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 37,
+        "user_role": "storemanager",
+        "username": "test2",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-27 22:47:33",
+    "user_id": 37,
+    "username": "test2",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 37,
+        "user_role": "storemanager",
+        "username": "test2",
+        "store_id": 1
+    }
+}
+
+STOREMANAGER DEBUG: {
+    "timestamp": "2025-08-27 22:47:33",
+    "user_id": 37,
+    "username": "test2",
+    "user_role": "storemanager",
+    "store_id": 1,
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 37,
+        "user_role": "storemanager",
+        "username": "test2",
+        "store_id": 1
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:15:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:15:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:15:19",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:19:27",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:19:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:19:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:33:17",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:33:17",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:33:17",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:44:14",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:44:15",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:44:15",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:44:31",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:44:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:46:22",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:46:22",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:46:22",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:46:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:30",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:31",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:31",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:47:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:50:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:50:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:50:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:51:16",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:51:57",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:52:03",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:52:03",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:52:03",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:53:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:53:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:53:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:53:41",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:54:58",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:54:59",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:54:59",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:55:04",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:40",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:41",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:41",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:56:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:57:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:57:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:57:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:57:50",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:57:50",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:58:02",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:58:07",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:58:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:58:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:58:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:58:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:59:52",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 22:59:52",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:05:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:05:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:05:28",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:06:27",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:06:27",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:06:27",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:06:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:06:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:08:26",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:08:27",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:08:27",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:08:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:08:35",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:09:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:09:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:09:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:09:51",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:09:51",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:11:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:11:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:11:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:11:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:11:45",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:20:55",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:20:55",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:20:55",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:21:00",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:21:02",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:21:03",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:21:07",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:21:08",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:30:24",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:30:24",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-28 23:30:24",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:34",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:36",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:39",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-29 01:05:44",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde",
+        "version": "v1.0"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:44:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:44:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:44:29",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:46:46",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:46:47",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:46:47",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:47:23",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:47:23",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:47:26",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:47:26",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:48:03",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER ERROR: {
+    "timestamp": "2025-08-31 02:48:03",
+    "action": "remove_region_manager",
+    "error": "Gebruiker is geen regiomanager.",
+    "trace": "#0 C:\\xampp\\htdocs\\secure_nyp\\public\\index.php(124): require()\n#1 {main}"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:48:07",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:48:08",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:48:08",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:48:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:49:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-08-31 02:49:43",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 01:46:31",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 01:46:32",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 01:46:32",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 01:46:40",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 01:46:40",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 01:46:40",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 02:03:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 02:03:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 02:03:10",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 15:06:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 15:06:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-01 15:06:38",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 18:23:00",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 18:23:01",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 18:23:01",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 22:26:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 22:26:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 22:26:56",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 22:54:13",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 22:54:14",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-02 22:54:14",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-04 19:11:41",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-04 19:11:41",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-04 19:11:41",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-04 19:12:00",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+INVITE DEBUG START: {
+    "timestamp": "2025-09-04 19:12:00",
+    "action": "send_invite",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "post_data": {
+        "action": "send_invite",
+        "email": "hmrwierper+2@gmail.com",
+        "username": "hoi",
+        "role": "regiomanager",
+        "store_id": "15"
+    },
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+
+INVITE PARSED DATA: {
+    "email": "hmrwierper+2@gmail.com",
+    "username": "hoi",
+    "role": "regiomanager",
+    "store_id": 15
+}
+
+INVITE: Basic validation passed
+
+INVITE: Developer role validation passed - regiomanager
+
+INVITE: Validating store ID - 15
+
+INVITE: Developer store validation passed - 15
+
+INVITE: Checking if email or username already exists
+
+INVITE: Email and username are unique
+
+INVITE: Generated token - 5099ee065eee30b9b1d9a6cdbb46c608, expiry: 2025-09-05 19:12:00
+
+INVITE: User created in database with ID: 38
+
+INVITE: Starting email setup
+
+INVITE: Email configuration set - Host: smtp.strato.com, Port: 587
+
+INVITE: Generated invite link - http://localhost/secure_nyp/public/set-password?token=5099ee065eee30b9b1d9a6cdbb46c608
+
+INVITE SUCCESS: Email sent successfully to hmrwierper+2@gmail.com
+
+INVITE FINAL SUCCESS: {
+    "timestamp": "2025-09-04 19:12:02",
+    "success": true,
+    "new_user_id": "38",
+    "email": "hmrwierper+2@gmail.com",
+    "username": "hoi",
+    "role": "regiomanager",
+    "store_id": 15,
+    "token": "5099ee065eee30b9b1d9a6cdbb46c608",
+    "invite_link": "http:\/\/localhost\/secure_nyp\/public\/set-password?token=5099ee065eee30b9b1d9a6cdbb46c608"
+}
+
+DEVELOPER DEBUG: {
+    "timestamp": "2025-09-04 19:12:02",
+    "user_id": 1,
+    "username": "Hidde",
+    "user_role": "developer",
+    "store_id": "not_set",
+    "region_id": "not_set",
+    "session_data": {
+        "user_id": 1,
+        "user_role": "developer",
+        "username": "Hidde"
+    }
+}
+

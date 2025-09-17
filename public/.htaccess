@@ -1,14 +1,31 @@
 RewriteEngine On
 
-# Stel de base directory in voor de rewrites
-RewriteBase /secure_nyp/public/
+# --- API rewrites ---
+RewriteCond %{REQUEST_URI} ^/api/([a-zA-Z0-9_-]+)$
+RewriteCond %{DOCUMENT_ROOT}/app/api/%1.php -f
+RewriteRule ^api/([a-zA-Z0-9_-]+)$ app/api/$1.php [L]
 
-# Sta directe toegang toe voor statische bestanden
+RewriteCond %{REQUEST_URI} ^/api/(.+)$
+RewriteCond %{DOCUMENT_ROOT}/app/api/%1.php -f
+RewriteRule ^api/(.+)$ app/api/$1.php [L]
+
+# Redirect /public/api/* naar /api/*
+RewriteCond %{REQUEST_URI} ^/public/api/(.*)$
+RewriteRule ^public/api/(.*)$ /api/$1 [L,R=301]
+
+# Sta directe toegang toe voor index.php (voorkom loop!)
+RewriteRule ^index\.php$ - [L]
+
+# --- Assets regel ---
+# Blokkeer directe toegang tot de folder zelf (bv. /assets/)
+RewriteRule ^assets/?$ - [F]
+
+# Sta bestanden binnen assets wel toe
 RewriteCond %{REQUEST_FILENAME} -f
 RewriteCond %{REQUEST_FILENAME} \.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ [NC]
 RewriteRule ^ - [L]
 
-# Stuur alle andere requests naar index.php
+# --- Catch-all ---
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]

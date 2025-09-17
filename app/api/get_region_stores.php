@@ -14,7 +14,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $userRole = $_SESSION['user_role'];
 
-if ($userRole !== 'regiomanager') {
+if ($userRole !== 'regiomanager' && $userRole !== 'developer') {
     http_response_code(403);
     echo json_encode(['error' => 'Unauthorized']);
     exit;
@@ -23,37 +23,63 @@ if ($userRole !== 'regiomanager') {
 try {
     $db = new PDO('sqlite:' . __DIR__ . '/../db/tasks.db');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    
+
     $userId = $_SESSION['user_id'];
-    
-    // Get user's region_id
-    $user_stmt = $db->prepare("SELECT region_id FROM users WHERE id = ?");
-    $user_stmt->execute([$userId]);
-    $user = $user_stmt->fetch(PDO::FETCH_ASSOC);
-    
-    if (!$user || !$user['region_id']) {
-        http_response_code(403);
-        echo json_encode(['error' => 'Region ID not found']);
-        exit;
+
+    // Get user's region_id (for developers, use session region_id)
+    if ($userRole === 'developer') {
+        if (!isset($_SESSION['region_id'])) {
+            http_response_code(403);
+            echo json_encode(['error' => 'Region ID not found in session']);
+            exit;
+        }
+        $user = ['region_id' => $_SESSION['region_id']];
+    } else {
+        $user_stmt = $db->prepare("SELECT region_id FROM users WHERE id = ?");
+        $user_stmt->execute([$userId]);
+        $user = $user_stmt->fetch(PDO::FETCH_ASSOC);
+
+        if (!$user || !$user['region_id']) {
+            http_response_code(403);
+            echo json_encode(['error' => 'Region ID not found']);
+            exit;
+        }
     }
-    
+
     $region_id = $user['region_id'];
-    
-    // Get stores in the region with their managers
-    $stmt = $db->prepare("
-        SELECT 
-            s.id,
-            s.name,
-            s.address,
-            GROUP_CONCAT(u.username, ', ') as managers
-        FROM stores s
-        JOIN region_stores rs ON s.id = rs.store_id
-        LEFT JOIN users u ON s.id = u.store_id AND u.role = 'manager'
-        WHERE rs.region_id = ?
-        GROUP BY s.id, s.name, s.address
-        ORDER BY s.name
-    ");
-    $stmt->execute([$region_id]);
+
+    // Get stores in the region with their managers (or all stores for developers)
+    if ($userRole === 'developer') {
+        $stmt = $db->prepare("
+            SELECT
+                s.id,
+                s.name,
+                s.address,
+                GROUP_CONCAT(u.username, ', ') as managers
+            FROM stores s
+            JOIN region_stores rs ON s.id = rs.store_id
+            LEFT JOIN users u ON s.id = u.store_id AND u.role = 'manager'
+            WHERE rs.region_id = ?
+            GROUP BY s.id, s.name, s.address
+            ORDER BY s.name
+        ");
+        $stmt->execute([$region_id]);
+    } else {
+        $stmt = $db->prepare("
+            SELECT
+                s.id,
+                s.name,
+                s.address,
+                GROUP_CONCAT(u.username, ', ') as managers
+            FROM stores s
+            JOIN region_stores rs ON s.id = rs.store_id
+            LEFT JOIN users u ON s.id = u.store_id AND u.role = 'manager'
+            WHERE rs.region_id = ?
+            GROUP BY s.id, s.name, s.address
+            ORDER BY s.name
+        ");
+        $stmt->execute([$region_id]);
+    }
     $stores = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
     echo json_encode($stores);

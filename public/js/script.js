@@ -1,4 +1,4 @@
-const BASEPATH = '/secure_nyp/public';
+const BASEPATH = window.location.hostname === 'localhost' ? '/secure_nyp/public' : '';
 const origFetch = window.fetch;
 window.fetch = function(resource, options) {
     if (typeof resource === 'string' && resource.startsWith('/api/')) {
@@ -13,50 +13,7 @@ let currentTasks = [];
 // Pagina navigatie
 
 // Taken genereren
-async function generateTasks() {
-    console.log('Generate tasks clicked');
-    
-    const storeId = document.getElementById('storeSelect').value;
-    const managerId = document.getElementById('managerSelect').value;
-    const day = document.getElementById('day').value;
-    const maxDuration = document.getElementById('max-duration').value;
-    
-    console.log('Values:', {storeId, managerId, day, maxDuration});
-    
-    if (!storeId || !managerId || !day) {
-        alert('Vul alle velden in');
-        return;
-    }
-    
-    try {
-        console.log('Sending request...');
-        const res = await fetch('/api/generate_tasks.php', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                store_id: storeId,    // Voeg store_id toe
-                manager: managerId,   // Behoud voor backwards compatibility
-                day: day, 
-                maxDuration: parseInt(maxDuration)
-            })
-        });
-        
-        console.log('Response status:', res.status);
-        const data = await res.json();
-        console.log('Response data:', data);
-        
-        if (data.error) {
-            alert('Fout: ' + data.error);
-            return;
-        }
-        
-        currentTasks = data.tasks;
-        displayGeneratedTasks(data.tasks, data.total_time);
-    } catch (e) {
-        console.error('Error:', e);
-        alert('Fout bij genereren taken: ' + e.message);
-    }
-}
+
 // Gegenereerde taken weergeven - MET WHATSAPP PREVIEW
 function displayGeneratedTasks(tasks, totalTime) {
     const container = document.getElementById('generated-tasks');
@@ -181,7 +138,7 @@ function generateWhatsAppPreview() {
     const day = document.getElementById('day').value;
     
     if (!currentTasks || currentTasks.length === 0) {
-        alert('Geen taken om preview van te maken');
+        showDangerAlert('Geen taken om preview van te maken');
         return;
     }
     
@@ -213,7 +170,7 @@ function copyWhatsAppMessage() {
     const previewTextarea = document.getElementById('whatsapp-preview');
     
     if (!previewTextarea.value) {
-        alert('Geen bericht om te kopiëren');
+        showDangerAlert('Geen bericht om te kopiëren');
         return;
     }
     
@@ -268,7 +225,7 @@ async function saveTaskSet() {
     const storeId = document.getElementById('storeSelect').value;
 
     if (!manager || !day || !storeId) {
-        alert('Vul alle velden in');
+        showDangerAlert('Vul alle velden in');
         return;
     }
     
@@ -290,7 +247,7 @@ async function saveTaskSet() {
             return;
         }
         
-        alert('✅ Taken succesvol opgeslagen voor bijhouden!');
+        showDangerAlert('✅ Taken succesvol opgeslagen voor bijhouden!');
         
         // Reset form
         document.getElementById('managerSelect').value = '';
@@ -447,35 +404,45 @@ function populateStoreFilter(taskSets) {
 // Alle task sets laden voor bijhouden
 async function loadAllTaskSetsForTracking() {
     const container = document.getElementById('task-tracking-list');
-    
+
     if (!container) {
         console.error('task-tracking-list element not found in DOM');
         return;
     }
-    
+
     try {
         console.log('Loading all task sets...');
-        const res = await fetch('/api/get_all_task_sets.php');
-        
+        console.log('User role:', userRole);
+        console.log('Store ID:', typeof store_id !== 'undefined' ? store_id : 'undefined');
+
+        // For store managers, add store filter parameter
+        let url = '/api/get_all_task_sets.php';
+        if (isStoremanager && typeof store_id !== 'undefined' && store_id) {
+            url += `?store_id=${store_id}`;
+            console.log('Adding store filter for store manager:', url);
+        }
+
+        const res = await fetch(url);
+
         if (!res.ok) {
             throw new Error(`HTTP error! status: ${res.status}`);
         }
-        
+
         const text = await res.text();
         console.log('Response text:', text);
-        
+
         if (!text) {
             throw new Error('Empty response from server');
         }
-        
+
         const data = JSON.parse(text);
         console.log('Parsed data:', data);
-        
+
         if (!data.success) {
             container.innerHTML = '<div class="text-center text-gray-500 py-8"><i class="fas fa-clipboard-list text-4xl mb-4"></i><p>Geen opgeslagen taken gevonden.</p><p class="text-sm text-red-500">' + (data.error || 'Onbekende fout') + '</p></div>';
             return;
         }
-        
+
         if (!data.task_sets || data.task_sets.length === 0) {
             container.innerHTML = '<div class="text-center text-gray-500 py-8"><i class="fas fa-clipboard-list text-4xl mb-4"></i><p>Geen opgeslagen taken gevonden.</p></div>';
             // Clear search data
@@ -483,18 +450,18 @@ async function loadAllTaskSetsForTracking() {
             filteredTaskSetsData = [];
             return;
         }
-        
+
         // Store data globally for search functionality
         allTaskSetsData = data.task_sets;
         filteredTaskSetsData = [...allTaskSetsData]; // Copy all data initially
-        
-        // Populate store filter for non-managers
-        if (!isManager) {
+
+        // Populate store filter for non-managers (but not for store managers since they only see their store)
+        if (!isManager && !isStoremanager) {
             populateStoreFilter(allTaskSetsData);
         }
-        
+
         renderAllTaskSets(filteredTaskSetsData);
-        
+
     } catch (e) {
         console.error('Error loading task sets:', e);
         if (container) {
@@ -667,7 +634,6 @@ async function loadTaskSetDetails(taskSetId) {
 }
 
 // Render task set details
-// Render task set details - AANGEPASTE VERSIE
 function renderTaskSetDetails(taskSetId, taskSet, tasks, completions) {
     const container = document.getElementById(`task-set-content-${taskSetId}`);
     if (!container) return;
@@ -857,9 +823,10 @@ async function submitTaskSet(taskSetId) {
     if (!confirm('Weet je zeker dat je deze dag wilt indienen? Dit kan niet ongedaan worden gemaakt.')) {
         return;
     }
-    
+
     try {
-        const response = await fetch('/api/submit_task_set.php', {
+        // First, get incomplete tasks from database
+        const checkResponse = await fetch('/api/get_incomplete_tasks.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -868,13 +835,85 @@ async function submitTaskSet(taskSetId) {
                 task_set_id: parseInt(taskSetId)
             })
         });
-        
-        const data = await response.json();
-        
+
+        if (!checkResponse.ok) {
+            throw new Error(`HTTP error! status: ${checkResponse.status}`);
+        }
+
+        const checkData = await checkResponse.json();
+
+        if (!checkData.success) {
+            throw new Error(checkData.error || 'Failed to get incomplete tasks');
+        }
+
+        const incompleteTasks = checkData.incomplete_tasks || [];
+        let incompleteReasons = {};
+
+        // If there are incomplete tasks, ask for reasons
+        console.log('Incomplete tasks detected from DB:', incompleteTasks);
+        if (incompleteTasks.length > 0) {
+            for (const task of incompleteTasks) {
+                const reason = prompt(`Waarom is de taak "${task.name}" niet voltooid?\n\nGeef een korte uitleg:`);
+
+                if (reason === null) {
+                    // User cancelled
+                    return;
+                }
+
+                if (!reason.trim()) {
+                    showNotification('❌ Je moet een reden opgeven voor elke onvoltooide taak', 'error');
+                    return;
+                }
+
+                incompleteReasons[task.id] = reason.trim();
+            }
+        }
+
+        // Now submit the task set
+        const response = await fetch('/api/submit_task_set.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                task_set_id: parseInt(taskSetId),
+                incomplete_reasons: incompleteReasons
+            })
+        });
+
+        // Check if response is ok first
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const responseText = await response.text();
+        console.log('Raw response:', responseText); // Debug log
+
+        let data;
+        try {
+            data = JSON.parse(responseText);
+        } catch (parseError) {
+            console.error('JSON parse error:', parseError);
+            console.error('Response text:', responseText);
+            throw new Error('Server returned invalid JSON response');
+        }
+
         if (data.success) {
-            showNotification('✅ Taken succesvol ingediend!', 'success');
-            location.reload();            
-            
+            let message = '✅ Taken succesvol ingediend!';
+
+            // Voeg e-mail status toe aan melding
+            if (data.mail_sent) {
+                message += ` E-mail verzonden naar management (${data.completion_rate}% voltooid)`;
+                 showPage('track')
+                if (data.attachments && data.attachments > 0) {
+                    message += ` met ${data.attachments} foto's`;
+                }
+            } else if (data.mail_error) {
+                message += ` (E-mail kon niet worden verzonden: ${data.mail_error})`;
+            }
+
+            showNotification(message, 'success');
+
             // Update de UI direct zonder reload
             const taskSetElement = document.querySelector(`[data-task-set-id="${taskSetId}"]`);
             if (taskSetElement) {
@@ -893,7 +932,11 @@ async function submitTaskSet(taskSetId) {
         }
     } catch (e) {
         console.error('Error:', e);
-        showNotification('❌ Fout bij indienen: ' + e.message, 'error');
+        if (e.message.includes('JSON')) {
+            showNotification('❌ Server fout: Ongeldige response ontvangen. Controleer de server logs.', 'error');
+        } else {
+            showNotification('❌ Fout bij indienen: ' + e.message, 'error');
+        }
     }
 }
 
@@ -963,14 +1006,14 @@ async function deleteAllTaskSets() {
             throw new Error(data.error || 'Onbekende fout bij verwijderen');
         }
         
-        alert('✅ Alle schoonmaakdagen zijn succesvol verwijderd!');
+        showDangerAlert('✅ Alle schoonmaakdagen zijn succesvol verwijderd!');
         
         // Herlaad de pagina om de lege staat te tonen
         loadAllTaskSetsForTracking();
         
     } catch (e) {
         console.error('Error deleting all task sets:', e);
-        alert('❌ Fout bij verwijderen van schoonmaakdagen:\n' + e.message);
+        showDangerAlert('❌ Fout bij verwijderen van schoonmaakdagen:\n' + e.message);
     }
 }
 
@@ -1029,19 +1072,19 @@ function displayTasks(tasks) {
         '2-wekelijks': document.getElementById('biweekly-tasks'),
         'maandelijks': document.getElementById('monthly-tasks')
     };
-    
+
     const counts = {
         'dagelijks': 0,
         'wekelijks': 0,
         '2-wekelijks': 0,
         'maandelijks': 0
     };
-    
+
     // Leeg alle containers
     Object.values(containers).forEach(container => {
         if (container) container.innerHTML = '';
     });
-    
+
     if (!tasks || tasks.length === 0) {
         Object.values(containers).forEach(container => {
             if (container) {
@@ -1050,42 +1093,59 @@ function displayTasks(tasks) {
         });
         return;
     }
-    
+
     // Verdeel taken per frequentie
     tasks.forEach((task, index) => {
         const container = containers[task.frequency];
         if (!container) return;
-        
+
         counts[task.frequency]++;
-        
-        const requiredBadge = task.required == 1 ? 
-            '<span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Verplicht</span>' : 
+
+        const requiredBadge = task.required == 1 ?
+            '<span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">Verplicht</span>' :
             '<span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full">Optioneel</span>';
-        
+
+        const bkBadge = task.is_bk == 1 ?
+            '<span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full"><i class="fas fa-hamburger m-auto mr-auto flex justify-center text-orange-500 mr-1"></i></span>' : '';
+
         const deleteBtnHtml = isManager ? '' : `
             <button onclick="removeTask(${index})" class="text-red-500 hover:text-red-700 hover:bg-red-50 p-2 rounded-lg transition-colors">
                 <i class="fas fa-trash"></i>
             </button>
         `;
-        
+
+        const bkToggleHtml = isManager ? '' : `
+            <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="checkbox"
+                       ${task.is_bk == 1 ? 'checked' : ''}
+                       onchange="toggleTaskBK(${index}, this.checked)"
+                       class="w-4 h-4 text-orange-600 bg-gray-100 border-gray-300 rounded focus:ring-orange-500">
+                <span class="text-sm text-gray-600">BK</span>
+            </label>
+        `;
+
         const taskHtml = `
         <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-gray-200 hover:bg-gray-50 transition-colors">
             <div class="flex-1">
                 <div class="flex items-center space-x-3 mb-2">
                     <span class="font-medium text-gray-800">${task.name}</span>
                     ${requiredBadge}
+                    ${bkBadge}
                 </div>
                 <div class="text-sm text-gray-600">
                     <i class="fas fa-clock mr-1"></i>${task.time} min
                 </div>
             </div>
-            ${deleteBtnHtml}
+            <div class="flex items-center space-x-3">
+                ${bkToggleHtml}
+                ${deleteBtnHtml}
+            </div>
         </div>
         `;
-        
+
         container.innerHTML += taskHtml;
     });
-    
+
     // Update counters
     document.getElementById('daily-count').textContent = counts['dagelijks'];
     document.getElementById('weekly-count').textContent = counts['wekelijks'];
@@ -1103,20 +1163,42 @@ function updateTask(index, field, value) {
 }
 
 // Remove task
+// Toggle BK status for task
+async function toggleTaskBK(index, isBK) {
+    if (!allTasks[index]) return;
+
+    const oldValue = allTasks[index].is_bk;
+    allTasks[index].is_bk = isBK ? 1 : 0;
+
+    // Update display direct
+    displayTasks(allTasks);
+
+    // Sla wijzigingen op naar database
+    try {
+        await saveAllTasks();
+        showNotification(isBK ? '✅ Taak gemarkeerd als BK!' : '✅ BK markering verwijderd!', 'success');
+    } catch (e) {
+        // Bij fout, herstel oude waarde
+        allTasks[index].is_bk = oldValue;
+        displayTasks(allTasks);
+        showNotification('❌ Fout bij bijwerken: ' + e.message, 'error');
+    }
+}
+
 // Remove task - AANGEPASTE VERSIE
 async function removeTask(index) {
     if (!confirm('Weet je zeker dat je deze taak wilt verwijderen?')) {
         return;
     }
-    
+
     const taskToRemove = allTasks[index];
-    
+
     // Verwijder uit lokale array
     allTasks.splice(index, 1);
-    
+
     // Update display direct
     displayTasks(allTasks);
-    
+
     // Sla wijzigingen op naar database
     try {
         await saveAllTasks();
@@ -1193,55 +1275,61 @@ function addNewTask() {
     const taskTime = parseInt(document.getElementById('task-time').value);
     const taskFrequency = document.getElementById('task-frequency').value;
     const taskRequired = document.getElementById('task-required').checked;
-    
+    const BkTask = document.getElementById('task-burgerkitchen').checked;
+
     if (!taskName) {
-        alert('Vul een taaknaam in');
+        showDangerAlert('Vul een taaknaam in');
         return;
     }
-    
+
     const newTask = {
         name: taskName,
         time: taskTime,
         frequency: taskFrequency,
-        required: taskRequired ? 1 : 0
+        required: taskRequired ? 1 : 0,
+        is_bk: BkTask ? 1 : 0   // ✅ matcht met PHP
     };
-    
+
     allTasks.push(newTask);
     displayTasks(allTasks);
-    
+
     // Reset form
     document.getElementById('new-task').value = '';
     document.getElementById('task-time').value = 5;
     document.getElementById('task-frequency').value = 'dagelijks';
     document.getElementById('task-required').checked = false;
-    
+    document.getElementById('task-burgerkitchen').checked = false;
+
     // Save to backend
     saveAllTasks();
 }
 // Save all tasks
 async function saveAllTasks() {
     if (!allTasks || allTasks.length === 0) {
-        alert('Geen taken om op te slaan');
+        showDangerAlert('Geen taken om op te slaan');
         return;
     }
-    
+
     try {
         const res = await fetch('/api/save_tasks.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({tasks: allTasks})
+            body: JSON.stringify({
+                tasks: allTasks,
+                bk: true
+            })
         });
-        
+
         const data = await res.json();
-        
+
         if (!data.success) {
             console.log('Fout bij opslaan: ' + data.error);
             return;
         }
-        
-        alert('✅ Taken succesvol opgeslagen!');
+
+        showDangerAlert('✅ Taken succesvol opgeslagen!');
         loadTasks(); // Herlaad taken
-        
+
     } catch (e) {
         console.log('Fout bij opslaan: ' + e.message);
     }
@@ -1382,7 +1470,7 @@ function confirmReplaceTask() {
     const select = document.getElementById('replacementTaskSelect');
     const newTaskId = parseInt(select.value);
     if (!newTaskId) {
-        alert('Selecteer een taak om te vervangen');
+        showDangerAlert('Selecteer een taak om te vervangen');
         return;
     }
     
@@ -1399,7 +1487,7 @@ function confirmReplaceTask() {
     .then(res => res.json())
     .then(data => {
         if (data.success) {
-            alert('Taak succesvol vervangen!');
+            showDangerAlert('Taak succesvol vervangen!');
             closeReplaceTaskModal();
             // Herlaad takenlijst (pas aan naar jouw functie)
             loadTaskSetDetails(replaceModalTaskSetId);
@@ -1407,43 +1495,59 @@ function confirmReplaceTask() {
             console.log('Fout: ' + data.error);
         }
     })
-    .catch(() => alert('Fout bij verbinden met server'));
+    .catch(() => showDangerAlert('Fout bij verbinden met server'));
 }
 
 let stores = [];
 let managersByStore = {};
 
 // Laad winkels en managers bij pagina laden
-async function loadStoresAndManagers() {
-  try {
-    const res = await fetch('/api/api_get_stores_and_managers.php');
-    const data = await res.json();
-    if (data.error) {
-      console.log('Fout bij laden winkels: ' + data.error);
-      return;
-    }
-    stores = data.stores || [];
-    managersByStore = data.managersByStore || {};
-
-    const storeSelect = document.getElementById('storeSelect');
-    storeSelect.innerHTML = '<option value="">Selecteer winkel</option>';
-    stores.forEach(store => {
-      storeSelect.innerHTML += `<option value="${store.id}">${store.name}</option>`;
-    });
-
-    storeSelect.disabled = false;
-    storeSelect.addEventListener('change', onStoreChange);
-
-    // Manager dropdown init
-    const managerSelect = document.getElementById('managerSelect');
-    managerSelect.innerHTML = '<option value="">Selecteer winkel eerst</option>';
-    managerSelect.disabled = true;
-
-  } catch (err) {
-    console.log('Fout bij laden winkels: ' + err.message);
+function loadStoresAndManagers() {
+  let url = '/api/api_get_stores_and_managers.php';
+  if (isStoremanager && typeof window.store_id !== 'undefined' && window.store_id) {
+    url += `?store_id=${window.store_id}`; // store_id is Bussum winkel ID
   }
-}
 
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      if (data.error) {
+        console.log('Fout bij laden winkels: ' + data.error);
+        return;
+      }
+      stores = data.stores || [];
+      managersByStore = data.managersByStore || {};
+
+      const storeSelect = document.getElementById('storeSelect');
+
+      if (isStoremanager && typeof window.store_id !== 'undefined' && window.store_id) {
+        const managerStore = stores.find(store => store.id == window.store_id);
+        if (managerStore) {
+          storeSelect.innerHTML = `<option value="${managerStore.id}" selected>${managerStore.name}</option>`;
+          storeSelect.disabled = true;
+          // Managers dropdown vullen met managers van Bussum
+          setTimeout(() => {
+            storeSelect.value = managerStore.id;
+            onStoreChange.call(storeSelect);
+          }, 100);
+        }
+      } else {
+        storeSelect.innerHTML = '<option value="">Selecteer winkel</option>';
+        stores.forEach(store => {
+          storeSelect.innerHTML += `<option value="${store.id}">${store.name}</option>`;
+        });
+        storeSelect.disabled = false;
+        storeSelect.addEventListener('change', onStoreChange);
+      }
+
+      const managerSelect = document.getElementById('managerSelect');
+      managerSelect.innerHTML = '<option value="">Selecteer winkel eerst</option>';
+      managerSelect.disabled = true;
+    })
+    .catch(err => {
+      console.log('Fout bij laden winkels: ' + err.message);
+    });
+}
 function onStoreChange() {
   const storeId = this.value;
   const managerSelect = document.getElementById('managerSelect');
@@ -1467,14 +1571,21 @@ async function generateTasks() {
   console.log('Generate tasks clicked');
 
   const managerSelect = document.getElementById('managerSelect');
+  const storeSelect = document.getElementById('storeSelect').value;
   const manager = managerSelect.value;
   const day = document.getElementById('day').value;
   const maxDuration = document.getElementById('max-duration').value;
 
-  console.log('Values:', { manager, day, maxDuration });
+  console.log('Values:', { manager, day, maxDuration, storeSelect });
 
   if (!manager || !day) {
-    alert('Vul alle velden in');
+    showDangerAlert('Vul alle velden in');
+    return;
+  }
+
+  // For store managers, validate they can only generate for their own store
+  if (isStoremanager && window.store_id && storeSelect != window.store_id) {
+    showDangerAlert('Je kunt alleen taken genereren voor je eigen winkel');
     return;
   }
 
@@ -1483,7 +1594,7 @@ async function generateTasks() {
     const res = await fetch('/api/generate_tasks.php', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ manager, day, maxDuration: parseInt(maxDuration) })
+      body: JSON.stringify({ manager, day, maxDuration: parseInt(maxDuration), storeSelect })
     });
 
     console.log('Response status:', res.status);

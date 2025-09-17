@@ -19,15 +19,36 @@ try {
     $params = [];
     $sql = "SELECT * FROM task_sets ";
 
-    if ($userRole === 'manager') {
-        // Manager ziet alleen zijn eigen taken en winkel
+    if ($userRole === 'manager' || $userRole === 'storemanager') {
+        // Manager en storemanager zien alleen taken van hun winkel
         $stmtUser = $db->prepare("SELECT store_id FROM users WHERE id = ?");
         $stmtUser->execute([$userId]);
         $storeId = $stmtUser->fetchColumn();
 
-        $sql .= "WHERE manager = ? AND store_id = ? ORDER BY created_at DESC";
-        $params = [$userId, $storeId];
-    } else {
+        if (!$storeId) {
+            http_response_code(403);
+            echo json_encode(['success' => false, 'error' => 'Geen winkel toegewezen']);
+            exit;
+        }
+
+        $sql .= "WHERE store_id = ? ORDER BY created_at DESC";
+        $params = [$storeId];
+    }  elseif ($userRole === 'regiomanager') {
+    // Regiomanager ziet taken van alle winkels in zijn regio
+    $stmtUser = $db->prepare("SELECT region_id FROM users WHERE id = ?");
+    $stmtUser->execute([$userId]);
+    $regionId = $stmtUser->fetchColumn();
+
+    if (!$regionId) {
+        http_response_code(403);
+        echo json_encode(['success' => false, 'error' => 'Geen regio toegewezen']);
+        exit;
+    }
+
+    // Gebruik region_stores als autoritatieve koppeltabel tussen regio en winkels
+    $sql .= "WHERE store_id IN (SELECT store_id FROM region_stores WHERE region_id = ?) ORDER BY created_at DESC";
+    $params = [$regionId];
+} elseif ($userRole === 'admin' || $userRole === 'developer') {
         // Admin kan filteren op winkel via GET param
         if (isset($_GET['store_id']) && is_numeric($_GET['store_id'])) {
             $storeId = (int)$_GET['store_id'];
@@ -36,6 +57,11 @@ try {
         } else {
             $sql .= "ORDER BY created_at DESC";
         }
+    } else {
+        // Onbekende rol
+        http_response_code(403);
+        echo json_encode(['success' => false, 'error' => 'Onvoldoende rechten ', 'user_role' => $userRole]);
+        exit;
     }
 
     $stmt = $db->prepare($sql);

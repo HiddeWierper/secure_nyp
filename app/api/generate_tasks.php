@@ -33,8 +33,9 @@ $data = json_decode($input, true);
 
 $manager = $data['manager'] ?? '';
 $day = $data['day'] ?? '';
-$storeId = $data['store_id'] ?? null; // Nieuwe parameter voor winkel selectie
-$maxDuration = isset($data['maxDuration']) ? (int)$data['maxDuration'] : 90; // standaard 90 min
+$storeId = $data['storeSelect'] ?? null;
+$maxDuration = isset($data['maxDuration']) ? (int)$data['maxDuration'] : 90;
+$includeBkTasks = isset($data['includeBkTasks']) ? (bool)$data['includeBkTasks'] : false; // NIEUW: BK taken checkbox
 
 if (empty($manager) || empty($day)) {
     echo json_encode(['error' => 'Manager en dag zijn verplicht']);
@@ -66,27 +67,35 @@ try {
         exit;
     }
 
-    // Controleer of de gebruiker toegang heeft tot de geselecteerde winkel
+    // Controleer toegang tot winkel (bestaande code blijft hetzelfde)
     $hasAccess = false;
-    
+
     if ($user['role'] === 'admin') {
-        // Admin heeft toegang tot alle winkels
+        $hasAccess = true;
+    } elseif ($user['role'] === 'developer') {
         $hasAccess = true;
     } elseif ($user['role'] === 'regiomanager') {
-        // Regiomanager heeft alleen toegang tot winkels in zijn regio
         if (!$user['region_id']) {
             http_response_code(403);
             echo json_encode(['error' => 'Regiomanager heeft geen regio toegewezen']);
             exit;
         }
-        
+
         $access_check = $db->prepare("
-            SELECT COUNT(*) 
-            FROM region_stores rs 
+            SELECT COUNT(*)
+            FROM region_stores rs
             WHERE rs.region_id = ? AND rs.store_id = ?
         ");
         $access_check->execute([$user['region_id'], $storeId]);
         $hasAccess = $access_check->fetchColumn() > 0;
+    } elseif ($user['role'] === 'storemanager') {
+        if (!$user['store_id']) {
+            http_response_code(403);
+            echo json_encode(['error' => 'Storemanager heeft geen winkel toegewezen']);
+            exit;
+        }
+
+        $hasAccess = ($user['store_id'] == $storeId);
     }
     
     if (!$hasAccess) {
@@ -95,85 +104,125 @@ try {
         exit;
     }
 
-    // Controleer of de geselecteerde winkel bestaat
-    $store_check = $db->prepare("SELECT name FROM stores WHERE id = ?");
+    // Controleer of de geselecteerde winkel bestaat en haal is_bk status op
+    $store_check = $db->prepare("SELECT name, is_bk FROM stores WHERE id = ?");
     $store_check->execute([$storeId]);
     $store = $store_check->fetch(PDO::FETCH_ASSOC);
-    
+
     if (!$store) {
         http_response_code(404);
         echo json_encode(['error' => 'Winkel niet gevonden']);
         exit;
     }
 
-    // Haal alle taken op
-    $stmt = $db->query("SELECT * FROM tasks");
+    // AANGEPAST: Haal taken op gebaseerd op winkel BK status
+    $taskQuery = "SELECT * FROM tasks";
+    if ($store['is_bk']) {
+        // Als winkel BK is, haal alle taken op (inclusief BK taken)
+        // Geen extra filter nodig
+    } else {
+        // Als winkel niet BK is, alleen niet-BK taken
+        $taskQuery .= " WHERE is_bk = 0";
+    }
+
+    $stmt = $db->query($taskQuery);
     $allTasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // Functie om te controleren of een taak recent is voltooid (door ELKE manager in DEZE winkel)
+    // Functie om te controleren of een taak recent is voltooid
     function isTaskRecentlyCompleted($db, $taskId, $frequency, $storeId) {
         if ($frequency === 'dagelijks') {
-            return false; // Dagelijkse taken zijn altijd beschikbaar
+            return false;
         }
-        
-        // Bepaal hoeveel dagen terug we moeten kijken
+
         $daysBack = match($frequency) {
             'wekelijks' => 7,
             '2-wekelijks' => 14,
             'maandelijks' => 30,
             default => 0
         };
-        
+
         if ($daysBack === 0) return false;
-        
-        // Zoek naar voltooide taken binnen de periode voor deze specifieke winkel
+
         $cutoffDate = date('Y-m-d H:i:s', strtotime("-{$daysBack} days"));
-        
+
         $stmt = $db->prepare("
-            SELECT COUNT(*) 
+            SELECT COUNT(*)
             FROM task_set_items tsi
             JOIN task_sets ts ON tsi.task_set_id = ts.id
-            WHERE tsi.task_id = :task_id 
-            AND tsi.completed = 1 
+            WHERE tsi.task_id = :task_id
+            AND tsi.completed = 1
             AND ts.store_id = :store_id
             AND ts.created_at >= :cutoff_date
         ");
-        
+
         $stmt->execute([
             ':task_id' => $taskId,
             ':store_id' => $storeId,
             ':cutoff_date' => $cutoffDate
         ]);
-        
+
         return $stmt->fetchColumn() > 0;
     }
 
-    // Filter taken op basis van frequentie en recent voltooide taken voor deze winkel
+    // Functie om te controleren of een taak is toegewezen maar nog niet voltooid (ongeacht wanneer)
+    function hasIncompleteTask($db, $taskId, $storeId) {
+        $stmt = $db->prepare("
+            SELECT COUNT(*)
+            FROM task_set_items tsi
+            JOIN task_sets ts ON tsi.task_set_id = ts.id
+            WHERE tsi.task_id = :task_id
+            AND tsi.completed = 0
+            AND ts.store_id = :store_id
+        ");
+
+        $stmt->execute([
+            ':task_id' => $taskId,
+            ':store_id' => $storeId
+        ]);
+
+        return $stmt->fetchColumn() > 0;
+    }
+
+    // Filter taken op basis van frequentie en recent voltooide taken
     $filteredTasks = [];
+    $priorityTasks = []; // Taken die zijn toegewezen maar nog niet voltooid krijgen prioriteit
+
     foreach ($allTasks as $task) {
-        if (!isTaskRecentlyCompleted($db, $task['id'], $task['frequency'], $storeId)) {
+        // Check eerst of er onvoltooide taken zijn - deze hebben altijd prioriteit
+        if (hasIncompleteTask($db, $task['id'], $storeId)) {
+            $filteredTasks[] = $task;
+            $priorityTasks[] = $task; // Onvoltooide taken krijgen altijd prioriteit
+        } elseif (!isTaskRecentlyCompleted($db, $task['id'], $task['frequency'], $storeId)) {
+            // Alleen als er geen onvoltooide taken zijn, kijk naar frequentie
             $filteredTasks[] = $task;
         }
     }
 
-    // Debug info (optioneel - verwijder in productie)
+    // Debug info met BK status
     $debugInfo = [];
     foreach ($allTasks as $task) {
         $isBlocked = isTaskRecentlyCompleted($db, $task['id'], $task['frequency'], $storeId);
+        $hasIncomplete = hasIncompleteTask($db, $task['id'], $storeId);
         $debugInfo[] = [
             'task' => $task['name'],
             'frequency' => $task['frequency'],
             'blocked' => $isBlocked,
+            'is_bk' => (bool)$task['is_bk'],
+            'has_incomplete' => $hasIncomplete, // NIEUW: of er onvoltooide taken zijn
+            'priority' => $hasIncomplete, // Prioriteit gebaseerd op onvoltooide taken
             'store_specific' => true
         ];
     }
 
-    // Voeg verplichte taken altijd toe (ook als ze recent zijn voltooid)
+    // Voeg verplichte taken altijd toe
     $requiredTasks = array_filter($allTasks, fn($t) => $t['required'] == 1);
 
-    // Voor optionele taken, gebruik gefilterde lijst
-    $optionalTasks = array_filter($filteredTasks, fn($t) => $t['required'] == 0);
-    shuffle($optionalTasks);
+    // Splits optionele taken in prioriteit en normale taken
+    $optionalPriorityTasks = array_filter($priorityTasks, fn($t) => $t['required'] == 0);
+    $optionalNormalTasks = array_filter($filteredTasks, fn($t) => $t['required'] == 0 && !in_array($t, $priorityTasks));
+
+    // Shuffle alleen de normale taken, prioriteit taken blijven vooraan
+    shuffle($optionalNormalTasks);
 
     $selectedTasks = [];
     $totalTime = 0;
@@ -185,8 +234,17 @@ try {
         $totalTime += $task['time'];
     }
 
-    // Voeg optionele taken toe tot max 6 taken of max tijd
-    foreach ($optionalTasks as $task) {
+    // Voeg eerst prioriteit taken toe (gisteren niet voltooid)
+    foreach ($optionalPriorityTasks as $task) {
+        if (count($selectedTasks) >= 6) break;
+        if ($totalTime + $task['time'] <= $maxDuration) {
+            $selectedTasks[] = $task;
+            $totalTime += $task['time'];
+        }
+    }
+
+    // Voeg daarna normale optionele taken toe tot max 6 taken of max tijd
+    foreach ($optionalNormalTasks as $task) {
         if (count($selectedTasks) >= 6) break;
         if ($totalTime + $task['time'] <= $maxDuration) {
             $selectedTasks[] = $task;
@@ -196,19 +254,38 @@ try {
 
     // Check minimum tijd, voeg kleine taken toe indien nodig
     if ($totalTime < $minTime) {
-        foreach ($optionalTasks as $task) {
+        // Probeer eerst prioriteit taken
+        foreach ($optionalPriorityTasks as $task) {
             if (!in_array($task, $selectedTasks) && $task['time'] <= 15 && $totalTime + $task['time'] <= $maxDuration) {
                 $selectedTasks[] = $task;
                 $totalTime += $task['time'];
                 break;
             }
         }
+
+        // Als nog steeds onder minimum, probeer normale taken
+        if ($totalTime < $minTime) {
+            foreach ($optionalNormalTasks as $task) {
+                if (!in_array($task, $selectedTasks) && $task['time'] <= 15 && $totalTime + $task['time'] <= $maxDuration) {
+                    $selectedTasks[] = $task;
+                    $totalTime += $task['time'];
+                    break;
+                }
+            }
+        }
     }
+
+    // NIEUW: Tel BK taken in de selectie
+    $bkTaskCount = count(array_filter($selectedTasks, fn($t) => $t['is_bk'] == 1));
+    $priorityTaskCount = count(array_filter($selectedTasks, fn($t) => in_array($t, $priorityTasks)));
 
     echo json_encode([
         'success' => true,
         'tasks' => $selectedTasks,
         'total_time' => $totalTime,
+        'bk_tasks_included' => $includeBkTasks, // NIEUW: of BK taken zijn meegenomen
+        'bk_task_count' => $bkTaskCount, // NIEUW: aantal BK taken in selectie
+        'priority_task_count' => $priorityTaskCount, // NIEUW: aantal prioriteit taken
         'store_info' => [
             'id' => $storeId,
             'name' => $store['name']
@@ -217,7 +294,7 @@ try {
             'role' => $user['role'],
             'region' => $user['region_name']
         ],
-        'debug' => $debugInfo // Verwijder deze regel in productie
+        'debug' => $debugInfo
     ]);
 } catch (PDOException $e) {
     http_response_code(500);

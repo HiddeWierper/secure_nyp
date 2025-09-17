@@ -62,6 +62,8 @@ if (!$token) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="https://nypschoonmaak.nl/assets/logo.webp">  
+
 
   <script>
     tailwind.config = {
@@ -354,7 +356,7 @@ if (!$token) {
   </style>
 </head>
 
-<body class="min-h-screen flex items-center justify-center p-4">
+<body class="overflow-hidden min-h-screen flex items-center justify-center p-4">
   <div class="w-full max-w-md">
     <div class="glass-card rounded-2xl p-6 sm:p-8">
       <!-- Logo/Header -->

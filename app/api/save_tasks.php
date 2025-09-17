@@ -26,14 +26,16 @@ try {
     // Verwijder alle taken
     $db->exec("DELETE FROM tasks");
 
-    $stmt = $db->prepare("INSERT INTO tasks (name, time, frequency, required) VALUES (:name, :time, :frequency, :required)");
+    $stmt = $db->prepare("INSERT INTO tasks (name, time, frequency, required, is_bk) 
+                        VALUES (:name, :time, :frequency, :required, :is_bk)");
 
     foreach ($data['tasks'] as $task) {
         $stmt->execute([
-            ':name' => $task['name'],
-            ':time' => $task['time'],
+            ':name'      => $task['name'],
+            ':time'      => $task['time'],
             ':frequency' => $task['frequency'],
-            ':required' => isset($task['required']) ? (int)$task['required'] : 0
+            ':required'  => isset($task['required']) ? (int)$task['required'] : 0,
+            ':is_bk'     => isset($task['is_bk']) ? (int)$task['is_bk'] : 0  // ✅ consistent!
         ]);
     }
 

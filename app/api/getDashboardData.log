@@ -1,0 +1,1365 @@
+[2025-08-11 21:09:47] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:09:47] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:09:47] DB: Connected to SQLite
+[2025-08-11 21:09:47] Query totalStores for region 1: 0
+[2025-08-11 21:09:47] Query totalManagers for region 1: 0
+[2025-08-11 21:09:47] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:09:47] Query completionRate: completed=0, total=0, rate=0%
+[2025-08-11 21:09:47] Query tasksPerStore: rows=0
+[2025-08-11 21:09:47] Query completionTrend (last 7 days submitted task_sets): rows=0
+[2025-08-11 21:09:47] RESPONSE: success=true with data sent
+[2025-08-11 21:11:55] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:11:55] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:11:55] DB: Connected to SQLite
+[2025-08-11 21:11:55] Query totalStores for region 1: 0
+[2025-08-11 21:11:55] Query totalManagers for region 1: 0
+[2025-08-11 21:11:55] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:11:55] Query completionRate: completed=0, total=0, rate=0%
+[2025-08-11 21:11:55] Query tasksPerStore: rows=0
+[2025-08-11 21:11:55] Query completionTrend (last 7 days submitted task_sets): rows=0
+[2025-08-11 21:11:55] RESPONSE: success=true with data sent
+[2025-08-11 21:15:13] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:15:13] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:15:13] DB: Connected to SQLite
+[2025-08-11 21:15:13] Query totalStores for region 1: 4
+[2025-08-11 21:15:13] Query totalManagers for region 1: 3
+[2025-08-11 21:15:13] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:15:13] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:15:13] Query tasksPerStore: rows=4
+[2025-08-11 21:15:13] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:15:13] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:15:13] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:15:13] RESPONSE: success=true with data sent
+[2025-08-11 21:18:45] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:18:45] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:18:45] DB: Connected to SQLite
+[2025-08-11 21:18:45] Query totalStores for region 1: 4
+[2025-08-11 21:18:45] Query totalManagers for region 1: 3
+[2025-08-11 21:18:45] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:18:45] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:18:45] Query tasksPerStore: rows=4
+[2025-08-11 21:18:45] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:18:45] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:18:45] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:18:45] RESPONSE: success=true with data sent
+[2025-08-11 21:18:47] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:18:47] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:18:47] DB: Connected to SQLite
+[2025-08-11 21:18:47] Query totalStores for region 1: 4
+[2025-08-11 21:18:47] Query totalManagers for region 1: 3
+[2025-08-11 21:18:47] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:18:47] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:18:47] Query tasksPerStore: rows=4
+[2025-08-11 21:18:47] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:18:47] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:18:47] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:18:47] RESPONSE: success=true with data sent
+[2025-08-11 21:19:16] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:19:16] Session user_role=regiomanager, region_id=not set
+[2025-08-11 21:19:16] AUTH ERROR: Region ID not found in session
+[2025-08-11 21:19:33] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:19:33] Session user_role=regiomanager, region_id=not set
+[2025-08-11 21:19:33] AUTH ERROR: Region ID not found in session
+[2025-08-11 21:20:08] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:20:08] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:20:08] DB: Connected to SQLite
+[2025-08-11 21:20:08] Query totalStores for region 1: 4
+[2025-08-11 21:20:08] Query totalManagers for region 1: 4
+[2025-08-11 21:20:08] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:20:08] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:20:08] Query tasksPerStore: rows=4
+[2025-08-11 21:20:08] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:20:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:20:08] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:20:08] RESPONSE: success=true with data sent
+[2025-08-11 21:20:38] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:20:38] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:20:38] DB: Connected to SQLite
+[2025-08-11 21:20:38] Query totalStores for region 1: 4
+[2025-08-11 21:20:38] Query totalManagers for region 1: 4
+[2025-08-11 21:20:38] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:20:38] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:20:38] Query tasksPerStore: rows=4
+[2025-08-11 21:20:38] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:20:38] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:20:38] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:20:38] RESPONSE: success=true with data sent
+[2025-08-11 21:21:06] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:21:06] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:21:06] DB: Connected to SQLite
+[2025-08-11 21:21:06] Query totalStores for region 1: 4
+[2025-08-11 21:21:06] Query totalManagers for region 1: 4
+[2025-08-11 21:21:06] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:21:06] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:21:06] Query tasksPerStore: rows=4
+[2025-08-11 21:21:06] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:21:06] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:21:06] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:21:06] RESPONSE: success=true with data sent
+[2025-08-11 21:24:05] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:24:05] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:24:05] DB: Connected to SQLite
+[2025-08-11 21:24:05] Query totalStores for region 1: 4
+[2025-08-11 21:24:05] Query totalManagers for region 1: 3
+[2025-08-11 21:24:05] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:24:05] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:24:05] Query tasksPerStore: rows=4
+[2025-08-11 21:24:05] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:24:05] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:24:05] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:24:05] RESPONSE: success=true with data sent
+[2025-08-11 21:24:06] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:24:06] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:24:06] DB: Connected to SQLite
+[2025-08-11 21:24:06] Query totalStores for region 1: 4
+[2025-08-11 21:24:06] Query totalManagers for region 1: 3
+[2025-08-11 21:24:06] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:24:06] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:24:06] Query tasksPerStore: rows=4
+[2025-08-11 21:24:06] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:24:06] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:24:06] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:24:06] RESPONSE: success=true with data sent
+[2025-08-11 21:24:27] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:24:27] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:24:27] DB: Connected to SQLite
+[2025-08-11 21:24:27] Query totalStores for region 1: 4
+[2025-08-11 21:24:27] Query totalManagers for region 1: 3
+[2025-08-11 21:24:27] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:24:27] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:24:27] Query tasksPerStore: rows=4
+[2025-08-11 21:24:27] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:24:27] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:24:27] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:24:27] RESPONSE: success=true with data sent
+[2025-08-11 21:29:03] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:29:03] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:29:03] DB: Connected to SQLite
+[2025-08-11 21:29:03] Query totalStores for region 1: 4
+[2025-08-11 21:29:03] Query totalManagers for region 1: 3
+[2025-08-11 21:29:03] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:29:03] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:29:03] Query tasksPerStore: rows=4
+[2025-08-11 21:29:03] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:29:03] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:29:03] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:29:03] RESPONSE: success=true with data sent
+[2025-08-11 21:29:55] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:29:55] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:29:55] DB: Connected to SQLite
+[2025-08-11 21:29:55] Query totalStores for region 1: 4
+[2025-08-11 21:29:55] Query totalManagers for region 1: 3
+[2025-08-11 21:29:55] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 21:29:55] Query completionRate: completed=10, total=51, rate=19.6%
+[2025-08-11 21:29:55] Query tasksPerStore: rows=4
+[2025-08-11 21:29:55] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:29:55] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":51},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:29:55] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:29:55] RESPONSE: success=true with data sent
+[2025-08-11 21:30:15] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:30:15] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:30:15] DB: Connected to SQLite
+[2025-08-11 21:30:15] Query totalStores for region 1: 4
+[2025-08-11 21:30:15] Query totalManagers for region 1: 3
+[2025-08-11 21:30:15] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:30:15] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:30:15] Query tasksPerStore: rows=4
+[2025-08-11 21:30:15] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:30:15] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:30:15] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:30:15] RESPONSE: success=true with data sent
+[2025-08-11 21:30:47] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:30:47] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:30:47] DB: Connected to SQLite
+[2025-08-11 21:30:47] Query totalStores for region 1: 4
+[2025-08-11 21:30:47] Query totalManagers for region 1: 3
+[2025-08-11 21:30:47] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:30:47] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:30:47] Query tasksPerStore: rows=4
+[2025-08-11 21:30:47] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:30:47] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:30:47] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:30:47] RESPONSE: success=true with data sent
+[2025-08-11 21:38:13] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:38:13] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:38:13] DB: Connected to SQLite
+[2025-08-11 21:38:13] Query totalStores for region 1: 4
+[2025-08-11 21:38:13] Query totalManagers for region 1: 3
+[2025-08-11 21:38:13] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:38:13] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:38:13] Query tasksPerStore: rows=4
+[2025-08-11 21:38:13] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:38:13] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:38:13] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:38:13] RESPONSE: success=true with data sent
+[2025-08-11 21:38:22] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:38:22] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:38:22] DB: Connected to SQLite
+[2025-08-11 21:38:22] Query totalStores for region 1: 4
+[2025-08-11 21:38:22] Query totalManagers for region 1: 3
+[2025-08-11 21:38:22] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:38:22] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:38:22] Query tasksPerStore: rows=4
+[2025-08-11 21:38:22] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:38:22] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:38:22] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:38:22] RESPONSE: success=true with data sent
+[2025-08-11 21:39:01] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:39:01] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:39:01] DB: Connected to SQLite
+[2025-08-11 21:39:01] Query totalStores for region 1: 4
+[2025-08-11 21:39:01] Query totalManagers for region 1: 3
+[2025-08-11 21:39:01] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:39:01] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:39:01] Query tasksPerStore: rows=4
+[2025-08-11 21:39:01] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:39:01] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:39:01] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:39:01] RESPONSE: success=true with data sent
+[2025-08-11 21:39:08] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:39:08] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:39:08] DB: Connected to SQLite
+[2025-08-11 21:39:08] Query totalStores for region 1: 4
+[2025-08-11 21:39:08] Query totalManagers for region 1: 3
+[2025-08-11 21:39:08] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:39:08] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:39:08] Query tasksPerStore: rows=4
+[2025-08-11 21:39:08] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:39:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:39:08] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:39:08] RESPONSE: success=true with data sent
+[2025-08-11 21:39:44] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:39:44] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:39:44] DB: Connected to SQLite
+[2025-08-11 21:39:44] Query totalStores for region 1: 4
+[2025-08-11 21:39:44] Query totalManagers for region 1: 3
+[2025-08-11 21:39:44] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:39:44] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:39:44] Query tasksPerStore: rows=4
+[2025-08-11 21:39:44] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:39:44] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:39:44] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:39:44] RESPONSE: success=true with data sent
+[2025-08-11 21:39:53] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:39:53] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:39:53] DB: Connected to SQLite
+[2025-08-11 21:39:53] Query totalStores for region 1: 4
+[2025-08-11 21:39:53] Query totalManagers for region 1: 3
+[2025-08-11 21:39:53] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:39:53] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:39:53] Query tasksPerStore: rows=4
+[2025-08-11 21:39:53] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:39:53] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:39:53] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:39:53] RESPONSE: success=true with data sent
+[2025-08-11 21:39:58] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:39:58] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:39:58] DB: Connected to SQLite
+[2025-08-11 21:39:58] Query totalStores for region 1: 4
+[2025-08-11 21:39:58] Query totalManagers for region 1: 3
+[2025-08-11 21:39:58] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:39:58] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:39:58] Query tasksPerStore: rows=4
+[2025-08-11 21:39:58] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:39:58] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:39:58] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:39:58] RESPONSE: success=true with data sent
+[2025-08-11 21:40:07] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:40:07] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:40:07] DB: Connected to SQLite
+[2025-08-11 21:40:07] Query totalStores for region 1: 4
+[2025-08-11 21:40:07] Query totalManagers for region 1: 3
+[2025-08-11 21:40:07] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:40:07] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:40:07] Query tasksPerStore: rows=4
+[2025-08-11 21:40:07] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:40:07] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:40:07] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:40:07] RESPONSE: success=true with data sent
+[2025-08-11 21:40:25] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:40:25] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:40:25] DB: Connected to SQLite
+[2025-08-11 21:40:25] Query totalStores for region 1: 4
+[2025-08-11 21:40:25] Query totalManagers for region 1: 3
+[2025-08-11 21:40:25] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:40:25] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:40:25] Query tasksPerStore: rows=4
+[2025-08-11 21:40:25] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:40:25] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:40:25] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:40:25] RESPONSE: success=true with data sent
+[2025-08-11 21:40:34] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:40:34] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:40:34] DB: Connected to SQLite
+[2025-08-11 21:40:34] Query totalStores for region 1: 4
+[2025-08-11 21:40:34] Query totalManagers for region 1: 3
+[2025-08-11 21:40:34] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:40:34] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:40:34] Query tasksPerStore: rows=4
+[2025-08-11 21:40:34] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:40:34] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:40:34] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:40:34] RESPONSE: success=true with data sent
+[2025-08-11 21:40:56] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:40:56] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:40:56] DB: Connected to SQLite
+[2025-08-11 21:40:56] Query totalStores for region 1: 4
+[2025-08-11 21:40:56] Query totalManagers for region 1: 3
+[2025-08-11 21:40:56] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:40:56] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:40:56] Query tasksPerStore: rows=4
+[2025-08-11 21:40:56] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:40:56] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:40:56] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:40:56] RESPONSE: success=true with data sent
+[2025-08-11 21:41:28] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:41:28] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:41:28] DB: Connected to SQLite
+[2025-08-11 21:41:28] Query totalStores for region 1: 4
+[2025-08-11 21:41:28] Query totalManagers for region 1: 3
+[2025-08-11 21:41:28] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:41:28] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:41:28] Query tasksPerStore: rows=4
+[2025-08-11 21:41:28] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:41:28] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:41:28] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:41:28] RESPONSE: success=true with data sent
+[2025-08-11 21:41:34] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:41:34] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:41:34] DB: Connected to SQLite
+[2025-08-11 21:41:34] Query totalStores for region 1: 4
+[2025-08-11 21:41:34] Query totalManagers for region 1: 3
+[2025-08-11 21:41:34] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:41:34] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:41:34] Query tasksPerStore: rows=4
+[2025-08-11 21:41:34] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:41:34] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:41:34] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:41:34] RESPONSE: success=true with data sent
+[2025-08-11 21:42:14] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:42:14] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:42:14] DB: Connected to SQLite
+[2025-08-11 21:42:14] Query totalStores for region 1: 4
+[2025-08-11 21:42:14] Query totalManagers for region 1: 3
+[2025-08-11 21:42:14] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:42:14] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:42:14] Query tasksPerStore: rows=4
+[2025-08-11 21:42:14] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:42:14] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:42:14] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:42:14] RESPONSE: success=true with data sent
+[2025-08-11 21:42:48] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:42:48] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:42:48] DB: Connected to SQLite
+[2025-08-11 21:42:48] Query totalStores for region 1: 4
+[2025-08-11 21:42:48] Query totalManagers for region 1: 3
+[2025-08-11 21:42:48] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:42:48] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:42:48] Query tasksPerStore: rows=4
+[2025-08-11 21:42:48] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:42:48] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:42:48] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:42:48] RESPONSE: success=true with data sent
+[2025-08-11 21:43:40] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:43:40] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:43:40] DB: Connected to SQLite
+[2025-08-11 21:43:40] Query totalStores for region 1: 4
+[2025-08-11 21:43:40] Query totalManagers for region 1: 3
+[2025-08-11 21:43:40] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:43:40] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:43:40] Query tasksPerStore: rows=4
+[2025-08-11 21:43:40] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:43:40] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:43:40] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:43:40] RESPONSE: success=true with data sent
+[2025-08-11 21:43:44] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:43:44] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:43:44] DB: Connected to SQLite
+[2025-08-11 21:43:44] Query totalStores for region 1: 4
+[2025-08-11 21:43:44] Query totalManagers for region 1: 3
+[2025-08-11 21:43:44] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:43:44] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:43:44] Query tasksPerStore: rows=4
+[2025-08-11 21:43:44] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:43:44] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:43:44] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:43:44] RESPONSE: success=true with data sent
+[2025-08-11 21:53:18] === get_dashboard_data.php CALLED ===
+[2025-08-11 21:53:18] Session user_role=regiomanager, region_id=1
+[2025-08-11 21:53:18] DB: Connected to SQLite
+[2025-08-11 21:53:18] Query totalStores for region 1: 4
+[2025-08-11 21:53:18] Query totalManagers for region 1: 3
+[2025-08-11 21:53:18] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 21:53:18] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 21:53:18] Query tasksPerStore: rows=4
+[2025-08-11 21:53:18] Query completionTrend (last 7 days): rows=1
+[2025-08-11 21:53:18] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 21:53:18] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 21:53:18] RESPONSE: success=true with data sent
+[2025-08-11 22:00:20] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:00:20] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:00:20] DB: Connected to SQLite
+[2025-08-11 22:00:20] Query totalStores for region 1: 4
+[2025-08-11 22:00:20] Query totalManagers for region 1: 3
+[2025-08-11 22:00:20] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:00:20] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:00:20] Query tasksPerStore: rows=4
+[2025-08-11 22:00:20] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:00:20] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:00:20] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:00:20] RESPONSE: success=true with data sent
+[2025-08-11 22:04:10] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:04:10] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:04:10] DB: Connected to SQLite
+[2025-08-11 22:04:10] Query totalStores for region 1: 4
+[2025-08-11 22:04:10] Query totalManagers for region 1: 3
+[2025-08-11 22:04:10] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:04:10] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:04:10] Query tasksPerStore: rows=4
+[2025-08-11 22:04:10] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:04:10] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:04:10] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:04:10] RESPONSE: success=true with data sent
+[2025-08-11 22:04:51] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:04:51] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:04:51] DB: Connected to SQLite
+[2025-08-11 22:04:51] Query totalStores for region 1: 4
+[2025-08-11 22:04:51] Query totalManagers for region 1: 3
+[2025-08-11 22:04:51] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:04:51] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:04:51] Query tasksPerStore: rows=4
+[2025-08-11 22:04:51] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:04:51] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:04:51] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:04:51] RESPONSE: success=true with data sent
+[2025-08-11 22:16:51] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:16:51] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:16:51] DB: Connected to SQLite
+[2025-08-11 22:16:51] Query totalStores for region 1: 4
+[2025-08-11 22:16:51] Query totalManagers for region 1: 3
+[2025-08-11 22:16:51] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:16:51] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:16:51] Query tasksPerStore: rows=4
+[2025-08-11 22:16:51] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:16:51] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:16:51] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:16:51] RESPONSE: success=true with data sent
+[2025-08-11 22:20:17] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:20:17] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:20:17] DB: Connected to SQLite
+[2025-08-11 22:20:17] Query totalStores for region 1: 4
+[2025-08-11 22:20:17] Query totalManagers for region 1: 3
+[2025-08-11 22:20:17] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:20:17] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:20:17] Query tasksPerStore: rows=4
+[2025-08-11 22:20:17] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:20:17] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:20:17] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:20:17] RESPONSE: success=true with data sent
+[2025-08-11 22:49:38] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:49:38] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:49:38] DB: Connected to SQLite
+[2025-08-11 22:49:38] Query totalStores for region 1: 4
+[2025-08-11 22:49:38] Query totalManagers for region 1: 3
+[2025-08-11 22:49:38] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:49:38] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:49:38] Query tasksPerStore: rows=4
+[2025-08-11 22:49:38] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:49:38] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:49:38] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:49:38] RESPONSE: success=true with data sent
+[2025-08-11 22:50:07] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:50:07] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:50:07] DB: Connected to SQLite
+[2025-08-11 22:50:07] Query totalStores for region 1: 4
+[2025-08-11 22:50:07] Query totalManagers for region 1: 3
+[2025-08-11 22:50:07] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:50:07] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:50:07] Query tasksPerStore: rows=4
+[2025-08-11 22:50:07] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:50:07] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:50:07] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:50:07] RESPONSE: success=true with data sent
+[2025-08-11 22:50:13] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:50:13] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:50:13] DB: Connected to SQLite
+[2025-08-11 22:50:13] Query totalStores for region 1: 4
+[2025-08-11 22:50:13] Query totalManagers for region 1: 3
+[2025-08-11 22:50:13] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:50:13] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:50:13] Query tasksPerStore: rows=4
+[2025-08-11 22:50:13] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:50:13] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:50:13] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:50:13] RESPONSE: success=true with data sent
+[2025-08-11 22:56:54] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:56:54] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:56:54] DB: Connected to SQLite
+[2025-08-11 22:56:54] Query totalStores for region 1: 4
+[2025-08-11 22:56:54] Query totalManagers for region 1: 3
+[2025-08-11 22:56:54] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:56:54] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:56:54] Query tasksPerStore: rows=4
+[2025-08-11 22:56:54] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:56:54] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:56:54] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:56:54] RESPONSE: success=true with data sent
+[2025-08-11 22:57:08] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:57:08] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:57:08] DB: Connected to SQLite
+[2025-08-11 22:57:08] Query totalStores for region 1: 4
+[2025-08-11 22:57:08] Query totalManagers for region 1: 3
+[2025-08-11 22:57:08] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-11 22:57:08] Query completionRate: completed=10, total=58, rate=17.2%
+[2025-08-11 22:57:08] Query tasksPerStore: rows=4
+[2025-08-11 22:57:08] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:57:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":58},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:57:08] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:57:08] RESPONSE: success=true with data sent
+[2025-08-11 22:57:59] === get_dashboard_data.php CALLED ===
+[2025-08-11 22:57:59] Session user_role=regiomanager, region_id=1
+[2025-08-11 22:57:59] DB: Connected to SQLite
+[2025-08-11 22:57:59] Query totalStores for region 1: 4
+[2025-08-11 22:57:59] Query totalManagers for region 1: 3
+[2025-08-11 22:57:59] Query activeTasks (unsubmitted task_sets) for region 1: 2
+[2025-08-11 22:57:59] Query completionRate: completed=10, total=64, rate=15.6%
+[2025-08-11 22:57:59] Query tasksPerStore: rows=4
+[2025-08-11 22:57:59] Query completionTrend (last 7 days): rows=1
+[2025-08-11 22:57:59] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":64},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 22:57:59] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 22:57:59] RESPONSE: success=true with data sent
+[2025-08-11 23:00:43] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:00:43] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:00:43] DB: Connected to SQLite
+[2025-08-11 23:00:43] Query totalStores for region 1: 4
+[2025-08-11 23:00:43] Query totalManagers for region 1: 4
+[2025-08-11 23:00:43] Query activeTasks (unsubmitted task_sets) for region 1: 2
+[2025-08-11 23:00:43] Query completionRate: completed=10, total=64, rate=15.6%
+[2025-08-11 23:00:43] Query tasksPerStore: rows=4
+[2025-08-11 23:00:43] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:00:43] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":64},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-11 23:00:43] completionTrend sample=[{"date":"2025-08-11","completed":10,"total":51}]
+[2025-08-11 23:00:43] RESPONSE: success=true with data sent
+[2025-08-11 23:03:17] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:03:17] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:03:17] DB: Connected to SQLite
+[2025-08-11 23:03:17] Query totalStores for region 1: 4
+[2025-08-11 23:03:17] Query totalManagers for region 1: 4
+[2025-08-11 23:03:17] Query activeTasks (unsubmitted task_sets) for region 1: 2
+[2025-08-11 23:03:17] Query completionRate: completed=12, total=71, rate=16.9%
+[2025-08-11 23:03:17] Query tasksPerStore: rows=4
+[2025-08-11 23:03:17] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:03:17] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":64},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:03:17] completionTrend sample=[{"date":"2025-08-11","completed":12,"total":58}]
+[2025-08-11 23:03:17] RESPONSE: success=true with data sent
+[2025-08-11 23:03:27] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:03:27] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:03:27] DB: Connected to SQLite
+[2025-08-11 23:03:27] Query totalStores for region 1: 4
+[2025-08-11 23:03:27] Query totalManagers for region 1: 4
+[2025-08-11 23:03:27] Query activeTasks (unsubmitted task_sets) for region 1: 2
+[2025-08-11 23:03:27] Query completionRate: completed=12, total=71, rate=16.9%
+[2025-08-11 23:03:27] Query tasksPerStore: rows=4
+[2025-08-11 23:03:27] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:03:27] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":64},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:03:27] completionTrend sample=[{"date":"2025-08-11","completed":12,"total":58}]
+[2025-08-11 23:03:27] RESPONSE: success=true with data sent
+[2025-08-11 23:03:56] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:03:56] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:03:56] DB: Connected to SQLite
+[2025-08-11 23:03:56] Query totalStores for region 1: 4
+[2025-08-11 23:03:56] Query totalManagers for region 1: 4
+[2025-08-11 23:03:56] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 23:03:56] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-11 23:03:56] Query tasksPerStore: rows=4
+[2025-08-11 23:03:56] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:03:56] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:03:56] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-11 23:03:56] RESPONSE: success=true with data sent
+[2025-08-11 23:15:23] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:15:23] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:15:23] DB: Connected to SQLite
+[2025-08-11 23:15:23] Query totalStores for region 1: 4
+[2025-08-11 23:15:23] Query totalManagers for region 1: 4
+[2025-08-11 23:15:23] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 23:15:23] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-11 23:15:23] Query tasksPerStore: rows=4
+[2025-08-11 23:15:23] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:15:23] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:15:23] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-11 23:15:23] RESPONSE: success=true with data sent
+[2025-08-11 23:16:01] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:16:01] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:16:01] DB: Connected to SQLite
+[2025-08-11 23:16:01] Query totalStores for region 1: 4
+[2025-08-11 23:16:01] Query totalManagers for region 1: 4
+[2025-08-11 23:16:01] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 23:16:01] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-11 23:16:01] Query tasksPerStore: rows=4
+[2025-08-11 23:16:01] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:16:01] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:16:01] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-11 23:16:01] RESPONSE: success=true with data sent
+[2025-08-11 23:18:08] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:18:08] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:18:08] DB: Connected to SQLite
+[2025-08-11 23:18:08] Query totalStores for region 1: 4
+[2025-08-11 23:18:08] Query totalManagers for region 1: 4
+[2025-08-11 23:18:08] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 23:18:08] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-11 23:18:08] Query tasksPerStore: rows=4
+[2025-08-11 23:18:08] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:18:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:18:08] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-11 23:18:08] RESPONSE: success=true with data sent
+[2025-08-11 23:59:20] === get_dashboard_data.php CALLED ===
+[2025-08-11 23:59:20] Session user_role=regiomanager, region_id=1
+[2025-08-11 23:59:20] DB: Connected to SQLite
+[2025-08-11 23:59:20] Query totalStores for region 1: 4
+[2025-08-11 23:59:20] Query totalManagers for region 1: 4
+[2025-08-11 23:59:20] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-11 23:59:20] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-11 23:59:20] Query tasksPerStore: rows=4
+[2025-08-11 23:59:20] Query completionTrend (last 7 days): rows=1
+[2025-08-11 23:59:20] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-11 23:59:20] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-11 23:59:20] RESPONSE: success=true with data sent
+[2025-08-12 00:03:08] === get_dashboard_data.php CALLED ===
+[2025-08-12 00:03:08] Session user_role=regiomanager, region_id=1
+[2025-08-12 00:03:08] DB: Connected to SQLite
+[2025-08-12 00:03:08] Query totalStores for region 1: 4
+[2025-08-12 00:03:08] Query totalManagers for region 1: 4
+[2025-08-12 00:03:08] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-12 00:03:08] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-12 00:03:08] Query tasksPerStore: rows=4
+[2025-08-12 00:03:08] Query completionTrend (last 7 days): rows=1
+[2025-08-12 00:03:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 00:03:08] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 00:03:08] RESPONSE: success=true with data sent
+[2025-08-12 00:09:37] === get_dashboard_data.php CALLED ===
+[2025-08-12 00:09:37] Session user_role=regiomanager, region_id=1
+[2025-08-12 00:09:37] DB: Connected to SQLite
+[2025-08-12 00:09:37] Query totalStores for region 1: 4
+[2025-08-12 00:09:37] Query totalManagers for region 1: 4
+[2025-08-12 00:09:37] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-12 00:09:37] Query completionRate: completed=7, total=27, rate=25.9%
+[2025-08-12 00:09:37] Query tasksPerStore: rows=4
+[2025-08-12 00:09:37] Query completionTrend (last 7 days): rows=1
+[2025-08-12 00:09:37] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":20},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 00:09:37] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 00:09:37] RESPONSE: success=true with data sent
+[2025-08-12 21:33:33] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:33:33] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:33:33] DB: Connected to SQLite
+[2025-08-12 21:33:33] Query totalStores for region 1: 4
+[2025-08-12 21:33:33] Query totalManagers for region 1: 5
+[2025-08-12 21:33:33] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:33:33] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:33:33] Query tasksPerStore: rows=4
+[2025-08-12 21:33:33] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:33:33] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:33:33] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:33:33] RESPONSE: success=true with data sent
+[2025-08-12 21:36:58] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:36:58] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:36:58] DB: Connected to SQLite
+[2025-08-12 21:36:58] Query totalStores for region 1: 4
+[2025-08-12 21:36:58] Query totalManagers for region 1: 5
+[2025-08-12 21:36:58] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:36:58] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:36:58] Query tasksPerStore: rows=4
+[2025-08-12 21:36:58] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:36:58] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:36:58] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:36:58] RESPONSE: success=true with data sent
+[2025-08-12 21:37:04] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:37:04] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:37:04] DB: Connected to SQLite
+[2025-08-12 21:37:04] Query totalStores for region 1: 4
+[2025-08-12 21:37:04] Query totalManagers for region 1: 5
+[2025-08-12 21:37:04] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:37:04] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:37:04] Query tasksPerStore: rows=4
+[2025-08-12 21:37:04] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:37:04] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:37:04] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:37:04] RESPONSE: success=true with data sent
+[2025-08-12 21:37:07] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:37:07] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:37:07] DB: Connected to SQLite
+[2025-08-12 21:37:07] Query totalStores for region 1: 4
+[2025-08-12 21:37:07] Query totalManagers for region 1: 5
+[2025-08-12 21:37:07] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:37:07] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:37:07] Query tasksPerStore: rows=4
+[2025-08-12 21:37:07] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:37:07] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:37:07] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:37:07] RESPONSE: success=true with data sent
+[2025-08-12 21:40:08] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:40:08] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:40:08] DB: Connected to SQLite
+[2025-08-12 21:40:08] Query totalStores for region 1: 4
+[2025-08-12 21:40:08] Query totalManagers for region 1: 5
+[2025-08-12 21:40:08] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:40:08] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:40:08] Query tasksPerStore: rows=4
+[2025-08-12 21:40:08] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:40:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:40:08] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:40:08] RESPONSE: success=true with data sent
+[2025-08-12 21:40:42] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:40:42] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:40:42] DB: Connected to SQLite
+[2025-08-12 21:40:42] Query totalStores for region 1: 4
+[2025-08-12 21:40:42] Query totalManagers for region 1: 5
+[2025-08-12 21:40:42] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:40:42] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:40:42] Query tasksPerStore: rows=4
+[2025-08-12 21:40:42] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:40:42] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:40:42] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:40:42] RESPONSE: success=true with data sent
+[2025-08-12 21:40:53] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:40:53] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:40:53] DB: Connected to SQLite
+[2025-08-12 21:40:53] Query totalStores for region 1: 4
+[2025-08-12 21:40:53] Query totalManagers for region 1: 5
+[2025-08-12 21:40:53] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:40:53] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:40:53] Query tasksPerStore: rows=4
+[2025-08-12 21:40:53] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:40:53] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:40:53] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:40:53] RESPONSE: success=true with data sent
+[2025-08-12 21:45:22] === get_dashboard_data.php CALLED ===
+[2025-08-12 21:45:22] Session user_role=regiomanager, region_id=1
+[2025-08-12 21:45:22] DB: Connected to SQLite
+[2025-08-12 21:45:22] Query totalStores for region 1: 4
+[2025-08-12 21:45:22] Query totalManagers for region 1: 5
+[2025-08-12 21:45:22] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 21:45:22] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 21:45:22] Query tasksPerStore: rows=4
+[2025-08-12 21:45:22] Query completionTrend (last 7 days): rows=1
+[2025-08-12 21:45:22] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 21:45:22] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 21:45:22] RESPONSE: success=true with data sent
+[2025-08-12 22:37:12] === get_dashboard_data.php CALLED ===
+[2025-08-12 22:37:12] Session user_role=regiomanager, region_id=1
+[2025-08-12 22:37:12] DB: Connected to SQLite
+[2025-08-12 22:37:12] Query totalStores for region 1: 4
+[2025-08-12 22:37:12] Query totalManagers for region 1: 5
+[2025-08-12 22:37:12] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 22:37:12] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 22:37:12] Query tasksPerStore: rows=4
+[2025-08-12 22:37:12] Query completionTrend (last 7 days): rows=1
+[2025-08-12 22:37:12] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 22:37:12] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 22:37:12] RESPONSE: success=true with data sent
+[2025-08-12 22:37:19] === get_dashboard_data.php CALLED ===
+[2025-08-12 22:37:19] Session user_role=regiomanager, region_id=1
+[2025-08-12 22:37:19] DB: Connected to SQLite
+[2025-08-12 22:37:19] Query totalStores for region 1: 4
+[2025-08-12 22:37:19] Query totalManagers for region 1: 5
+[2025-08-12 22:37:19] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-12 22:37:19] Query completionRate: completed=7, total=34, rate=20.6%
+[2025-08-12 22:37:19] Query tasksPerStore: rows=4
+[2025-08-12 22:37:19] Query completionTrend (last 7 days): rows=1
+[2025-08-12 22:37:19] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":27},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":7}]
+[2025-08-12 22:37:19] completionTrend sample=[{"date":"2025-08-11","completed":7,"total":27}]
+[2025-08-12 22:37:19] RESPONSE: success=true with data sent
+[2025-08-13 21:53:33] === get_dashboard_data.php CALLED ===
+[2025-08-13 21:53:33] Session user_role=developer, region_id=3
+[2025-08-13 21:53:33] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:05:09] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:05:09] Session user_role=developer, region_id=3
+[2025-08-14 01:05:09] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:05:54] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:05:54] Session user_role=developer, region_id=3
+[2025-08-14 01:05:54] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:06:04] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:06:04] Session user_role=developer, region_id=3
+[2025-08-14 01:06:04] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:06:33] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:06:33] Session user_role=developer, region_id=3
+[2025-08-14 01:06:33] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:06:40] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:06:40] Session user_role=developer, region_id=3
+[2025-08-14 01:06:40] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:07:55] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:07:55] Session user_role=developer, region_id=3
+[2025-08-14 01:07:55] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:08:47] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:08:47] Session user_role=developer, region_id=3
+[2025-08-14 01:08:47] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:09:22] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:09:22] Session user_role=developer, region_id=3
+[2025-08-14 01:09:22] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:09:27] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:09:27] Session user_role=developer, region_id=3
+[2025-08-14 01:09:27] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:09:35] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:09:35] Session user_role=developer, region_id=3
+[2025-08-14 01:09:35] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:10:11] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:10:11] Session user_role=developer, region_id=3
+[2025-08-14 01:10:11] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:11:28] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:11:28] Session user_role=developer, region_id=3
+[2025-08-14 01:11:28] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:11:35] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:11:35] Session user_role=developer, region_id=3
+[2025-08-14 01:11:35] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:11:37] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:11:37] Session user_role=developer, region_id=3
+[2025-08-14 01:11:37] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:19:49] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:19:49] Session user_role=developer, region_id=not set
+[2025-08-14 01:19:49] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:23:53] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:23:53] Session user_role=developer, region_id=not set
+[2025-08-14 01:23:53] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:23:59] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:23:59] Session user_role=developer, region_id=not set
+[2025-08-14 01:23:59] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:28:33] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:28:33] Session user_role=developer, region_id=not set
+[2025-08-14 01:28:33] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:34:59] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:34:59] Session user_role=developer, region_id=not set
+[2025-08-14 01:34:59] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:40:22] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:40:22] Session user_role=developer, region_id=4
+[2025-08-14 01:40:22] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:40:28] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:40:28] Session user_role=developer, region_id=4
+[2025-08-14 01:40:28] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:45:03] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:45:03] Session user_role=developer, region_id=1
+[2025-08-14 01:45:03] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:47:36] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:47:36] Session user_role=developer, region_id=1
+[2025-08-14 01:47:36] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:48:09] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:48:09] Session user_role=developer, region_id=1
+[2025-08-14 01:48:09] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:49:57] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:49:57] Session user_role=developer, region_id=1
+[2025-08-14 01:49:57] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:50:39] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:50:39] Session user_role=developer, region_id=1
+[2025-08-14 01:50:39] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:50:44] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:50:44] Session user_role=developer, region_id=1
+[2025-08-14 01:50:44] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:50:59] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:50:59] Session user_role=developer, region_id=1
+[2025-08-14 01:50:59] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:52:17] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:52:17] Session user_role=developer, region_id=1
+[2025-08-14 01:52:17] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:52:39] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:52:39] Session user_role=developer, region_id=1
+[2025-08-14 01:52:39] AUTH ERROR: Unauthorized user_role=developer
+[2025-08-14 01:54:16] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:54:16] Session user_role=developer, region_id=1
+[2025-08-14 01:54:16] DB: Connected to SQLite
+[2025-08-14 01:54:16] Query totalStores for region 1: 4
+[2025-08-14 01:54:16] Query totalManagers for region 1: 4
+[2025-08-14 01:54:16] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-14 01:54:16] Query completionRate: completed=18, total=145, rate=12.4%
+[2025-08-14 01:54:16] Query tasksPerStore: rows=4
+[2025-08-14 01:54:16] Query completionTrend (last 7 days): rows=1
+[2025-08-14 01:54:16] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":145},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-14 01:54:16] completionTrend sample=[{"date":"2025-08-13","completed":18,"total":138}]
+[2025-08-14 01:54:16] RESPONSE: success=true with data sent
+[2025-08-14 01:54:25] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:54:25] Session user_role=developer, region_id=1
+[2025-08-14 01:54:25] DB: Connected to SQLite
+[2025-08-14 01:54:25] Query totalStores for region 1: 4
+[2025-08-14 01:54:25] Query totalManagers for region 1: 4
+[2025-08-14 01:54:25] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-14 01:54:25] Query completionRate: completed=18, total=145, rate=12.4%
+[2025-08-14 01:54:25] Query tasksPerStore: rows=4
+[2025-08-14 01:54:25] Query completionTrend (last 7 days): rows=1
+[2025-08-14 01:54:25] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":145},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-14 01:54:25] completionTrend sample=[{"date":"2025-08-13","completed":18,"total":138}]
+[2025-08-14 01:54:25] RESPONSE: success=true with data sent
+[2025-08-14 01:54:31] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:54:31] Session user_role=developer, region_id=1
+[2025-08-14 01:54:31] DB: Connected to SQLite
+[2025-08-14 01:54:31] Query totalStores for region 1: 4
+[2025-08-14 01:54:31] Query totalManagers for region 1: 4
+[2025-08-14 01:54:31] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-14 01:54:31] Query completionRate: completed=18, total=145, rate=12.4%
+[2025-08-14 01:54:31] Query tasksPerStore: rows=4
+[2025-08-14 01:54:31] Query completionTrend (last 7 days): rows=1
+[2025-08-14 01:54:31] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":145},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-14 01:54:31] completionTrend sample=[{"date":"2025-08-13","completed":18,"total":138}]
+[2025-08-14 01:54:31] RESPONSE: success=true with data sent
+[2025-08-14 01:55:14] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:55:14] Session user_role=developer, region_id=2
+[2025-08-14 01:55:14] DB: Connected to SQLite
+[2025-08-14 01:55:14] Query totalStores for region 2: 2
+[2025-08-14 01:55:14] Query totalManagers for region 2: 0
+[2025-08-14 01:55:14] Query activeTasks (unsubmitted task_sets) for region 2: 0
+[2025-08-14 01:55:14] Query completionRate: completed=0, total=0, rate=0%
+[2025-08-14 01:55:14] Query tasksPerStore: rows=2
+[2025-08-14 01:55:14] Query completionTrend (last 7 days): rows=0
+[2025-08-14 01:55:14] tasksPerStore sample=[{"store_name":"Nyp Utrecht Centrum","task_count":0},{"store_name":"Nyp Utrecht Overvecht","task_count":0}]
+[2025-08-14 01:55:14] RESPONSE: success=true with data sent
+[2025-08-14 01:55:54] === get_dashboard_data.php CALLED ===
+[2025-08-14 01:55:54] Session user_role=developer, region_id=2
+[2025-08-14 01:55:54] DB: Connected to SQLite
+[2025-08-14 01:55:54] Query totalStores for region 2: 2
+[2025-08-14 01:55:54] Query totalManagers for region 2: 0
+[2025-08-14 01:55:54] Query activeTasks (unsubmitted task_sets) for region 2: 0
+[2025-08-14 01:55:54] Query completionRate: completed=0, total=0, rate=0%
+[2025-08-14 01:55:54] Query tasksPerStore: rows=2
+[2025-08-14 01:55:54] Query completionTrend (last 7 days): rows=0
+[2025-08-14 01:55:54] tasksPerStore sample=[{"store_name":"Nyp Utrecht Centrum","task_count":0},{"store_name":"Nyp Utrecht Overvecht","task_count":0}]
+[2025-08-14 01:55:54] RESPONSE: success=true with data sent
+[2025-08-18 20:33:34] === get_dashboard_data.php CALLED ===
+[2025-08-18 20:33:34] Session user_role=regiomanager, region_id=not set
+[2025-08-18 20:33:34] AUTH ERROR: Region ID not found in session
+[2025-08-18 20:33:39] === get_dashboard_data.php CALLED ===
+[2025-08-18 20:33:39] Session user_role=regiomanager, region_id=not set
+[2025-08-18 20:33:39] AUTH ERROR: Region ID not found in session
+[2025-08-18 20:33:59] === get_dashboard_data.php CALLED ===
+[2025-08-18 20:33:59] Session user_role=regiomanager, region_id=1
+[2025-08-18 20:33:59] DB: Connected to SQLite
+[2025-08-18 20:33:59] Query totalStores for region 1: 4
+[2025-08-18 20:33:59] Query totalManagers for region 1: 4
+[2025-08-18 20:33:59] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-18 20:33:59] Query completionRate: completed=5, total=12, rate=41.7%
+[2025-08-18 20:33:59] Query tasksPerStore: rows=4
+[2025-08-18 20:33:59] Query completionTrend (last 7 days): rows=1
+[2025-08-18 20:33:59] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":12},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-18 20:33:59] completionTrend sample=[{"date":"2025-08-18","completed":5,"total":12}]
+[2025-08-18 20:33:59] RESPONSE: success=true with data sent
+[2025-08-18 20:35:22] === get_dashboard_data.php CALLED ===
+[2025-08-18 20:35:22] Session user_role=regiomanager, region_id=1
+[2025-08-18 20:35:22] DB: Connected to SQLite
+[2025-08-18 20:35:22] Query totalStores for region 1: 4
+[2025-08-18 20:35:22] Query totalManagers for region 1: 4
+[2025-08-18 20:35:22] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-18 20:35:22] Query completionRate: completed=5, total=12, rate=41.7%
+[2025-08-18 20:35:22] Query tasksPerStore: rows=4
+[2025-08-18 20:35:22] Query completionTrend (last 7 days): rows=1
+[2025-08-18 20:35:22] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":12},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-18 20:35:22] completionTrend sample=[{"date":"2025-08-18","completed":5,"total":12}]
+[2025-08-18 20:35:22] RESPONSE: success=true with data sent
+[2025-08-18 20:41:34] === get_dashboard_data.php CALLED ===
+[2025-08-18 20:41:34] Session user_role=developer, region_id=1
+[2025-08-18 20:41:34] DB: Connected to SQLite
+[2025-08-18 20:41:34] Query totalStores for region 1: 4
+[2025-08-18 20:41:34] Query totalManagers for region 1: 4
+[2025-08-18 20:41:34] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-18 20:41:34] Query completionRate: completed=5, total=12, rate=41.7%
+[2025-08-18 20:41:34] Query tasksPerStore: rows=4
+[2025-08-18 20:41:34] Query completionTrend (last 7 days): rows=1
+[2025-08-18 20:41:34] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":12},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-18 20:41:34] completionTrend sample=[{"date":"2025-08-18","completed":5,"total":12}]
+[2025-08-18 20:41:34] RESPONSE: success=true with data sent
+[2025-08-18 21:05:36] === get_dashboard_data.php CALLED ===
+[2025-08-18 21:05:36] Session user_role=regiomanager, region_id=1
+[2025-08-18 21:05:36] DB: Connected to SQLite
+[2025-08-18 21:05:36] Query totalStores for region 1: 4
+[2025-08-18 21:05:36] Query totalManagers for region 1: 4
+[2025-08-18 21:05:36] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-08-18 21:05:36] Query completionRate: completed=10, total=33, rate=30.3%
+[2025-08-18 21:05:36] Query tasksPerStore: rows=4
+[2025-08-18 21:05:36] Query completionTrend (last 7 days): rows=1
+[2025-08-18 21:05:36] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":33},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-18 21:05:36] completionTrend sample=[{"date":"2025-08-18","completed":10,"total":33}]
+[2025-08-18 21:05:36] RESPONSE: success=true with data sent
+[2025-08-27 22:48:12] === get_dashboard_data.php CALLED ===
+[2025-08-27 22:48:12] Session user_role=regiomanager, region_id=1
+[2025-08-27 22:48:12] DB: Connected to SQLite
+[2025-08-27 22:48:12] Query totalStores for region 1: 4
+[2025-08-27 22:48:12] Query totalManagers for region 1: 4
+[2025-08-27 22:48:12] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 22:48:12] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 22:48:12] Query tasksPerStore: rows=4
+[2025-08-27 22:48:12] Query completionTrend (last 7 days): rows=1
+[2025-08-27 22:48:12] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 22:48:12] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 22:48:12] RESPONSE: success=true with data sent
+[2025-08-27 22:51:12] === get_dashboard_data.php CALLED ===
+[2025-08-27 22:51:12] Session user_role=regiomanager, region_id=1
+[2025-08-27 22:51:12] DB: Connected to SQLite
+[2025-08-27 22:51:12] Query totalStores for region 1: 4
+[2025-08-27 22:51:12] Query totalManagers for region 1: 4
+[2025-08-27 22:51:12] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 22:51:12] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 22:51:12] Query tasksPerStore: rows=4
+[2025-08-27 22:51:12] Query completionTrend (last 7 days): rows=1
+[2025-08-27 22:51:12] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 22:51:12] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 22:51:12] RESPONSE: success=true with data sent
+[2025-08-27 23:00:05] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:00:05] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:00:05] DB: Connected to SQLite
+[2025-08-27 23:00:05] Query totalStores for region 1: 4
+[2025-08-27 23:00:05] Query totalManagers for region 1: 4
+[2025-08-27 23:00:05] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:00:05] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:00:05] Query tasksPerStore: rows=4
+[2025-08-27 23:00:05] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:00:05] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:00:05] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:00:05] RESPONSE: success=true with data sent
+[2025-08-27 23:00:39] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:00:39] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:00:39] DB: Connected to SQLite
+[2025-08-27 23:00:39] Query totalStores for region 1: 4
+[2025-08-27 23:00:39] Query totalManagers for region 1: 4
+[2025-08-27 23:00:39] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:00:39] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:00:39] Query tasksPerStore: rows=4
+[2025-08-27 23:00:39] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:00:39] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:00:39] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:00:39] RESPONSE: success=true with data sent
+[2025-08-27 23:00:52] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:00:52] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:00:52] DB: Connected to SQLite
+[2025-08-27 23:00:52] Query totalStores for region 1: 4
+[2025-08-27 23:00:52] Query totalManagers for region 1: 4
+[2025-08-27 23:00:52] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:00:52] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:00:52] Query tasksPerStore: rows=4
+[2025-08-27 23:00:52] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:00:52] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:00:52] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:00:52] RESPONSE: success=true with data sent
+[2025-08-27 23:05:00] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:05:00] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:05:00] DB: Connected to SQLite
+[2025-08-27 23:05:00] Query totalStores for region 1: 4
+[2025-08-27 23:05:00] Query totalManagers for region 1: 4
+[2025-08-27 23:05:00] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:05:00] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:05:00] Query tasksPerStore: rows=4
+[2025-08-27 23:05:00] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:05:00] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:05:00] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:05:00] RESPONSE: success=true with data sent
+[2025-08-27 23:10:26] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:10:26] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:10:26] DB: Connected to SQLite
+[2025-08-27 23:10:26] Query totalStores for region 1: 4
+[2025-08-27 23:10:26] Query totalManagers for region 1: 4
+[2025-08-27 23:10:26] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:10:26] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:10:26] Query tasksPerStore: rows=4
+[2025-08-27 23:10:26] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:10:26] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:10:26] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:10:26] RESPONSE: success=true with data sent
+[2025-08-27 23:19:50] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:19:50] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:19:50] DB: Connected to SQLite
+[2025-08-27 23:19:50] Query totalStores for region 1: 4
+[2025-08-27 23:19:50] Query totalManagers for region 1: 4
+[2025-08-27 23:19:50] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:19:50] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:19:50] Query tasksPerStore: rows=4
+[2025-08-27 23:19:50] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:19:50] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:19:50] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:19:50] RESPONSE: success=true with data sent
+[2025-08-27 23:20:25] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:20:25] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:20:25] DB: Connected to SQLite
+[2025-08-27 23:20:25] Query totalStores for region 1: 4
+[2025-08-27 23:20:25] Query totalManagers for region 1: 4
+[2025-08-27 23:20:25] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:20:25] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:20:25] Query tasksPerStore: rows=4
+[2025-08-27 23:20:25] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:20:25] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:20:25] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:20:25] RESPONSE: success=true with data sent
+[2025-08-27 23:22:28] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:22:28] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:22:28] DB: Connected to SQLite
+[2025-08-27 23:22:28] Query totalStores for region 1: 4
+[2025-08-27 23:22:28] Query totalManagers for region 1: 4
+[2025-08-27 23:22:28] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:22:28] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:22:28] Query tasksPerStore: rows=4
+[2025-08-27 23:22:28] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:22:28] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:22:28] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:22:28] RESPONSE: success=true with data sent
+[2025-08-27 23:23:10] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:23:10] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:23:10] DB: Connected to SQLite
+[2025-08-27 23:23:10] Query totalStores for region 1: 4
+[2025-08-27 23:23:10] Query totalManagers for region 1: 4
+[2025-08-27 23:23:10] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:23:10] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:23:10] Query tasksPerStore: rows=4
+[2025-08-27 23:23:10] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:23:10] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:23:10] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:23:10] RESPONSE: success=true with data sent
+[2025-08-27 23:26:04] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:26:04] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:26:04] DB: Connected to SQLite
+[2025-08-27 23:26:04] Query totalStores for region 1: 4
+[2025-08-27 23:26:04] Query totalManagers for region 1: 4
+[2025-08-27 23:26:04] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:26:04] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:26:04] Query tasksPerStore: rows=4
+[2025-08-27 23:26:04] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:26:04] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:26:04] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:26:04] RESPONSE: success=true with data sent
+[2025-08-27 23:36:10] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:36:10] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:36:10] DB: Connected to SQLite
+[2025-08-27 23:36:10] Query totalStores for region 1: 4
+[2025-08-27 23:36:10] Query totalManagers for region 1: 4
+[2025-08-27 23:36:10] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:36:10] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:36:10] Query tasksPerStore: rows=4
+[2025-08-27 23:36:10] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:36:10] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:36:10] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:36:10] RESPONSE: success=true with data sent
+[2025-08-27 23:36:47] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:36:47] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:36:47] DB: Connected to SQLite
+[2025-08-27 23:36:47] Query totalStores for region 1: 4
+[2025-08-27 23:36:47] Query totalManagers for region 1: 4
+[2025-08-27 23:36:47] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:36:47] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:36:47] Query tasksPerStore: rows=4
+[2025-08-27 23:36:47] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:36:47] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:36:47] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:36:47] RESPONSE: success=true with data sent
+[2025-08-27 23:39:32] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:39:32] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:39:32] DB: Connected to SQLite
+[2025-08-27 23:39:32] Query totalStores for region 1: 4
+[2025-08-27 23:39:32] Query totalManagers for region 1: 4
+[2025-08-27 23:39:32] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:39:32] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:39:32] Query tasksPerStore: rows=4
+[2025-08-27 23:39:32] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:39:32] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:39:32] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:39:32] RESPONSE: success=true with data sent
+[2025-08-27 23:40:45] === get_dashboard_data.php CALLED ===
+[2025-08-27 23:40:45] Session user_role=regiomanager, region_id=1
+[2025-08-27 23:40:45] DB: Connected to SQLite
+[2025-08-27 23:40:45] Query totalStores for region 1: 4
+[2025-08-27 23:40:45] Query totalManagers for region 1: 4
+[2025-08-27 23:40:45] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-08-27 23:40:45] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-08-27 23:40:45] Query tasksPerStore: rows=4
+[2025-08-27 23:40:45] Query completionTrend (last 7 days): rows=1
+[2025-08-27 23:40:45] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-08-27 23:40:45] completionTrend sample=[{"date":"2025-08-26","completed":4,"total":13}]
+[2025-08-27 23:40:45] RESPONSE: success=true with data sent
+[2025-09-27 23:41:04] === get_dashboard_data.php CALLED ===
+[2025-09-27 23:41:04] Session user_role=regiomanager, region_id=1
+[2025-09-27 23:41:04] DB: Connected to SQLite
+[2025-09-27 23:41:04] Query totalStores for region 1: 4
+[2025-09-27 23:41:04] Query totalManagers for region 1: 4
+[2025-09-27 23:41:04] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-09-27 23:41:04] Query completionRate: completed=14, total=52, rate=26.9%
+[2025-09-27 23:41:04] Query tasksPerStore: rows=4
+[2025-09-27 23:41:04] Query completionTrend (last 7 days): rows=0
+[2025-09-27 23:41:04] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":52},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-27 23:41:04] RESPONSE: success=true with data sent
+[2025-09-01 01:14:40] === get_dashboard_data.php CALLED ===
+[2025-09-01 01:14:40] Session user_role=regiomanager, region_id=1
+[2025-09-01 01:14:40] DB: Connected to SQLite
+[2025-09-01 01:14:40] Query totalStores for region 1: 4
+[2025-09-01 01:14:40] Query totalManagers for region 1: 4
+[2025-09-01 01:14:40] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-09-01 01:14:40] Query completionRate: completed=0, total=6, rate=0%
+[2025-09-01 01:14:40] Query tasksPerStore: rows=4
+[2025-09-01 01:14:40] Query completionTrend (last 7 days): rows=0
+[2025-09-01 01:14:40] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":6},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-01 01:14:40] RESPONSE: success=true with data sent
+[2025-09-01 01:15:06] === get_dashboard_data.php CALLED ===
+[2025-09-01 01:15:06] Session user_role=regiomanager, region_id=1
+[2025-09-01 01:15:06] DB: Connected to SQLite
+[2025-09-01 01:15:06] Query totalStores for region 1: 4
+[2025-09-01 01:15:06] Query totalManagers for region 1: 4
+[2025-09-01 01:15:06] Query activeTasks (unsubmitted task_sets) for region 1: 2
+[2025-09-01 01:15:06] Query completionRate: completed=0, total=13, rate=0%
+[2025-09-01 01:15:06] Query tasksPerStore: rows=4
+[2025-09-01 01:15:06] Query completionTrend (last 7 days): rows=0
+[2025-09-01 01:15:06] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":13},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-01 01:15:06] RESPONSE: success=true with data sent
+[2025-09-02 18:28:14] === get_dashboard_data.php CALLED ===
+[2025-09-02 18:28:14] Session user_role=regiomanager, region_id=1
+[2025-09-02 18:28:14] DB: Connected to SQLite
+[2025-09-02 18:28:14] Query totalStores for region 1: 4
+[2025-09-02 18:28:14] Query totalManagers for region 1: 4
+[2025-09-02 18:28:14] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-09-02 18:28:14] Query completionRate: completed=0, total=7, rate=0%
+[2025-09-02 18:28:14] Query tasksPerStore: rows=4
+[2025-09-02 18:28:14] Query completionTrend (last 7 days): rows=0
+[2025-09-02 18:28:14] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":7},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 18:28:14] RESPONSE: success=true with data sent
+[2025-09-02 18:33:54] === get_dashboard_data.php CALLED ===
+[2025-09-02 18:33:54] Session user_role=regiomanager, region_id=1
+[2025-09-02 18:33:54] DB: Connected to SQLite
+[2025-09-02 18:33:54] Query totalStores for region 1: 4
+[2025-09-02 18:33:54] Query totalManagers for region 1: 4
+[2025-09-02 18:33:54] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-09-02 18:33:54] Query completionRate: completed=0, total=7, rate=0%
+[2025-09-02 18:33:54] Query tasksPerStore: rows=4
+[2025-09-02 18:33:54] Query completionTrend (last 7 days): rows=0
+[2025-09-02 18:33:54] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":7},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 18:33:54] RESPONSE: success=true with data sent
+[2025-09-02 18:34:29] === get_dashboard_data.php CALLED ===
+[2025-09-02 18:34:29] Session user_role=regiomanager, region_id=1
+[2025-09-02 18:34:29] DB: Connected to SQLite
+[2025-09-02 18:34:29] Query totalStores for region 1: 4
+[2025-09-02 18:34:29] Query totalManagers for region 1: 4
+[2025-09-02 18:34:29] Query activeTasks (unsubmitted task_sets) for region 1: 1
+[2025-09-02 18:34:29] Query completionRate: completed=0, total=7, rate=0%
+[2025-09-02 18:34:29] Query tasksPerStore: rows=4
+[2025-09-02 18:34:29] Query completionTrend (last 7 days): rows=0
+[2025-09-02 18:34:29] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":7},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 18:34:29] RESPONSE: success=true with data sent
+[2025-09-02 22:25:20] === get_dashboard_data.php CALLED ===
+[2025-09-02 22:25:20] Session user_role=regiomanager, region_id=1
+[2025-09-02 22:25:20] DB: Connected to SQLite
+[2025-09-02 22:25:20] Query totalStores for region 1: 4
+[2025-09-02 22:25:20] Query totalManagers for region 1: 4
+[2025-09-02 22:25:20] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 22:25:20] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 22:25:20] Query tasksPerStore: rows=4
+[2025-09-02 22:25:20] Query completionTrend (last 7 days): rows=1
+[2025-09-02 22:25:20] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 22:25:20] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 22:25:20] RESPONSE: success=true with data sent
+[2025-09-02 22:25:48] === get_dashboard_data.php CALLED ===
+[2025-09-02 22:25:48] Session user_role=regiomanager, region_id=1
+[2025-09-02 22:25:48] DB: Connected to SQLite
+[2025-09-02 22:25:48] Query totalStores for region 1: 4
+[2025-09-02 22:25:48] Query totalManagers for region 1: 4
+[2025-09-02 22:25:48] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 22:25:48] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 22:25:48] Query tasksPerStore: rows=4
+[2025-09-02 22:25:48] Query completionTrend (last 7 days): rows=1
+[2025-09-02 22:25:48] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 22:25:48] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 22:25:48] RESPONSE: success=true with data sent
+[2025-09-02 22:25:52] === get_dashboard_data.php CALLED ===
+[2025-09-02 22:25:52] Session user_role=regiomanager, region_id=1
+[2025-09-02 22:25:52] DB: Connected to SQLite
+[2025-09-02 22:25:52] Query totalStores for region 1: 4
+[2025-09-02 22:25:52] Query totalManagers for region 1: 4
+[2025-09-02 22:25:52] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 22:25:52] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 22:25:52] Query tasksPerStore: rows=4
+[2025-09-02 22:25:52] Query completionTrend (last 7 days): rows=1
+[2025-09-02 22:25:52] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 22:25:52] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 22:25:52] RESPONSE: success=true with data sent
+[2025-09-02 22:25:56] === get_dashboard_data.php CALLED ===
+[2025-09-02 22:25:56] Session user_role=regiomanager, region_id=1
+[2025-09-02 22:25:56] DB: Connected to SQLite
+[2025-09-02 22:25:56] Query totalStores for region 1: 4
+[2025-09-02 22:25:56] Query totalManagers for region 1: 4
+[2025-09-02 22:25:56] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 22:25:56] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 22:25:56] Query tasksPerStore: rows=4
+[2025-09-02 22:25:56] Query completionTrend (last 7 days): rows=1
+[2025-09-02 22:25:56] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 22:25:56] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 22:25:56] RESPONSE: success=true with data sent
+[2025-09-02 22:26:04] === get_dashboard_data.php CALLED ===
+[2025-09-02 22:26:04] Session user_role=regiomanager, region_id=1
+[2025-09-02 22:26:04] DB: Connected to SQLite
+[2025-09-02 22:26:04] Query totalStores for region 1: 4
+[2025-09-02 22:26:04] Query totalManagers for region 1: 4
+[2025-09-02 22:26:04] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 22:26:04] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 22:26:04] Query tasksPerStore: rows=4
+[2025-09-02 22:26:04] Query completionTrend (last 7 days): rows=1
+[2025-09-02 22:26:04] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 22:26:04] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 22:26:04] RESPONSE: success=true with data sent
+[2025-09-02 22:26:12] === get_dashboard_data.php CALLED ===
+[2025-09-02 22:26:12] Session user_role=regiomanager, region_id=1
+[2025-09-02 22:26:12] DB: Connected to SQLite
+[2025-09-02 22:26:12] Query totalStores for region 1: 4
+[2025-09-02 22:26:12] Query totalManagers for region 1: 4
+[2025-09-02 22:26:12] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 22:26:12] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 22:26:12] Query tasksPerStore: rows=4
+[2025-09-02 22:26:12] Query completionTrend (last 7 days): rows=1
+[2025-09-02 22:26:12] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 22:26:12] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 22:26:12] RESPONSE: success=true with data sent
+[2025-09-02 23:21:21] === get_dashboard_data.php CALLED ===
+[2025-09-02 23:21:21] Session user_role=regiomanager, region_id=1
+[2025-09-02 23:21:21] DB: Connected to SQLite
+[2025-09-02 23:21:21] Query totalStores for region 1: 4
+[2025-09-02 23:21:21] Query totalManagers for region 1: 4
+[2025-09-02 23:21:21] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 23:21:21] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 23:21:21] Query tasksPerStore: rows=4
+[2025-09-02 23:21:21] Query completionTrend (last 7 days): rows=1
+[2025-09-02 23:21:21] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 23:21:21] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 23:21:21] RESPONSE: success=true with data sent
+[2025-09-02 23:21:45] === get_dashboard_data.php CALLED ===
+[2025-09-02 23:21:45] Session user_role=regiomanager, region_id=1
+[2025-09-02 23:21:45] DB: Connected to SQLite
+[2025-09-02 23:21:45] Query totalStores for region 1: 4
+[2025-09-02 23:21:45] Query totalManagers for region 1: 4
+[2025-09-02 23:21:45] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 23:21:45] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 23:21:45] Query tasksPerStore: rows=4
+[2025-09-02 23:21:45] Query completionTrend (last 7 days): rows=1
+[2025-09-02 23:21:45] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 23:21:45] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 23:21:45] RESPONSE: success=true with data sent
+[2025-09-02 23:21:51] === get_dashboard_data.php CALLED ===
+[2025-09-02 23:21:51] Session user_role=regiomanager, region_id=1
+[2025-09-02 23:21:51] DB: Connected to SQLite
+[2025-09-02 23:21:51] Query totalStores for region 1: 4
+[2025-09-02 23:21:51] Query totalManagers for region 1: 4
+[2025-09-02 23:21:51] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 23:21:51] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 23:21:51] Query tasksPerStore: rows=4
+[2025-09-02 23:21:51] Query completionTrend (last 7 days): rows=1
+[2025-09-02 23:21:51] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 23:21:51] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 23:21:51] RESPONSE: success=true with data sent
+[2025-09-02 23:22:08] === get_dashboard_data.php CALLED ===
+[2025-09-02 23:22:08] Session user_role=regiomanager, region_id=1
+[2025-09-02 23:22:08] DB: Connected to SQLite
+[2025-09-02 23:22:08] Query totalStores for region 1: 4
+[2025-09-02 23:22:08] Query totalManagers for region 1: 4
+[2025-09-02 23:22:08] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 23:22:08] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 23:22:08] Query tasksPerStore: rows=4
+[2025-09-02 23:22:08] Query completionTrend (last 7 days): rows=1
+[2025-09-02 23:22:08] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 23:22:08] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 23:22:08] RESPONSE: success=true with data sent
+[2025-09-02 23:22:21] === get_dashboard_data.php CALLED ===
+[2025-09-02 23:22:21] Session user_role=regiomanager, region_id=1
+[2025-09-02 23:22:21] DB: Connected to SQLite
+[2025-09-02 23:22:21] Query totalStores for region 1: 4
+[2025-09-02 23:22:21] Query totalManagers for region 1: 4
+[2025-09-02 23:22:21] Query activeTasks (unsubmitted task_sets) for region 1: 0
+[2025-09-02 23:22:21] Query completionRate: completed=20, total=30, rate=66.7%
+[2025-09-02 23:22:21] Query tasksPerStore: rows=4
+[2025-09-02 23:22:21] Query completionTrend (last 7 days): rows=1
+[2025-09-02 23:22:21] tasksPerStore sample=[{"store_name":"Nyp Bussum Brinklaan","task_count":30},{"store_name":"Nyp Hilversum Gijsbrecht","task_count":0},{"store_name":"Nyp Hilversum Kleine Drift","task_count":0}]
+[2025-09-02 23:22:21] completionTrend sample=[{"date":"2025-09-02","completed":20,"total":30}]
+[2025-09-02 23:22:21] RESPONSE: success=true with data sent

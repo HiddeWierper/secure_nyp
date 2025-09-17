@@ -592,9 +592,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       }
     }
   </style>
+    <link rel="icon" type="image/x-icon" href="https://nypschoonmaak.nl/assets/logo.webp">  
+
 </head>
 
-<body class="min-h-screen flex items-center justify-center p-4">
+<body class="overflow-hidden min-h-screen flex items-center justify-center p-4">
   <div class="w-full max-w-md">
     <div class="glass-card rounded-2xl p-6 sm:p-8">
       <!-- Logo/Header -->
@@ -659,7 +661,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <!-- Back to login -->
       <div class="form-group mt-8 text-center">
         <p class="text-gray-600 text-sm mb-4">Weet je je wachtwoord weer?</p>
-        <a href="/login" 
+        <a href="<?= url('/login') ?>"
            class="btn-secondary inline-flex items-center px-6 py-2 rounded-xl font-medium text-sm transition-all hover:no-underline">
           <i class="fas fa-arrow-left mr-2"></i>
           Terug naar inloggen

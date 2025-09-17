@@ -3,21 +3,37 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-error_log('API get_region_managers.php session region_id: ' . ($_SESSION['region_id'] ?? 'not set'));
-error_log('API get_region_managers.php session user_role: ' . ($_SESSION['user_role'] ?? 'not set'));
+header('Content-Type: application/json');
 
-// Check if user is logged in and is a regiomanager
-if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'regiomanager') {
+function logRegionManager($message) {
+    $logFile = __DIR__ . '/getRegionManager.log';
+    $timestamp = date('Y-m-d H:i:s');
+    file_put_contents($logFile, "[$timestamp] $message" . PHP_EOL, FILE_APPEND | LOCK_EX);
+}
+
+logRegionManager("=== GET REGION MANAGERS API CALLED ===");
+logRegionManager("Session region_id: " . ($_SESSION['region_id'] ?? 'not set'));
+logRegionManager("Session user_role: " . ($_SESSION['user_role'] ?? 'not set'));
+logRegionManager("Session user_id: " . ($_SESSION['user_id'] ?? 'not set'));
+
+
+
+// Check if user is logged in and is a regiomanager or developer
+if (!isset($_SESSION['user_role']) || !in_array($_SESSION['user_role'], ['regiomanager', 'developer'])) {
+    logRegionManager("ERROR: Access denied - user role: " . ($_SESSION['user_role'] ?? 'not set'));
     http_response_code(403);
-    echo json_encode(['error' => 'Toegang geweigerd']);
+    echo json_encode(['success' => false, 'error' => 'Toegang geweigerd']);
     exit;
 }
 
 if (!isset($_SESSION['region_id'])) {
+    logRegionManager("ERROR: Region ID not found in session");
     http_response_code(400);
-    echo json_encode(['error' => 'Region ID not found in session']);
+    echo json_encode(['success' => false, 'error' => 'Region ID not found in session']);
     exit;
 }
+
+logRegionManager("Access granted - proceeding with region_id: " . $_SESSION['region_id']);
 
 try {
     $db = new PDO('sqlite:' . __DIR__ . '/../db/tasks.db');
@@ -41,11 +57,9 @@ try {
     $stmt->execute([$regionId]);
     $managers = $stmt->fetchAll(PDO::FETCH_ASSOC);
     
-    error_log("Managers found: " . count($managers));
-    $stmt->execute([$regionId]);
-    $managers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    logRegionManager("DB Query executed - managers found: " . count($managers));
     
-    echo json_encode($managers);
+    echo json_encode(['success' => true, 'managers' => $managers]);
     
 } catch (PDOException $e) {
     http_response_code(500);

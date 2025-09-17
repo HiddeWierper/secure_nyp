@@ -46,25 +46,49 @@ try {
         exit;
     }
     
-    // Maak bestandsnaam
-    $extension = pathinfo($uploadedFile['name'], PATHINFO_EXTENSION);
+    // Maak bestandsnaam (altijd .webp)
     $safeTaskName = preg_replace('/[^a-zA-Z0-9_-]/', '_', $task['name']);
-    $fileName = $safeTaskName . '_' . $taskSetId . '_' . $taskId . '.' . $extension;
-    
+    $fileName = $safeTaskName . '_' . $taskSetId . '_' . $taskId . '.webp';
+
     // Upload directory
     $uploadDir = __DIR__ . '/../../public/uploads/photos/';
 
     if (!is_dir($uploadDir)) {
         mkdir($uploadDir, 0755, true);
     }
-    
+
     $filePath = $uploadDir . $fileName;
-    
-    // Verplaats bestand
-    if (!move_uploaded_file($uploadedFile['tmp_name'], $filePath)) {
-        echo json_encode(['success' => false, 'error' => 'Kon bestand niet opslaan']);
+
+    // Converteer naar WebP
+    $sourceImage = null;
+    switch ($uploadedFile['type']) {
+        case 'image/jpeg':
+            $sourceImage = imagecreatefromjpeg($uploadedFile['tmp_name']);
+            break;
+        case 'image/png':
+            $sourceImage = imagecreatefrompng($uploadedFile['tmp_name']);
+            break;
+        case 'image/gif':
+            $sourceImage = imagecreatefromgif($uploadedFile['tmp_name']);
+            break;
+        case 'image/webp':
+            $sourceImage = imagecreatefromwebp($uploadedFile['tmp_name']);
+            break;
+    }
+
+    if (!$sourceImage) {
+        echo json_encode(['success' => false, 'error' => 'Kon afbeelding niet verwerken']);
         exit;
     }
+
+    // Sla op als WebP
+    if (!imagewebp($sourceImage, $filePath, 80)) {
+        imagedestroy($sourceImage);
+        echo json_encode(['success' => false, 'error' => 'Kon WebP bestand niet opslaan']);
+        exit;
+    }
+
+    imagedestroy($sourceImage);
     
     // Update database
     $relativePath = 'uploads/photos/' . $fileName;

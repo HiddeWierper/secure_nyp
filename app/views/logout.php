@@ -3,5 +3,5 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 session_destroy();
-header('Location: ' . url('/login'));login');
+header('Location: ' . url('/landing'));
 exit;
